@@ -1,0 +1,172 @@
+---
+title: "emv"
+author: "pedusal"
+date: "17 2 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+#rm(list=ls())  # REMOVE ALL OBJECTS
+### Asenna hyvaksi havaitut paketit ######
+# pkgs <- c("data.table", # used for data import
+#           "car",        # used for testing linear hypothesis
+#           "haven",      # used for data import
+#           #"tidyverse",  # data manipulation etc
+#           "broom",      # for working with model coefficients and model summaries efficiently
+#           "lubridate",  # used for creating timestamps
+#           "DT",         # for displaying data_frames nicely
+#           "GGally",     # for "ggpairs" plot
+#           "ggfortify",
+#           "plotly")  # for enhancing plots
+# 
+# install.packages(c(pkgs))
+# loaded_pkgs <- lapply(c(pkgs), library, character.only = TRUE)
+# 
+# library(readxl)
+```
+
+
+
+
+```{r aloitus, include=FALSE}
+####### Aseta tyoskentely kansio ja lataa veikkauset ###########
+
+#Get the working directory:
+#getwd()
+library(readxl)
+#Setup the working directory:
+setwd("C:/Users/Pedu/Documents/GitHub/emv/data")
+myFiles <- list.files(pattern = "xlsx$")
+veikkaukset <- lapply(myFiles, function(x) read_excel(x))
+```
+
+```{r tarkitus, include=FALSE}
+library(dplyr)
+library(knitr)
+################### Hae oikea rivi ################
+
+oikearivi <- read_excel("data/11oikearivi.xlsx")
+
+###### Muokkaaa  sopivaksi #############
+
+oikearivi <- oikearivi %>%   
+  filter(!is.na(oikearivi[,6]),
+         !is.na(oikearivi[,8])
+  )#%>%
+  #rename(X__2 = Kotii,
+   #      X__4 = viieras
+  #) 
+
+############ Aseta tarkistussarjat ##################
+
+koti <- oikearivi$...6
+vieras <- oikearivi$...8
+koti <- as.numeric(koti)
+
+merkki <- c(1:length(koti))
+merkki[1:length(koti)] <- NA
+
+x <- c(1:length(koti))
+for (i in x) {
+  if (koti[i]>vieras[i]){
+    merkki[i] <- 1
+  } else if (koti[i] == vieras[i]) {
+    merkki[i] <- 2
+  } else if (koti[i]<vieras[i]) {
+    merkki[i] <- 3
+  }
+}
+
+################# Luo Pistetaulu ###################
+
+pelit <- c(1:50)
+pelit[1] <- c("Veikkaaja")
+pelit[2] <- c("Yhteensa")
+for (i in x) {
+  pelit[i+2] <- c(paste(oikearivi$...3[i], "-", oikearivi$...5[i]))
+}
+
+pistetaulu <- matrix(NA,10,50)
+colnames(pistetaulu) <- c(pelit)
+pistetaulu <- as.data.frame(pistetaulu)
+
+################### Veikkausten tarkistus ja lisays pistetauluun #######
+
+y <- c(2:length(veikkaukset))
+
+
+for (u in y) {
+  tarkistettava <- data.frame(veikkaukset[u])
+  pistetaulu[u-1, 1] <- tarkistettava[1,5]
+  
+  tarkistettava <- tarkistettava %>% 
+    filter(!is.na(...6),
+         !is.na(...8)
+  )
+  
+  koti1 <- tarkistettava$...6
+  vieras1 <- tarkistettava$...8
+  koti1 <- as.numeric(koti1)
+
+  merkki1 <- c(1:length(koti1))
+  merkki1[1:length(koti1)] <- NA
+
+  for (i in x) {
+
+    if(koti1[i]>vieras1[i]){
+      merkki1[i] <- 1
+
+      } else if (koti1[i] == vieras1[i]) {
+  
+        merkki1[i] <- 2
+
+      } else if (koti1[i]<vieras1[i]) {
+  
+        merkki1[i] <- 3
+
+      }
+    }
+
+  x <- c(1:length(koti))
+  for (i in x) {
+    if(koti[i] == koti1[i] & vieras[i] == vieras1[i]) {
+       pistetaulu[u-1, i+2] <- c(3)
+       #} else if (merkki[i] == merkki1[i] 
+        #     & (koti[i] == koti1 [i] | vieras == vieras1[i])){
+         # pistetaulu[u-1, i+1] <- c(2)
+       } else if (merkki[i] == merkki1[i]) {
+          pistetaulu[u-1, i+2] <- c(1)
+       } else {
+          pistetaulu[u-1, i+2] <- c(0)
+       }
+  }
+  
+
+}
+
+pistetaulu$Yhteensa <- apply(pistetaulu[1:10, 1:length(koti)+2], 1, sum)
+sort(pistetaulu$Yhteensa)
+
+
+# #wb <- createWorkbook(type = "xlsx")
+# library(xlsx)
+# write.xlsx(mydata, "c:/mydata.xlsx")
+# 
+# taulu <- matrix(NA,10,50)
+# y <- c(2:10)
+# x <- c(1:50)
+# 
+# for (u in y) {
+#   
+#   for (i in x) {
+#     taulu[u,i] <- u
+#   }
+# }
+
+```
+```{r pisteet printtaus, echo=FALSE}
+
+print(pistetaulu)
+
+```

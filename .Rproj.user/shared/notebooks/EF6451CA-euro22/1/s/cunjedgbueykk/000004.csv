@@ -1,0 +1,66 @@
+"0","####### Aseta tyoskentely kansio ja lataa veikkauset ###########"
+"0",""
+"0","#Get the working directory:"
+"0","#getwd()"
+"0","library(readxl)"
+"0","#Setup the working directory:"
+"0","setwd(""C:/Users/Pedu/Documents/GitHub/euro22/data"")"
+"2","The working directory was changed to C:/Users/Pedu/Documents/GitHub/euro22/data inside a notebook chunk. The working directory will be reset when the chunk is finished running. Use the knitr root.dir option in the setup chunk to change the working directory for notebook chunks."
+"0","myFiles <- list.files(pattern = ""xlsx$"")"
+"0","veikkaukset <- lapply(myFiles, function(x) read_excel(x))"
+"2","New names:
+* `` -> ...2
+* `` -> ...3
+* `` -> ...4
+* `` -> ...5
+* `` -> ...6
+* ...
+"
+"2","New names:
+* `` -> ...2
+* `` -> ...3
+* `` -> ...4
+* `` -> ...6
+* `` -> ...7
+* ...
+"
+"2","New names:
+* `` -> ...2
+* `` -> ...3
+* `` -> ...4
+* `` -> ...6
+* `` -> ...7
+* ...
+"
+"2","New names:
+* `` -> ...2
+* `` -> ...3
+* `` -> ...4
+* `` -> ...6
+* `` -> ...7
+* ...
+"
+"2","New names:
+* `` -> ...2
+* `` -> ...3
+* `` -> ...4
+* `` -> ...6
+* `` -> ...7
+* ...
+"
+"2","New names:
+* `` -> ...2
+* `` -> ...3
+* `` -> ...4
+* `` -> ...6
+* `` -> ...7
+* ...
+"
+"2","New names:
+* `` -> ...2
+* `` -> ...3
+* `` -> ...4
+* `` -> ...6
+* `` -> ...7
+* ...
+"
