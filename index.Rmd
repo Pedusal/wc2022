@@ -15,7 +15,7 @@ output:
 
 ***
   
-```{r child = "emv.Rmd"}
+```{r child = "euro22.Rmd"}
 ```
   
 ***
