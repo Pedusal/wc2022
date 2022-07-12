@@ -336,7 +336,7 @@ formattable(p
 
 
 
-```{r veikkaustaulu, echo=FALSE}
+```{r veikkaustaulu luonti, include=FALSE}
 library(formattable)
 library(dplyr)
 #library(knitr)
@@ -372,19 +372,32 @@ for (uu in 2:(length(veikkaukset))) {
   }
 }
 
-as.datatable((formattable(veikkaustaulu)
-            ),
-            options = list(
-                      dom = 't',
-                      scrollX = TRUE,
-                      scrollCollapse = TRUE
-            )
-)
 
 ```
 
 
+```{r veikkaustaulu piirtaminen, echo=FALSE}
+library(formattable)
+library(dplyr)
+#library(knitr)
 
+as.datatable(
+            formattable(
+              veikkaustaulu,
+              list(
+                area(row=1) ~ formatter("span", 
+    style = ~ style(color = "green"))
+              )
+            )
+            ,
+            options = list(
+                      dom = 't',
+                      scrollX = TRUE,
+                      scrollCollapse = TRUE
+                      )
+)
+
+```
 
 
 
