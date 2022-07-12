@@ -258,8 +258,14 @@ sort(pistetaulu$Yhteensa)
 #install.packages("formattable")
 library(formattable)
 
+### sortataan pistetaulu ennen piirtämistä
+pistetaulu <- pistetaulu[order(-pistetaulu$Yhteensa),]
 
+##nimetaan rivit uudelleen, jotta ovat nro. jarjestyksessa
+riviennimet <- c(1:(length(pelaajat)-1))
 
+rownames(pistetaulu) <- c(riviennimet)
+###
 
 myForm <- function(x) {
               formatter('span',
@@ -270,9 +276,12 @@ myForm <- function(x) {
 }
 
 as.datatable(formattable(pistetaulu,
-              list(Nimi = formatter("span", style = ~ style(color = "black",font.weight = "bold")),
+              list(
+                Nimi = formatter("span", style = ~ style(
+                  color = "black",font.weight = "bold")),
                 Yhteensa = color_tile("white", "green"),
-              area(col=3:length(pistetaulu[1,]) ) ~ color_tile("transparent", "lightskyblue")
+                area(col=3:length(pistetaulu[1,]) ) ~ color_tile(
+                  "transparent", "lightskyblue")
                      
               )
             ),
@@ -280,6 +289,7 @@ as.datatable(formattable(pistetaulu,
                       dom = 't',
                       scrollX = TRUE,
                       scrollCollapse = TRUE
+                      #order = list(list(2, 'desc'))
             )
 )
 
@@ -386,14 +396,17 @@ as.datatable(
               veikkaustaulu,
               list(
                 area(row=1) ~ formatter("span", 
-    style = ~ style(color = "green"))
+    style = ~ style(color = "green", font.weight = "bold"))
               )
             )
             ,
             options = list(
                       dom = 't',
+                      columnDefs = list(list(
+                        className = 'dt-center', targets = 3:length(pelit)-1)),
                       scrollX = TRUE,
-                      scrollCollapse = TRUE
+                      scrollCollapse = TRUE,
+                      fixedColumns = list(leftColumns = 2)
                       )
 )
 
