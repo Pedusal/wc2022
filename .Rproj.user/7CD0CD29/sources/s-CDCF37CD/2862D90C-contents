@@ -113,7 +113,7 @@ maaliporssi <- as.data.frame(oikearivi[,10:12])
 
 
 
-```{r luodaan df:iä, include=FALSE}
+```{r luodaan df:iä, warning=FALSE, include=FALSE}
 
 ################# luo veikkaustaulu
 veikkaustaulu <- matrix(NA,length(pelaajat),length(pelit))
@@ -189,9 +189,11 @@ for (i in 1:length(maalintekijat[,1])) { # haetaan osallistujan maalintekijat
 
 ```
 
-```{r aloitus moi, echo=FALSE}
+```{r aloitus moi, echo=FALSE, warning=FALSE}
 ## Sano moi
 print("Hello Euro22")
+
+#print("Päivitetty: " as.character(Sys.Date()))
 ```
 Sivun alaosasta löydät osallistujien veikkaukset sekä ehkä joku päivä jonkinlaisen koosteen niistä
 
@@ -202,7 +204,7 @@ Sivun alaosasta löydät osallistujien veikkaukset sekä ehkä joku päivä jonk
 
 
 
-```{r tarkitus, include=FALSE}
+```{r tarkitus, warning=FALSE, include=FALSE}
 library(dplyr)
 library(knitr)
  
@@ -317,7 +319,7 @@ sort(pistetaulu$Yhteensa)
 ```
 
 
-
+## Pisteet
 
 ```{r pisteet printtaus, echo=FALSE, warning=FALSE}
 #install.packages("formattable")
@@ -365,7 +367,7 @@ as.datatable(formattable(pistetaulu,
 
 
 
-```{r pisteet printtaus testeja, eval=FALSE, include=FALSE}
+```{r pisteet printtaus testeja, eval=FALSE, warning=FALSE, include=FALSE}
 
 as.datatable(formattable(pistetaulu,
               list(Nimi = formatter("span", style = ~ style(color = "black",font.weight = "bold")),
@@ -451,6 +453,8 @@ for (uu in 2:(length(veikkaukset))) {
 ```
 
 
+## Osallistujien rivit
+
 ```{r veikkaustaulu piirtaminen, echo=FALSE}
 library(formattable)
 library(dplyr)
@@ -478,6 +482,7 @@ as.datatable(
 ```
 
 
+## Maalintekijät
 
 ```{r maalintekijät piirtaminen, echo=FALSE}
 library(formattable)
