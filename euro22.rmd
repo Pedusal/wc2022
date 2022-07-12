@@ -269,13 +269,19 @@ myForm <- function(x) {
                         ))
 }
 
-formattable(pistetaulu,
+as.datatable(formattable(pistetaulu,
               list(Nimi = formatter("span", style = ~ style(color = "black",font.weight = "bold")),
                 Yhteensa = color_tile("white", "green"),
               area(col=3:length(pistetaulu[1,]) ) ~ color_tile("transparent", "lightskyblue")
                      
               )
+            ),
+            options = list(
+                      dom = 't',
+                      scrollX = TRUE,
+                      scrollCollapse = TRUE
             )
+)
 
             
 
@@ -286,13 +292,14 @@ formattable(pistetaulu,
 
 ```{r pisteet printtaus testeja, eval=FALSE, include=FALSE}
 
-formattable(pistetaulu,
-            list(
-              Yhteensa = color_tile("white", "blue")
-              #pistetaulu[,3:length(pistetaulu[1,])] = color_tile("white", "red")
+as.datatable(formattable(pistetaulu,
+              list(Nimi = formatter("span", style = ~ style(color = "black",font.weight = "bold")),
+                Yhteensa = color_tile("white", "green"),
+              area(col=3:length(pistetaulu[1,]) ) ~ color_tile("transparent", "lightskyblue")
+                     
               )
             )
-
+)
 
 formattable(pistetaulu,
             lapply(pistetaulu[,3:5], formatter("span", style = x ~ ifelse(x == "A",
@@ -365,7 +372,14 @@ for (uu in 2:(length(veikkaukset))) {
   }
 }
 
-formattable(veikkaustaulu)
+as.datatable((formattable(veikkaustaulu)
+            ),
+            options = list(
+                      dom = 't',
+                      scrollX = TRUE,
+                      scrollCollapse = TRUE
+            )
+)
 
 ```
 

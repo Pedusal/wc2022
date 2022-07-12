@@ -1,0 +1,1 @@
+{"frames":[],"message":"Error in as.data.table(formattable(pistetaulu, list(Nimi = formatter(\"span\",  : \n  could not find function \"as.data.table\"\n"}

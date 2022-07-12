@@ -1,9 +1,12 @@
-"0","formattable(pistetaulu,
+"0","as.data.table(formattable(pistetaulu,
               list(Nimi = formatter(""span"", style = ~ style(color = ""black"",font.weight = ""bold"")),
                 Yhteensa = color_tile(""white"", ""green""),
               area(col=3:length(pistetaulu[1,]) ) ~ color_tile(""transparent"", ""lightskyblue"")
                      
               )
             )
+)
 "
-"0",""
+"2","Error in as.data.table(formattable(pistetaulu, list(Nimi = formatter(""span"",  : 
+  could not find function ""as.data.table""
+"
