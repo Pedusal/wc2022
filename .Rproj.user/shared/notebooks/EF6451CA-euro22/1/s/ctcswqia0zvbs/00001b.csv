@@ -1,0 +1,9 @@
+"0","formattable(pistetaulu,
+              list(Nimi = formatter(""span"", style = ~ style(color = ""black"",font.weight = ""bold"")),
+                Yhteensa = color_tile(""white"", ""green""),
+              area(col=3:length(pistetaulu[1,]) ) ~ color_tile(""transparent"", ""lightskyblue"")
+                     
+              )
+            )
+"
+"0",""

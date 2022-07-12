@@ -131,71 +131,9 @@ print("Hello Euro22")
 Sivun alaosasta löydät osallistujien veikkaukset sekä ehkä joku päivä jonkinlaisen koosteen niistä
 
 
-```{r veikkaustaulu, echo=FALSE}
-library(formattable)
-library(dplyr)
-#library(knitr)
-
-## tulokset veikkaustauluun ###
-  veikkaus <- data.frame(veikkaukset[1])
-  
-  veikkaus <- veikkaus %>%   
-  filter(!is.na(veikkaus[,6])
-                  )
-  
-for (iii in 1:length(veikkaus$...2)) {
-  
-    veikkaustaulu[1,2+iii] <-    c(paste(as.character(veikkaus$...6[iii]),"-",as.character(veikkaus$...8[iii])))
-}
-  
-#### Lisataan veikkaukset veikkaustauluun
-
-## haetaan yksittainen veikkaus kasittelyyn
-
-for (uu in 2:(length(veikkaukset))) {
-  veikkaus <- data.frame(veikkaukset[uu])
-  
-  veikkaus <- veikkaus %>%   
-  filter(!is.na(veikkaus[,6])
-                  )
-  ## lisataan veikkaajan rivi veikkaustauluun
-  for (iii in 1:length(veikkaus$...2)) {
-  
-    veikkaustaulu[uu,2+iii] <-    c(paste(as.character(veikkaus$...6[iii]),"-",as.character(veikkaus$...8[iii])))
-  
-    
-  }
-}
-
-formattable(veikkaustaulu)
-
-```
-
-```{r maalintekijät, echo=FALSE}
-library(formattable)
-library(dplyr)
 
 
-maalintekijat <- matrix(NA,length(pelaajat)-1,6)
-colnames(maalintekijat) <- c("nimi", "Maalintekija1", "Maalintekija2", "Maalintekija3", "Maalintekija4", "Maalintekija5")
-maalintekijat <- as.data.frame(maalintekijat)
 
-for (uu in 2:length(veikkaukset)) {
-  veikkaus <- data.frame(veikkaukset[uu])
-  
-  maalintekijat[uu-1,1] <- veikkaus[[1,5]]
-  
-  veikkaus <- veikkaus %>%   
-  filter(!is.na(veikkaus[,10])
-  )
-         
-  maalintekijat[uu-1,2:6] <- c(veikkaus$...10[2:6])
-}
-
-
-formattable(maalintekijat)
-
-```
 
 
 
@@ -316,7 +254,7 @@ sort(pistetaulu$Yhteensa)
 
 
 
-```{r pisteet printtaus, echo=FALSE}
+```{r pisteet printtaus, echo=FALSE, warning=FALSE}
 #install.packages("formattable")
 library(formattable)
 
@@ -331,13 +269,20 @@ myForm <- function(x) {
                         ))
 }
 
-formattable(pistetaulu, 
-              list(Yhteensa = color_tile("white", "green"),
-              lapply(pistetaulu[,3:5], myForm)
+formattable(pistetaulu,
+              list(Nimi = formatter("span", style = ~ style(color = "black",font.weight = "bold")),
+                Yhteensa = color_tile("white", "green"),
+              area(col=3:length(pistetaulu[1,]) ) ~ color_tile("transparent", "lightskyblue")
+                     
               )
             )
 
+            
+
 ```
+
+
+
 
 ```{r pisteet printtaus testeja, eval=FALSE, include=FALSE}
 
@@ -378,5 +323,79 @@ formattable(p
     style = x ~ style(color = ifelse(x, "green", "red")),
     x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No")))
 ))
+
+```
+
+
+
+
+```{r veikkaustaulu, echo=FALSE}
+library(formattable)
+library(dplyr)
+#library(knitr)
+
+## tulokset veikkaustauluun ###
+  veikkaus <- data.frame(veikkaukset[1])
+  
+  veikkaus <- veikkaus %>%   
+  filter(!is.na(veikkaus[,6])
+                  )
+  
+for (iii in 1:length(veikkaus$...2)) {
+  
+    veikkaustaulu[1,2+iii] <-    c(paste(as.character(veikkaus$...6[iii]),"-",as.character(veikkaus$...8[iii])))
+}
+  
+#### Lisataan veikkaukset veikkaustauluun
+
+## haetaan yksittainen veikkaus kasittelyyn
+
+for (uu in 2:(length(veikkaukset))) {
+  veikkaus <- data.frame(veikkaukset[uu])
+  
+  veikkaus <- veikkaus %>%   
+  filter(!is.na(veikkaus[,6])
+                  )
+  ## lisataan veikkaajan rivi veikkaustauluun
+  for (iii in 1:length(veikkaus$...2)) {
+  
+    veikkaustaulu[uu,2+iii] <-    c(paste(as.character(veikkaus$...6[iii]),"-",as.character(veikkaus$...8[iii])))
+  
+    
+  }
+}
+
+formattable(veikkaustaulu)
+
+```
+
+
+
+
+
+
+```{r maalintekijät, echo=FALSE}
+library(formattable)
+library(dplyr)
+
+
+maalintekijat <- matrix(NA,length(pelaajat)-1,6)
+colnames(maalintekijat) <- c("nimi", "Maalintekija1", "Maalintekija2", "Maalintekija3", "Maalintekija4", "Maalintekija5")
+maalintekijat <- as.data.frame(maalintekijat)
+
+for (uu in 2:length(veikkaukset)) {
+  veikkaus <- data.frame(veikkaukset[uu])
+  
+  maalintekijat[uu-1,1] <- veikkaus[[1,5]]
+  
+  veikkaus <- veikkaus %>%   
+  filter(!is.na(veikkaus[,10])
+  )
+         
+  maalintekijat[uu-1,2:6] <- c(veikkaus$...10[2:6])
+}
+
+
+formattable(maalintekijat)
 
 ```
