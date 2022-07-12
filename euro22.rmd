@@ -124,20 +124,30 @@ pistetaulu <- as.data.frame(pistetaulu)
 
 ```
 
-```{r aloitus moi, include=TRUE}
+```{r aloitus moi, echo=FALSE}
 ## Sano moi
 print("Hello Euro22")
 ```
 Sivun alaosasta löydät osallistujien veikkaukset sekä ehkä joku päivä jonkinlaisen koosteen niistä
 
 
-```{r veikkaustaulu, include=TRUE}
+```{r veikkaustaulu, echo=FALSE}
 library(formattable)
 library(dplyr)
 #library(knitr)
 
 ## tulokset veikkaustauluun ###
-
+  veikkaus <- data.frame(veikkaukset[1])
+  
+  veikkaus <- veikkaus %>%   
+  filter(!is.na(veikkaus[,6])
+                  )
+  
+for (iii in 1:length(veikkaus$...2)) {
+  
+    veikkaustaulu[1,2+iii] <-    c(paste(as.character(veikkaus$...6[iii]),"-",as.character(veikkaus$...8[iii])))
+}
+  
 #### Lisataan veikkaukset veikkaustauluun
 
 ## haetaan yksittainen veikkaus kasittelyyn
@@ -161,23 +171,29 @@ formattable(veikkaustaulu)
 
 ```
 
-```{r maalintekijät, include=TRUE}
+```{r maalintekijät, echo=FALSE}
+library(formattable)
+library(dplyr)
 
 
+maalintekijat <- matrix(NA,length(pelaajat)-1,6)
+colnames(maalintekijat) <- c("nimi", "Maalintekija1", "Maalintekija2", "Maalintekija3", "Maalintekija4", "Maalintekija5")
+maalintekijat <- as.data.frame(maalintekijat)
 
-for (uu in 1:6) {
+for (uu in 2:length(veikkaukset)) {
   veikkaus <- data.frame(veikkaukset[uu])
   
-  veikkaus <- veikkaus %>%   
-  filter(!is.na(veikkaus[,4])
-                  )
-  ## lisataan veikkaajan rivi veikkaustauluun
+  maalintekijat[uu-1,1] <- veikkaus[[1,5]]
   
-  print(veikkaus$...10[1:5])
+  veikkaus <- veikkaus %>%   
+  filter(!is.na(veikkaus[,10])
+  )
+         
+  maalintekijat[uu-1,2:6] <- c(veikkaus$...10[2:6])
 }
 
 
-
+formattable(maalintekijat)
 
 ```
 

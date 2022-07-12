@@ -208,37 +208,9 @@ summary {
 
 
 <hr />
-<pre class="r"><code>## Sano moi
-print(&quot;Hello Euro22&quot;)</code></pre>
 <pre><code>## [1] &quot;Hello Euro22&quot;</code></pre>
 <p>Sivun alaosasta löydät osallistujien veikkaukset sekä ehkä joku päivä jonkinlaisen koosteen niistä</p>
-<pre class="r"><code>library(formattable)</code></pre>
 <pre><code>## Warning: package &#39;formattable&#39; was built under R version 4.0.5</code></pre>
-<pre class="r"><code>library(dplyr)
-#library(knitr)
-
-## tulokset veikkaustauluun ###
-
-#### Lisataan veikkaukset veikkaustauluun
-
-## haetaan yksittainen veikkaus kasittelyyn
-
-for (uu in 2:(length(veikkaukset))) {
-  veikkaus &lt;- data.frame(veikkaukset[uu])
-  
-  veikkaus &lt;- veikkaus %&gt;%   
-  filter(!is.na(veikkaus[,6])
-                  )
-  ## lisataan veikkaajan rivi veikkaustauluun
-  for (iii in 1:length(veikkaus$...2)) {
-  
-    veikkaustaulu[uu,2+iii] &lt;-    c(paste(as.character(veikkaus$...6[iii]),&quot;-&quot;,as.character(veikkaus$...8[iii])))
-  
-    
-  }
-}
-
-formattable(veikkaustaulu)</code></pre>
 <table class="table table-condensed">
 <thead>
 <tr>
@@ -334,34 +306,34 @@ Tulokset
 NA
 </td>
 <td style="text-align:right;">
-NA
+1 - 0
 </td>
 <td style="text-align:right;">
-NA
+4 - 1
 </td>
 <td style="text-align:right;">
-NA
+4 - 1
 </td>
 <td style="text-align:right;">
-NA
+4 - 0
 </td>
 <td style="text-align:right;">
-NA
+2 - 2
 </td>
 <td style="text-align:right;">
-NA
+1 - 1
 </td>
 <td style="text-align:right;">
-NA
+1 - 1
 </td>
 <td style="text-align:right;">
-NA
+5 - 1
 </td>
 <td style="text-align:right;">
-NA
+2 - 0
 </td>
 <td style="text-align:right;">
-NA
+7 - 0
 </td>
 <td style="text-align:right;">
 NA
@@ -909,30 +881,152 @@ NA
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>for (uu in 1:6) {
-  veikkaus &lt;- data.frame(veikkaukset[uu])
-  
-  veikkaus &lt;- veikkaus %&gt;%   
-  filter(!is.na(veikkaus[,4])
-                  )
-  ## lisataan veikkaajan rivi veikkaustauluun
-  
-  print(veikkaus$...10[1:5])
-}</code></pre>
-<pre><code>## [1] &quot;Grace Geyoro&quot;                              
-## [2] &quot;Katharina Schiechtl, Katharina Naschenweng&quot;
-## [3] &quot;Justine Vandaevermaet&quot;                     
-## [4] &quot;Beth Mead&quot;                                 
-## [5] &quot;Linda Sallstrom&quot;                           
-## [1] &quot;Alessia Russo&quot;      &quot;Vivianne Miedema&quot;   &quot;Stina Blackstenius&quot;
-## [4] &quot;Lea Schuller&quot;       &quot;Ada Hegerberg&quot;     
-## [1] &quot;Vivianne Miedema&quot;        &quot;Esther González&quot;        
-## [3] &quot;Stina Blackstenius&quot;      &quot;Marie-Antoinette Katoto&quot;
-## [5] &quot;Ada Hegerberg&quot;          
-## [1] &quot;Ellen white&quot; &quot;Katoto&quot;      &quot;Miedema&quot;     &quot;Gonzalez&quot;    &quot;Mead&quot;       
-## [1] &quot;Miedema&quot;   &quot;Renard&quot;    &quot;Harder&quot;    &quot;Hegerberg&quot; &quot;White&quot;    
-## [1] &quot;Pernilla Hader&quot;    &quot;Ada Hergerberg&quot;    &quot;Ellen White&quot;      
-## [4] &quot;Vivianne  Miedema&quot; &quot;Alexia Puderas&quot;</code></pre>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:right;">
+nimi
+</th>
+<th style="text-align:right;">
+Maalintekija1
+</th>
+<th style="text-align:right;">
+Maalintekija2
+</th>
+<th style="text-align:right;">
+Maalintekija3
+</th>
+<th style="text-align:right;">
+Maalintekija4
+</th>
+<th style="text-align:right;">
+Maalintekija5
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+Ella
+</td>
+<td style="text-align:right;">
+Alessia Russo
+</td>
+<td style="text-align:right;">
+Vivianne Miedema
+</td>
+<td style="text-align:right;">
+Stina Blackstenius
+</td>
+<td style="text-align:right;">
+Lea Schuller
+</td>
+<td style="text-align:right;">
+Ada Hegerberg
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Lassi
+</td>
+<td style="text-align:right;">
+Vivianne Miedema
+</td>
+<td style="text-align:right;">
+Esther González
+</td>
+<td style="text-align:right;">
+Stina Blackstenius
+</td>
+<td style="text-align:right;">
+Marie-Antoinette Katoto
+</td>
+<td style="text-align:right;">
+Ada Hegerberg
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+pedu
+</td>
+<td style="text-align:right;">
+Ellen white
+</td>
+<td style="text-align:right;">
+Katoto
+</td>
+<td style="text-align:right;">
+Miedema
+</td>
+<td style="text-align:right;">
+Gonzalez
+</td>
+<td style="text-align:right;">
+Mead
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Seppo
+</td>
+<td style="text-align:right;">
+Miedema
+</td>
+<td style="text-align:right;">
+Renard
+</td>
+<td style="text-align:right;">
+Harder
+</td>
+<td style="text-align:right;">
+Hegerberg
+</td>
+<td style="text-align:right;">
+White
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Suvi
+</td>
+<td style="text-align:right;">
+Pernilla Hader
+</td>
+<td style="text-align:right;">
+Ada Hergerberg
+</td>
+<td style="text-align:right;">
+Ellen White
+</td>
+<td style="text-align:right;">
+Vivianne Miedema
+</td>
+<td style="text-align:right;">
+Alexia Puderas
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Tessa
+</td>
+<td style="text-align:right;">
+Vivianne Miedema
+</td>
+<td style="text-align:right;">
+Stina Blackstenius
+</td>
+<td style="text-align:right;">
+Lea Schüller
+</td>
+<td style="text-align:right;">
+Ada Hegerberg
+</td>
+<td style="text-align:right;">
+Beth Mead
+</td>
+</tr>
+</tbody>
+</table>
 <table class="table table-condensed">
 <thead>
 <tr>
