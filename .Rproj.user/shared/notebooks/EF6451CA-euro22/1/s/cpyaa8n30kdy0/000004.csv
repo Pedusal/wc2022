@@ -1,0 +1,7 @@
+"0",""
+"0","################# Luo Pistetaulu ###################"
+"0",""
+"0","pistetaulu <- matrix(NA,length(pelaajat),length(pelit))"
+"0","colnames(pistetaulu) <- c(pelit)"
+"0","pistetaulu <- as.data.frame(pistetaulu)"
+"0",""

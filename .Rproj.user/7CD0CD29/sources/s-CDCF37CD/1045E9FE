@@ -1,0 +1,28 @@
+{
+    "id": "1045E9FE",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1657551522930.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "id": "3d0599e4d23e45f5935d20f437a5d1d2",
+        "name": "veikkaukset",
+        "title": "veikkaukset",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7377518737310704177,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1657551522930,
+    "read_only": false,
+    "read_only_alternatives": []
+}
