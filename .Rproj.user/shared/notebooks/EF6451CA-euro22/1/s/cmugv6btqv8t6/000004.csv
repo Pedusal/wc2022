@@ -1,0 +1,5 @@
+"0","####### valiera taulu luonti #####################"
+"0","final4taulu <- matrix(NA,length(pelaajat)-1,5)"
+"0","colnames(final4taulu) <- c(""Mestari"",""Välierämaa1"",""Välierämaa2"","
+"0","                          ""Välierämaa3"",""Välierämaa4"")"
+"0","final4taulu <- as.data.frame(final4taulu)"

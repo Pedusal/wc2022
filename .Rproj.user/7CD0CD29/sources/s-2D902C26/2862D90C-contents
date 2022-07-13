@@ -35,8 +35,6 @@ output: html_document
 ```
 
 
-
-
 ```{r aloitus, include=FALSE}
 ####### Aseta tyoskentely kansio ja lataa veikkauset ###########
 
@@ -50,7 +48,6 @@ setwd("C:/Users/Pedu/Documents/GitHub/euro22/data")
 myFiles <- list.files(pattern = "xlsx$")
 veikkaukset <- lapply(myFiles, function(x) read_excel(x))
 ```
-
 
 
 ```{r alustetaan muuttujia, warning=FALSE, include=FALSE}
@@ -72,15 +69,15 @@ oikearivi <- oikearivi %>%
                  )
 
 ############## luo pelit vector
-pelit <- c(1:length(oikearivi$...3)+2)
-pelit[1] <- c("Nimi")
-pelit[2] <- c("Yhteensa")
+pelit <- c(1:(length(oikearivi$...3)-2))
+#pelit[1] <- c("Nimi")
+#pelit[2] <- c("Yhteensa")
 
 pelit_juoksevanro <- c(1:length(pelit))
 
 ### pelit vektoriin pelien nimet #####
 for (i in pelit_juoksevanro) {
-  pelit[i+2] <- c(paste(oikearivi$...3[i], "-", oikearivi$...5[i]))
+  pelit[i] <- c(paste(oikearivi$...3[i], "-", oikearivi$...5[i]))
 }
 
 ############## pistetaulu nimet vector
@@ -113,20 +110,23 @@ for (u in 2:length(pelaajat)) {
 ```
 
 
-
-
 ```{r luodaan df:iä, warning=FALSE, include=FALSE}
 
 ################# luo veikkaustaulu
-veikkaustaulu <- matrix(NA,length(pelaajat),length(pelit))
-colnames(veikkaustaulu) <- c(pelit)
+veikkaustaulu <- matrix(NA,length(pelaajat),length(pelit)+1)
+
+vt_nimet <- c(1:(length(pelit)+1))
+vt_nimet[1] <- c("Nimi")
+vt_nimet[2:(length(pelit)+1)] <- c(pelit)
+
+colnames(veikkaustaulu) <- c(vt_nimet)
 veikkaustaulu <- as.data.frame(veikkaustaulu)
 
 # df = dataframe
 # old.var.name = The name you don't like anymore
 # new.var.name = The name you want to get
 
-names(veikkaustaulu)[names(veikkaustaulu) == 'Yhteensa'] <- '____'
+#names(veikkaustaulu)[names(veikkaustaulu) == 'Yhteensa'] <- '____'
 
 
 ##### lisataan pelaajat veikkaustauluun #######
@@ -192,6 +192,13 @@ for (i in 1:length(maalintekijat[,1])) { # haetaan osallistujan maalintekijat
 ```
 
 
+```{r LUO_final4taulu, echo=FALSE, warning=FALSE}
+####### valiera taulu luonti #####################
+final4taulu <- matrix(NA,length(pelaajat)-1,5)
+final4taulu <- as.data.frame(final4taulu)
+```
+
+
 ```{r aloitus moi, echo=FALSE, warning=FALSE}
 ## Sano moi
 #print("Hello Euro22")
@@ -202,13 +209,38 @@ print(paste("Hello Euro22!", "Sivu päivitetty:", Sys.time()))
 Sivun alaosasta löydät osallistujien veikkaukset sekä ehkä joku päivä jonkinlaisen koosteen niistä
 
 
+```{r pelipaiva 8, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+## tee taulu
+library(ggplot2)
+Sys.Date()
+
+veikkaustaulu.t <- as.data.frame(t(veikkaustaulu)[-1,]) # transpose
+colnames(veikkaustaulu.t) <- c(pelaajat)
+
+paivan_pelit <- subset(veikkaustaulu, 
+
+bp <- ggplot(veikkaustaulu.t, aes(x=Ella,
+                                  y=pelit,
+                                  group = Tulokset  
+                                    )) +
+  geom_point(aes(color=Ella)) + 
+  geom_line(aes(color=Ella))+
+  geom_hline(yintercept = 0.25)+
+  facet_wrap(~kausi,ncol = 3)+
+  scale_color_gradient(low="#33CC33", high="#CCFFCC")+
+  theme_dark()+
+  #geom_smooth(method = "lm")+
+   xlab("Neljännes") +
+  #ylab("Otoksen poikkeama väestöstä (prosenttiyksikköä)")+
+  scale_y_continuous(labels=percent_format()) + 
+labs(title = paste("Jääkiekkoa harrastavien poikien syntymäajat \nneljänneksittäin kausilla 2004-2016, ","n =",toString(sum(jun[,6]))))
+
+print(bp)
+
+```
 
 
-
-
-
-
-```{r tarkitus, warning=FALSE, include=FALSE}
+```{r pistetaulu TAYTTo, warning=FALSE, include=FALSE}
 
 
 ###### Taytetaan pistetaulu eli tehdaan tarkistus ja laitetaan pisteet #########
@@ -362,18 +394,12 @@ as.datatable(formattable(pistetaulu,
 ```
 
 
-
-
-
-
-
-
-```{r veikkaustaulu taytto, include=FALSE}
+```{r veikkaustaulu TAYTTO, include=FALSE}
 library(formattable)
 library(dplyr)
 #library(knitr)
 
-## tulokset veikkaustauluun ###
+############ tulokset veikkaustauluun ###
   veikkaus <- data.frame(veikkaukset[1])
   
   veikkaus <- veikkaus %>%   
@@ -382,10 +408,15 @@ library(dplyr)
   
 for (iii in 1:length(veikkaus$...2)) {
   
-    veikkaustaulu[1,2+iii] <-    c(paste(as.character(veikkaus$...6[iii]),"-",as.character(veikkaus$...8[iii])))
+    veikkaustaulu[1,1+iii] <-    c(paste(as.character(veikkaus$...6[iii]),
+                                         "-",
+                                         as.character(veikkaus$...8[iii])))
 }
+######################################## 
+
   
-#### Lisataan veikkaukset veikkaustauluun
+ 
+########## Lisataan veikkaukset veikkaustauluun #########
 
 ## haetaan yksittainen veikkaus kasittelyyn
 
@@ -396,11 +427,11 @@ for (uu in 2:(length(veikkaukset))) {
   filter(!is.na(veikkaus[,6])
                   )
   ## lisataan veikkaajan rivi veikkaustauluun
-  for (iii in 1:length(veikkaus$...2)) {
+  for (iii in 1:length(pelit)) {
   
-    veikkaustaulu[uu,2+iii] <-    c(paste(as.character(veikkaus$...6[iii]),"-",as.character(veikkaus$...8[iii])))
-  
-    
+    veikkaustaulu[uu,1+iii] <-    c(paste(as.character(veikkaus$...6[iii]),
+                                          "-",
+                                          as.character(veikkaus$...8[iii])))
   }
 }
 
@@ -465,3 +496,21 @@ as.datatable(
 )
 
 ```
+
+
+```{r final4taulu TAYTTO, echo=FALSE}
+colnames(final4taulu) <- c("Mestari","Välierämaa1","Välierämaa2",
+                          "Välierämaa3","Välierämaa4")
+rownames(final4taulu) <- pelaajat[-1]
+
+for (i in 2:length(veikkaukset)) {
+  final4taulu[i,1] <- as.data.frame(veikkaukset[i])[5,18] #haetaan mestari
+}
+
+
+
+#tst <- as.data.frame(veikkaukset[2])[5,18]
+
+
+```
+
