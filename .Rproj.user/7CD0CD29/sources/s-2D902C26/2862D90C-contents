@@ -191,11 +191,13 @@ for (i in 1:length(maalintekijat[,1])) { # haetaan osallistujan maalintekijat
 
 ```
 
+
 ```{r aloitus moi, echo=FALSE, warning=FALSE}
 ## Sano moi
-print("Hello Euro22")
+#print("Hello Euro22")
 
-#print("Päivitetty: " as.character(Sys.Date()))
+print(paste("Hello Euro22!", "Sivu päivitetty:", Sys.time()))
+
 ```
 Sivun alaosasta löydät osallistujien veikkaukset sekä ehkä joku päivä jonkinlaisen koosteen niistä
 
