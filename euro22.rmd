@@ -140,14 +140,16 @@ colnames(pistetaulu) <- c(pt_nimet)
 pistetaulu <- as.data.frame(pistetaulu)
 #########################################################################
 
+```
 
-
-
+```{r LUO_maalintekijataulu, echo=FALSE, warning=FALSE}
 ################ luo Maalintekijä taulu ja täytä se ######################
 maalintekijat <- matrix(NA,length(pelaajat)-1,6)
 colnames(maalintekijat) <- c("nimi", "Maalintekija1", "Maalintekija2", "Maalintekija3", "Maalintekija4", "Maalintekija5")
 maalintekijat <- as.data.frame(maalintekijat)
+```
 
+```{r TAYTA_maalintekijataulu, echo=FALSE, warning=FALSE}
 ### sisalto
 for (uu in 2:length(veikkaukset)) {
   veikkaus <- data.frame(veikkaukset[uu])
@@ -158,7 +160,7 @@ for (uu in 2:length(veikkaukset)) {
   filter(!is.na(veikkaus[,10])
   )
          
-  maalintekijat[uu-1,2:6] <- c(veikkaus$...10[2:6])
+  maalintekijat[uu-1,2:6] <- c(sort(veikkaus$...10[2:6]))
 }
 
 # luodaan nolla pistettä sisältävä vector ja laitetaan se tauluun
@@ -187,8 +189,6 @@ for (i in 1:length(maalintekijat[,1])) { # haetaan osallistujan maalintekijat
 }
 
 ###########################################################################
-
-
 ```
 
 
