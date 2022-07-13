@@ -346,15 +346,18 @@ as.datatable(formattable(pistetaulu,
                      
               )
             ),
+            #selection = 'none', rownames = '', filter = 'none',
+            extensions = c(#'Buttons',
+                           'FixedColumns'),
             options = list(
                       dom = 't',
                       scrollX = TRUE,
-                      scrollCollapse = TRUE
+                      #scrollCollapse = TRUE,
+                      fixedColumns = list(leftColumns = 2)
                       #order = list(list(2, 'desc'))
             )
 )
 
-            
 
 ```
 

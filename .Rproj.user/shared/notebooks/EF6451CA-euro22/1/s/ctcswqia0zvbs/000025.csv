@@ -1,0 +1,24 @@
+"0","as.datatable(formattable(pistetaulu,
+              list(
+                Nimi = formatter(""span"", style = ~ style(
+                  color = ""black"",font.weight = ""bold"")),
+                Yhteensa = color_tile(""white"", ""green""),
+                Maalit = color_tile(""white"", ""red""),
+                area(col=4:length(pistetaulu[1,]) ) ~ color_tile(
+                  ""transparent"", ""lightskyblue"")
+                     
+              )
+            ),
+            #selection = 'none', rownames = '', filter = 'none',
+            extensions = c(#'Buttons',
+                           'FixedColumns'),
+            options = list(
+                      dom = 't',
+                      scrollX = TRUE,
+                      #scrollCollapse = TRUE,
+                      fixedColumns = list(leftColumns = 2)
+                      #order = list(list(2, 'desc'))
+            )
+)
+"
+"0",""
