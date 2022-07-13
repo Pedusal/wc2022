@@ -53,10 +53,17 @@ veikkaukset <- lapply(myFiles, function(x) read_excel(x))
 
 
 
-```{r alustetaan muuttujia, include=FALSE}
+```{r alustetaan muuttujia, warning=FALSE, include=FALSE}
 ################### Hae oikea rivi ################
 
 oikearivi <- read_excel("data/11oikearivi.xlsx")
+
+######## maaliporssi df luonti#################
+maaliporssi <- oikearivi %>%   
+  filter(!is.na(oikearivi[,10])
+                 )
+
+maaliporssi  <- as.data.frame(maaliporssi[-1,10:12])
 
 ###### Muokkaaa  sopivaksi #############
 
@@ -97,15 +104,10 @@ for (u in 2:length(pelaajat)) {
   #pelaaja <- veikkaus[[1,5]]
 }
 
-######## maaliporssi df luonti#################
-maaliporssi <- as.data.frame(oikearivi[,10:12])
-
-##maaliporssi
-
 ```
 
 
-```{r df idea, include=FALSE}
+```{r df idea, warning=FALSE, include=FALSE}
 ####### Tee jokaisesta vaikkauksesta oma dataframe ###########
 
 ```
@@ -321,7 +323,7 @@ sort(pistetaulu$Yhteensa)
 
 ## Pisteet
 
-```{r pisteet printtaus, echo=FALSE, warning=FALSE}
+```{r pisteet printtaus, echo=FALSE, message=FALSE, warning=FALSE}
 #install.packages("formattable")
 library(formattable)
 
@@ -490,7 +492,19 @@ library(dplyr)
 
 
 
-
-formattable(maalintekijat)
+as.datatable(
+  formattable(maalintekijat)
+  ,
+            options = list(
+                      dom = 't',
+                      columnDefs = list(list(
+                        className = 'dt-center', 
+                        targets = length(maalintekijat[1,]))
+                        ),
+                      scrollX = TRUE,
+                      scrollCollapse = TRUE,
+                      fixedColumns = list(leftColumns = 2)
+                      )
+)
 
 ```

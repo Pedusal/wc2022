@@ -1,17 +1,26 @@
-"0","library(dplyr)
-"
-"2","package ‘dplyr’ was built under R version 4.0.5"
-"2","
-Attaching package: ‘dplyr’
-
-"
-"2","The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-"
-"2","The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-"
+"0",""
+"0","#rm(list=ls())  # REMOVE ALL OBJECTS"
+"0","### Asenna hyvaksi havaitut paketit ######"
+"0","# pkgs <- c(""data.table"", # used for data import"
+"0","#           ""car"",        # used for testing linear hypothesis"
+"0","#           ""haven"",      # used for data import"
+"0","#           #""tidyverse"",  # data manipulation etc"
+"0","#           ""broom"",      # for working with model coefficients and model summaries efficiently"
+"0","#           ""lubridate"",  # used for creating timestamps"
+"0","#           ""DT"",         # for displaying data_frames nicely"
+"0","#           ""GGally"",     # for ""ggpairs"" plot"
+"0","#           ""ggfortify"","
+"0","#           ""plotly"")  # for enhancing plots"
+"0","# "
+"0","# install.packages(c(pkgs))"
+"0","# loaded_pkgs <- lapply(c(pkgs), library, character.only = TRUE)"
+"0","# "
+"0","# library(readxl)"
+"0",""
+"0","#Sys.which(""make"")"
+"0",""
+"0","#install.packages(""https://cran.r-project.org/src/contrib/Archive/rlang/rlang_1.0.2.tar.gz"", repos = NULL, type=""source"")"
+"0",""
+"0","##install.packages(""gt"")"
+"0","##library(gt)"
+"0","# library(dplyr)"
