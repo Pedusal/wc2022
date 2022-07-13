@@ -424,12 +424,16 @@ as.datatable(
               )
             )
             ,
+            #selection = 'none', #filter = 'none',
+            rownames = '', 
+            extensions = c(#'Buttons',
+                           'FixedColumns'),
             options = list(
                       dom = 't',
                       columnDefs = list(list(
                         className = 'dt-center', targets = 3:length(pelit)-1)),
                       scrollX = TRUE,
-                      scrollCollapse = TRUE,
+                      #scrollCollapse = TRUE,
                       fixedColumns = list(leftColumns = 2)
                       )
 )
