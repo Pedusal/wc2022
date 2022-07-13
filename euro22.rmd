@@ -540,3 +540,27 @@ as.datatable(
 )
 
 ```
+
+```{r PIIRRA_mestarijakauma, eval=FALSE, include=FALSE}
+################# piirretaan mestarit
+
+bp <- ggplot(final4taulu, aes(x=Mestari
+                              #,y=
+                              #,group=  
+                                    )) +
+  geom_line(aes(color=Mestari))+
+  geom_point(aes(color=Mestari)) + 
+  
+  geom_hline(yintercept = 0.25)+
+  facet_wrap(~kausi,ncol = 3)+
+  scale_color_gradient(low="#33CC33", high="#CCFFCC")+
+  theme_dark()+
+  #geom_smooth(method = "lm")+
+   xlab("Neljännes") +
+  #ylab("Otoksen poikkeama väestöstä (prosenttiyksikköä)")+
+  scale_y_continuous(labels=percent_format()) + 
+labs(title = paste("Jääkiekkoa harrastavien poikien syntymäajat \nneljänneksittäin kausilla 2004-2016, ","n =",toString(sum(jun[,6]))))
+
+print(bp)
+
+```
