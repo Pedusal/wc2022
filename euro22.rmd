@@ -135,8 +135,8 @@ veikkaustaulu$Nimi <- pelaajat
 
 ################# Luo Pistetaulu ###################
 
-pistetaulu <- matrix(NA,length(pelaajat)-1,length(pelit))
-colnames(pistetaulu) <- c(pelit)
+pistetaulu <- matrix(NA,length(pelaajat)-1,length(pt_nimet))
+colnames(pistetaulu) <- c(pt_nimet)
 pistetaulu <- as.data.frame(pistetaulu)
 #########################################################################
 
@@ -209,9 +209,17 @@ Sivun alaosasta löydät osallistujien veikkaukset sekä ehkä joku päivä jonk
 
 
 ```{r tarkitus, warning=FALSE, include=FALSE}
+
+
+###### Taytetaan pistetaulu eli tehdaan tarkistus ja laitetaan pisteet #########
+
 library(dplyr)
 library(knitr)
  
+####### Maalintekijat pistetauluun ####################################
+pistetaulu$Maalit <- maalintekijat$Maalit
+
+
 
 ############ Aseta tarkistussarjat ##################
 
@@ -259,38 +267,34 @@ for (u in y) {
   vieras1 <- tarkistettava$...8
   koti1 <- as.numeric(koti1)
 
+  ## Asetetaan pelin merkki
   merkki1 <- c(1:length(koti1))
   merkki1[1:length(koti1)] <- NA
-  
-  x <- c(1:length(pelatut_pelit_lkm$...2))
+    x <- c(1:length(pelatut_pelit_lkm$...2))
 
-  for (i in x) {
-
-    if(koti1[i]>vieras1[i]){
+  for (i in x) { 
+    if(koti1[i]>vieras1[i]){ ## Kotivoitto
       merkki1[i] <- 1
-
-      } else if (koti1[i] == vieras1[i]) {
-  
+      } else if (koti1[i] == vieras1[i]) { ## Tasapeli
         merkki1[i] <- 2
-
-      } else if (koti1[i]<vieras1[i]) {
-  
+      } else if (koti1[i]<vieras1[i]) { ## Vierasvoitto
         merkki1[i] <- 3
-
       }
     }
 
+  ### Pisteet pistetauluun
   x <- c(1:length(pelatut_pelit_lkm$...2))
   for (i in x) {
-    if(koti[i] == koti1[i] & vieras[i] == vieras1[i]) {
-       pistetaulu[u-1, i+2] <- c(5)
-       } else if (merkki[i] == merkki1[i] 
-             & (koti[i] == koti1[i] | vieras[i] == vieras1[i])){
-          pistetaulu[u-1, i+2] <- c(3)
-       } else if (merkki[i] == merkki1[i]) {
-          pistetaulu[u-1, i+2] <- c(2)
-       } else {
-          pistetaulu[u-1, i+2] <- c(0)
+    if(koti[i] == koti1[i] & vieras[i] == vieras1[i]) { # taysin oikein
+       pistetaulu[u-1, i+3] <- c(5)
+       } else if (merkki[i] == merkki1[i] ## merkki ja toisen maalit oikein
+                  & (koti[i] == koti1[i] 
+                  | vieras[i] == vieras1[i])){ 
+          pistetaulu[u-1, i+3] <- c(3)
+       } else if (merkki[i] == merkki1[i]) { ## merkki oikein
+          pistetaulu[u-1, i+3] <- c(2)
+       } else { ## ei pisteita
+          pistetaulu[u-1, i+3] <- c(0)
        }
   }
   
@@ -300,25 +304,10 @@ for (u in y) {
 
 
 
-
+### pistetaulu summaus
 pistetaulu$Yhteensa <- apply(pistetaulu[1:6,1:length(pelatut_pelit_lkm$...2)+2], 1, sum)
 sort(pistetaulu$Yhteensa)
 
-
-# #wb <- createWorkbook(type = "xlsx")
-# library(xlsx)
-# write.xlsx(mydata, "c:/mydata.xlsx")
-# 
-# taulu <- matrix(NA,10,50)
-# y <- c(2:10)
-# x <- c(1:50)
-# 
-# for (u in y) {
-#   
-#   for (i in x) {
-#     taulu[u,i] <- u
-#   }
-# }
 
 ```
 
@@ -351,7 +340,8 @@ as.datatable(formattable(pistetaulu,
                 Nimi = formatter("span", style = ~ style(
                   color = "black",font.weight = "bold")),
                 Yhteensa = color_tile("white", "green"),
-                area(col=3:length(pistetaulu[1,]) ) ~ color_tile(
+                Maalit = color_tile("white", "red"),
+                area(col=4:length(pistetaulu[1,]) ) ~ color_tile(
                   "transparent", "lightskyblue")
                      
               )
@@ -371,53 +361,11 @@ as.datatable(formattable(pistetaulu,
 
 
 
-```{r pisteet printtaus testeja, eval=FALSE, warning=FALSE, include=FALSE}
-
-as.datatable(formattable(pistetaulu,
-              list(Nimi = formatter("span", style = ~ style(color = "black",font.weight = "bold")),
-                Yhteensa = color_tile("white", "green"),
-              area(col=3:length(pistetaulu[1,]) ) ~ color_tile("transparent", "lightskyblue")
-                     
-              )
-            )
-)
-
-formattable(pistetaulu,
-            lapply(pistetaulu[,3:5], formatter("span", style = x ~ ifelse(x == "A",
-    style(color = "green", font.weight = "bold"), NA)))
-            )
-
-
-p <- data.frame(
-  id = c(1, 2, 3, 4, 5),
-  name = c("A1", "A2", "B1", "B2", "C1"),
-  balance = accounting(c(52500, 36150, 25000, 18300, 7600), format = "d"),
-  growth = percent(c(0.3, 0.3, 0.1, 0.15, 0.15), format = "d"),
-  ready = formattable(c(TRUE, TRUE, FALSE, FALSE, TRUE), "yes", "no"))
-p
-
-
-formattable(p
-
-, list(
-  age = color_tile("white", "orange"),
-  grade = formatter("span", style = x ~ ifelse(x == "A",
-    style(color = "green", font.weight = "bold"), NA)),
-  area(col = c(test1_score, test2_score)) ~ normalize_bar("pink", 0.2),
-  final_score = formatter("span",
-    style = x ~ style(color = ifelse(rank(-x) <= 3, "green", "gray")),
-    x ~ sprintf("%.2f (rank: %02d)", x, rank(-x))),
-  registered = formatter("span",
-    style = x ~ style(color = ifelse(x, "green", "red")),
-    x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No")))
-))
-
-```
 
 
 
 
-```{r veikkaustaulu luonti, include=FALSE}
+```{r veikkaustaulu taytto, include=FALSE}
 library(formattable)
 library(dplyr)
 #library(knitr)
