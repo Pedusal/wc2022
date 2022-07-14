@@ -36,6 +36,9 @@ simpleCap <- function(x) {
 ```
 
 ```{r Eurodata, include=FALSE}
+library(dplyr)
+library(knitr)
+library(stringr)
 #### Luodaan Eurodata df ###
 Eurodata <- data.frame(matrix(ncol = 7, nrow = 0))
 #####
@@ -105,11 +108,21 @@ colnames(Eurodata) <- c("Nimi", "Tyyppi", "Tyyppikd",
                         "Sisalto","Sisälto_tarkenne", "Tyyppi_lkm", "__")
 
 ## laitetaan iso alkukirjaimet KAIKKIALLE (jokaiseen muuttujaan)
-Eurodata <- sapply(Eurodata, simpleCap)
+Eurodata <- as.data.frame(apply(Eurodata, c(1,2), simpleCap))
+
+## korvataan jostain tulevat nanat
+Eurodata[Eurodata == "NANA"] <- NA
+
+## korvataan Alankomaat -> Hollanti
+Eurodata[Eurodata == "Hollanti"] <- "Alankomaat"
+
+## trimmaus
+Eurodata <- Eurodata %>% 
+  mutate(across(where(is.character), str_trim, side = "both"))
 ```
 
 ```{r Eurodata lkm, echo=FALSE}
-unique_jun2 = 
+Eurodata_lkm = 
   Eurodata %>% group_by(Tyyppi) %>% count(Sisalto) %>% mutate(lkm =n)
 
 unique_jun2 = unique_jun2 %>% group_by(Sukupuoli, VVVV, syntymakuukausi, kausi) %>% 

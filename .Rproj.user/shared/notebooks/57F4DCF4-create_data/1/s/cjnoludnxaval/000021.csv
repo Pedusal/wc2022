@@ -1,0 +1,3 @@
+"0","  Eurodata %>% group_by(Tyyppi, Tyyppikd) %>% count(Sisalto) %>% mutate(lkm =n)
+"
+"0",""
