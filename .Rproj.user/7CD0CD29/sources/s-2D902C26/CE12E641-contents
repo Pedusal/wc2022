@@ -1,0 +1,167 @@
+---
+title: "create_piirros_data"
+author: "pedusal"
+date: "14 7 2022"
+output: html_document
+---
+
+---
+title: "createUnijun"
+output: html_document
+---
+
+```{r setup, echo=FALSE}
+
+####### Aseta tyoskentely kansio ja lataa veikkauset ###########
+
+#Get the working directory:
+#getwd()
+library(readxl)
+library(dplyr)
+library(knitr)
+#Setup the working directory:
+setwd("C:/Users/Pedu/Documents/GitHub/euro22/data")
+myFiles <- list.files(pattern = "xlsx$")
+veikkaukset <- lapply(myFiles, function(x) read_excel(x))
+
+#oikearivi <- read_excel("data/11oikearivi.xlsx")
+
+### Funktio isoja alkukirjaimia varten
+simpleCap <- function(x) {
+  s <- strsplit(x, " ")[[1]]
+  paste(toupper(substring(s, 1,1)), substring(s, 2),
+      sep="", collapse=" ")
+}
+
+```
+
+```{r Eurodata, include=FALSE}
+#### Luodaan Eurodata df ###
+Eurodata <- data.frame(matrix(ncol = 7, nrow = 0))
+#####
+
+
+#####
+for (i in 1:length(veikkaukset)) {
+  veikkaus_apu <- as.data.frame(veikkaukset[i])
+  
+  #TopScorer
+  Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "TopScorer", "TS",
+                      veikkaus_apu[5,14],veikkaus_apu[5,15],NA,NA)
+              )
+  
+  #Mestari 
+    Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Mestari", "M",
+                      veikkaus_apu[5,18],NA,NA,NA)
+              )
+    
+  #Valieramaat
+  Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Välierämaa", "Välierämaa1",
+                      veikkaus_apu[5,17],NA,NA,NA)
+              )
+    Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Välierämaa", "Välierämaa2",
+                      veikkaus_apu[6,17],NA,NA,NA)
+              )  
+      Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Välierämaa", "Välierämaa3",
+                      veikkaus_apu[7,17],NA,NA,NA)
+              )  
+        Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Välierämaa", "Välierämaa4",
+                      veikkaus_apu[8,17],NA,NA,NA)
+              ) 
+
+  #Maalintekijat
+  Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Maalintekijä", "Maalintekijä1",
+                      veikkaus_apu[5,10],veikkaus_apu[5,11],NA,NA)
+              )
+    Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Maalintekijä", "Maalintekijä2",
+                      veikkaus_apu[6,10],veikkaus_apu[6,11],NA,NA)
+              )
+      Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Maalintekijä", "Maalintekijä3",
+                      veikkaus_apu[7,10],veikkaus_apu[7,11],NA,NA)
+              )
+        Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Maalintekijä", "Maalintekijä4",
+                      veikkaus_apu[8,10],veikkaus_apu[8,11],NA,NA)
+              )
+          Eurodata <- rbind(Eurodata,
+                    c(veikkaus_apu[1,5], "Maalintekijä", "Maalintekijä5",
+                      veikkaus_apu[9,10],veikkaus_apu[9,11],NA,NA)
+              )
+ 
+}
+#####
+
+### Eurodata col nimet   #########
+colnames(Eurodata) <- c("Nimi", "Tyyppi", "Tyyppikd",
+                        "Sisalto","Sisälto_tarkenne", "Tyyppi_lkm", "__")
+
+## laitetaan iso alkukirjaimet KAIKKIALLE (jokaiseen muuttujaan)
+Eurodata <- sapply(Eurodata, simpleCap)
+```
+
+```{r Eurodata lkm, echo=FALSE}
+unique_jun2 = 
+  Eurodata %>% group_by(Tyyppi) %>% count(Sisalto) %>% mutate(lkm =n)
+
+unique_jun2 = unique_jun2 %>% group_by(Sukupuoli, VVVV, syntymakuukausi, kausi) %>% 
+  mutate(proportion = sum(pct),
+         maara=sum(lkm))
+```
+
+
+```{r Euroottelu luonti, echo=FALSE}
+#write.table(juniori, "data/tutkielmadata_varmuus.txt")
+```
+
+
+```{r data tiedostoon, echo=FALSE}
+#write.table(juniori, "data/tutkielmadata_varmuus.txt")
+```
+
+```{r junioridata, echo=FALSE}
+syntyneet <- read.table("data/syntyneet.txt")
+vuodet = c("2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2015","2016")
+
+str(juniori)
+
+
+kks <- c("Tammi", "Helmi", "Maalis", "Huhti", "Touko", "Kes�","Hein�","Elo","Syys","Loka","Marras","Joulu")
+
+
+unique_jun2 = juniori %>% group_by(Sukupuoli, VVVV, KK, kausi) %>% count(KK) %>% mutate(lkm =n)
+
+neljannekset <- c("1-3","4-6","7-9","10-12")
+syntymakuukausi <- cut(unique_jun2$KK, breaks = binit, include.lowest = TRUE, labels = neljannekset)
+
+unique_jun2 <- data.frame(unique_jun2, syntymakuukausi)
+
+unique_jun2 = unique_jun2 %>% group_by(Sukupuoli, VVVV, kausi) %>% mutate(n = sum(lkm))%>% mutate(pct = lkm/n)
+
+unique_jun2 = unique_jun2 %>% group_by(Sukupuoli, VVVV, syntymakuukausi, kausi) %>% 
+  mutate(proportion = sum(pct),
+         maara=sum(lkm))
+```
+
+
+```{r junioridata, echo=FALSE}
+unique_jun <- merge(x = unique_jun2, y = syntyneet, by = c("VVVV", "KK"), all.x = TRUE)
+
+unique_jun <- unique_jun %>% mutate(ika = kausi - VVVV,
+                                    otoksenPoikkeamaVaestosta = pct.x - pct.y,
+                                    otoksenPoikkeamaVaestosta2 = proportion.x- proportion.y,
+                                    sukupuoli = ifelse(Sukupuoli == "Mies", "pojat", "tyt�t"), 
+                                    kausi1 = as.character(kausi))
+
+unique_jun <- unique_jun %>% mutate(otos = paste(kausi1,  sukupuoli))
+
+#write.table(unique_jun, "data/unijun.txt")
+```
