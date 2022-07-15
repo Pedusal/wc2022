@@ -1,0 +1,36 @@
+"Tyyppi" "Sisalto" "n" "lkm"
+"1" "Maalintekijä" "Ada Hegerberg" 5 5
+"2" "Maalintekijä" "Alessia Russo" 1 1
+"3" "Maalintekijä" "Alexia Puderas" 1 1
+"4" "Maalintekijä" "Beth Mead" 3 3
+"5" "Maalintekijä" "Ellen White" 3 3
+"6" "Maalintekijä" "Esther Gonzalez" 2 2
+"7" "Maalintekijä" "Grace Geyoro" 1 1
+"8" "Maalintekijä" "Justine Vandaevermaet" 1 1
+"9" "Maalintekijä" "Katharina Naschenweng" 1 1
+"10" "Maalintekijä" "Katharina Schiechtl" 1 1
+"11" "Maalintekijä" "Lea Schuller" 2 2
+"12" "Maalintekijä" "Marie-Antoinette Katoto" 2 2
+"13" "Maalintekijä" "Pernille Harder" 2 2
+"14" "Maalintekijä" "Stina Blackstenius" 3 3
+"15" "Maalintekijä" "Vivianne Miedema" 6 6
+"16" "Maalintekijä" "Wendie Renard" 1 1
+"17" "Mestari" "Alankomaat" 1 1
+"18" "Mestari" "Englanti" 2 2
+"19" "Mestari" "Espanja" 1 1
+"20" "Mestari" "Ranska" 1 1
+"21" "Mestari" "Ruotsi" 1 1
+"22" "Mestari" NA 1 1
+"23" "TopScorer" "Alessia Russo" 1 1
+"24" "TopScorer" "Alexia Puderas" 1 1
+"25" "TopScorer" "Ellen White" 1 1
+"26" "TopScorer" "Stina Blackstenius" 1 1
+"27" "TopScorer" "Vivianne Miedema" 2 2
+"28" "TopScorer" NA 1 1
+"29" "Välierämaa" "Alankomaat" 5 5
+"30" "Välierämaa" "Englanti" 6 6
+"31" "Välierämaa" "Espanja" 4 4
+"32" "Välierämaa" "Ranska" 3 3
+"33" "Välierämaa" "Ruotsi" 4 4
+"34" "Välierämaa" "Saksa" 2 2
+"35" "Välierämaa" NA 4 4

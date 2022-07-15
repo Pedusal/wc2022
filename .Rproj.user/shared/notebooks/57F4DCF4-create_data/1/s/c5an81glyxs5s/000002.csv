@@ -1,0 +1,4 @@
+"0","write.table(Eurodata, ""data/Eurodata.txt"")"
+"0",""
+"0","write.table(Eurodata_lkm, ""data/Eurodata_lkm.txt"")"
+"0",""

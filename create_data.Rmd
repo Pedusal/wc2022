@@ -137,7 +137,10 @@ unique_jun2 = unique_jun2 %>% group_by(Sukupuoli, VVVV, syntymakuukausi, kausi) 
 
 
 ```{r data tiedostoon, echo=FALSE}
-#write.table(juniori, "data/tutkielmadata_varmuus.txt")
+write.table(Eurodata, "data/Eurodata.txt")
+
+write.table(Eurodata_lkm, "data/Eurodata_lkm.txt")
+
 ```
 
 ```{r junioridata, echo=FALSE}
