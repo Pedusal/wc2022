@@ -3,7 +3,7 @@
     "path": "~/GitHub/euro22/euro22.rmd",
     "project_path": "euro22.rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "2826488544",
     "contents": "",
     "dirty": false,
     "created": 1657476160866.0,
@@ -13,16 +13,16 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "581,0",
-        "scrollLine": "579",
-        "last_setup_crc32": "AC19D656c6ef20cc"
+        "cursorPosition": "575,33",
+        "scrollLine": "556",
+        "last_setup_crc32": "AC19D6569cfc7c48"
     },
-    "folds": "116|50|146|0|\n148|55|153|0|\n155|57|195|0|\n198|49|202|0|\n205|45|211|0|\n215|75|243|0|\n246|54|347|0|\n352|66|397|0|\n400|42|442|0|\n447|44|475|0|\n480|44|499|0|\n502|37|523|0|\n527|41|545|0|\n",
-    "lastKnownWriteTime": 1657892561,
+    "folds": "115|44|118|0|\n121|50|151|0|\n153|55|158|0|\n160|57|200|0|\n203|49|207|0|\n210|45|216|0|\n220|75|248|0|\n251|54|352|0|\n405|42|447|0|\n452|44|480|0|\n485|44|504|0|\n507|37|528|0|\n532|41|550|0|\n",
+    "lastKnownWriteTime": 1658005704,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1657892561380,
+    "last_content_update": 1658005704577,
     "read_only": false,
     "read_only_alternatives": []
 }

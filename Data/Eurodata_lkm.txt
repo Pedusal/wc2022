@@ -1,36 +1,280 @@
-"Tyyppi" "Sisalto" "n" "lkm"
-"1" "Maalintekij‰" "Ada Hegerberg" 5 5
-"2" "Maalintekij‰" "Alessia Russo" 1 1
-"3" "Maalintekij‰" "Alexia Puderas" 1 1
-"4" "Maalintekij‰" "Beth Mead" 3 3
-"5" "Maalintekij‰" "Ellen White" 3 3
-"6" "Maalintekij‰" "Esther Gonzalez" 2 2
-"7" "Maalintekij‰" "Grace Geyoro" 1 1
-"8" "Maalintekij‰" "Justine Vandaevermaet" 1 1
-"9" "Maalintekij‰" "Katharina Naschenweng" 1 1
-"10" "Maalintekij‰" "Katharina Schiechtl" 1 1
-"11" "Maalintekij‰" "Lea Schuller" 2 2
-"12" "Maalintekij‰" "Marie-Antoinette Katoto" 2 2
-"13" "Maalintekij‰" "Pernille Harder" 2 2
-"14" "Maalintekij‰" "Stina Blackstenius" 3 3
-"15" "Maalintekij‰" "Vivianne Miedema" 6 6
-"16" "Maalintekij‰" "Wendie Renard" 1 1
-"17" "Mestari" "Alankomaat" 1 1
-"18" "Mestari" "Englanti" 2 2
-"19" "Mestari" "Espanja" 1 1
-"20" "Mestari" "Ranska" 1 1
-"21" "Mestari" "Ruotsi" 1 1
-"22" "Mestari" NA 1 1
-"23" "TopScorer" "Alessia Russo" 1 1
-"24" "TopScorer" "Alexia Puderas" 1 1
-"25" "TopScorer" "Ellen White" 1 1
-"26" "TopScorer" "Stina Blackstenius" 1 1
-"27" "TopScorer" "Vivianne Miedema" 2 2
-"28" "TopScorer" NA 1 1
-"29" "V‰lier‰maa" "Alankomaat" 5 5
-"30" "V‰lier‰maa" "Englanti" 6 6
-"31" "V‰lier‰maa" "Espanja" 4 4
-"32" "V‰lier‰maa" "Ranska" 3 3
-"33" "V‰lier‰maa" "Ruotsi" 4 4
-"34" "V‰lier‰maa" "Saksa" 2 2
-"35" "V‰lier‰maa" NA 4 4
+"Sisalto" "Tyyppi" "n" "lkm" "id" "value" "cc" "maa.id"
+"1" "Ada Hegerberg" "Maalintekij‰" 5 5 NA NA NA NA
+"2" "Afganistan" NA NA NA "AF" "Afghanistan" "#874D96" "AF"
+"3" "Ahvenanmaa" NA NA NA "AX" "√Öland Islands" NA "AX"
+"4" "Alankomaat" "Mestari" 1 1 "NL" "Netherlands" "#529624" "NL"
+"5" "Alankomaat" "V‰lier‰maa" 5 5 "NL" "Netherlands" "#529624" "NL"
+"6" "Albania" NA NA NA "AL" "Albania" "#D2ECB1" "AL"
+"7" "Alessia Russo" "Maalintekij‰" 1 1 NA NA NA NA
+"8" "Alessia Russo" "TopScorer" 1 1 NA NA NA NA
+"9" "Alexia Puderas" "Maalintekij‰" 1 1 NA NA NA NA
+"10" "Alexia Puderas" "TopScorer" 1 1 NA NA NA NA
+"11" "Algeria" NA NA NA "DZ" "Algeria" "#A34F06" "DZ"
+"12" "Amerikan Samoa" NA NA NA "AS" "American Samoa" NA "AS"
+"13" "Andorra" NA NA NA "AD" "Andorra" NA "AD"
+"14" "Angola" NA NA NA "AO" "Angola" "#C96C0C" "AO"
+"15" "Anguilla" NA NA NA "AI" "Anguilla" NA "AI"
+"16" "Antarktis" NA NA NA "AQ" "Antarctica" NA "AQ"
+"17" "Antigua ja Barbuda" NA NA NA "AG" "Antigua & Barbuda" NA "AG"
+"18" "Arabiemiirikunnat" NA NA NA "AE" "United Arab Emirates" NA "AE"
+"19" "Argentiina" NA NA NA "AR" "Argentina" "#C62026" "AR"
+"20" "Armenia" NA NA NA "AM" "Armenia" NA "AM"
+"21" "Aruba" NA NA NA "AW" "Aruba" NA "AW"
+"22" "Australia" NA NA NA "AU" "Australia" "#313695" "AU"
+"23" "Azerbaid≈æan" NA NA NA "AZ" "Azerbaijan" NA "AZ"
+"24" "Bahama" NA NA NA "BS" "Bahamas" NA "BS"
+"25" "Bahrain" NA NA NA "BH" "Bahrain" "#E7D4E8" "BH"
+"26" "Bangladesh" NA NA NA "BD" "Bangladesh" "#5B1567" "BD"
+"27" "Barbados" NA NA NA "BB" "Barbados" NA "BB"
+"28" "Belgia" NA NA NA "BE" "Belgium" "#6DAD35" "BE"
+"29" "Belize" NA NA NA "BZ" "Belize" NA "BZ"
+"30" "Benin" NA NA NA "BJ" "Benin" "#EA952F" "BJ"
+"31" "Bermuda" NA NA NA "BM" "Bermuda" NA "BM"
+"32" "Beth Mead" "Maalintekij‰" 3 3 NA NA NA NA
+"33" "Bhutan" NA NA NA "BT" "Bhutan" NA "BT"
+"34" "Bolivia" NA NA NA "BO" "Bolivia" "#F57748" "BO"
+"35" "Bosnia ja Hertsegovina" NA NA NA "BA" "Bosnia & Herzegovina" NA "BA"
+"36" "Botswana" NA NA NA "BW" "Botswana" "#FDC37B" "BW"
+"37" "Bouvet‚Äônsaari" NA NA NA "BV" "Bouvet Island" NA "BV"
+"38" "Brasilia" NA NA NA "BR" "Brazil" "#AD0826" "BR"
+"39" "Brittil√§inen Intian valtameren alue" NA NA NA "IO" "British Indian Ocean Territory" NA "IO"
+"40" "Brittil√§iset Neitsytsaaret" NA NA NA "VG" "British Virgin Islands" NA "VG"
+"41" "Brunei" NA NA NA "BN" "Brunei" NA "BN"
+"42" "Bulgaria" NA NA NA "BG" "Bulgaria" "#8AC34F" "BG"
+"43" "Burkina Faso" NA NA NA "BF" "Burkina Faso" "#BE6209" "BF"
+"44" "Burundi" NA NA NA "BI" "Burundi" "#E79029" "BI"
+"45" "Caymansaaret" NA NA NA "KY" "Cayman Islands" NA "KY"
+"46" "Chile" NA NA NA "CL" "Chile" "#E04430" "CL"
+"47" "Cookinsaaret" NA NA NA "CK" "Cook Islands" NA "CK"
+"48" "Costa Rica" NA NA NA "CR" "Costa Rica" "#FDB668" "CR"
+"49" "Cura√ßao" NA NA NA "CW" "Cura√ßao" NA "CW"
+"50" "Djibouti" NA NA NA "DJ" "Djibouti" "#FDDCAF" "DJ"
+"51" "Dominica" NA NA NA "DM" "Dominica" NA "DM"
+"52" "Dominikaaninen tasavalta" NA NA NA "DO" "Dominican Republic" "#F46D43" "DO"
+"53" "Ecuador" NA NA NA "EC" "Ecuador" "#E54E35" "EC"
+"54" "Egypti" NA NA NA "EG" "Egypt" "#833D07" "EG"
+"55" "El Salvador" NA NA NA "SV" "El Salvador" "#FA9856" "SV"
+"56" "Ellen White" "Maalintekij‰" 3 3 NA NA NA NA
+"57" "Ellen White" "TopScorer" 1 1 NA NA NA NA
+"58" "Englanti" "Mestari" 2 2 NA NA NA NA
+"59" "Englanti" "V‰lier‰maa" 6 6 NA NA NA NA
+"60" "Eritrea" NA NA NA "ER" "Eritrea" "#F3A548" "ER"
+"61" "Espanja" "Mestari" 1 1 "ES" "Spain" "#41831E" "ES"
+"62" "Espanja" "V‰lier‰maa" 4 4 "ES" "Spain" "#41831E" "ES"
+"63" "Esther Gonzalez" "Maalintekij‰" 2 2 NA NA NA NA
+"64" "Etel√§-Afrikka" NA NA NA "ZA" "South Africa" "#8F4407" "ZA"
+"65" "Etel√§-Georgia ja Etel√§iset Sandwichsaaret" NA NA NA "GS" "South Georgia & South Sandwich Islands" NA "GS"
+"66" "Etel√§-Korea" NA NA NA "KR" "South Korea" NA "KR"
+"67" "Etel√§-Sudan" NA NA NA "SS" "South Sudan" NA "SS"
+"68" "Etiopia" NA NA NA "ET" "Ethiopia" "#873F07" "ET"
+"69" "F√§rsaaret" NA NA NA "FO" "Faroe Islands" NA "FO"
+"70" "Falklandinsaaret" NA NA NA "FK" "Falkland Islands" NA "FK"
+"71" "Fid≈æi" NA NA NA "FJ" "Fiji" NA "FJ"
+"72" "Filippiinit" NA NA NA "PH" "Philippines" "#681F75" "PH"
+"73" "Gabon" NA NA NA "GA" "Gabon" "#FDCA88" "GA"
+"74" "Gambia" NA NA NA "GM" "Gambia" "#FDC074" "GM"
+"75" "Georgia" NA NA NA "GE" "Georgia" NA "GE"
+"76" "Ghana" NA NA NA "GH" "Ghana" "#AB5406" "GH"
+"77" "Gibraltar" NA NA NA "GI" "Gibraltar" NA "GI"
+"78" "Gr√∂nlanti" NA NA NA "GL" "Greenland" NA "GL"
+"79" "Grace Geyoro" "Maalintekij‰" 1 1 NA NA NA NA
+"80" "Grenada" NA NA NA "GD" "Grenada" NA "GD"
+"81" "Guadeloupe" NA NA NA "GP" "Guadeloupe" NA "GP"
+"82" "Guam" NA NA NA "GU" "Guam" NA "GU"
+"83" "Guatemala" NA NA NA "GT" "Guatemala" "#EA5839" "GT"
+"84" "Guernsey" NA NA NA "GG" "Guernsey" NA "GG"
+"85" "Guinea" NA NA NA "GN" "Guinea" "#E18417" "GN"
+"86" "Guinea-Bissau" NA NA NA "GW" "Guinea-Bissau" "#FDC681" "GW"
+"87" "Guyana" NA NA NA "GY" "Guyana" NA "GY"
+"88" "Haiti" NA NA NA "HT" "Haiti" "#F7824D" "HT"
+"89" "Heard ja McDonaldinsaaret" NA NA NA "HM" "Heard & McDonald Islands" NA "HM"
+"90" "Honduras" NA NA NA "HN" "Honduras" "#F88D51" "HN"
+"91" "Hongkong ‚Äì Kiinan e.h.a." NA NA NA "HK" "Hong Kong SAR China" NA "HK"
+"92" "Huippuvuoret ja Jan Mayen" NA NA NA "SJ" "Svalbard & Jan Mayen" NA "SJ"
+"93" "Indonesia" NA NA NA "ID" "Indonesia" "#4D0A59" "ID"
+"94" "Intia" NA NA NA "IN" "India" "#460552" "IN"
+"95" "Irak" NA NA NA "IQ" "Iraq" "#9467A5" "IQ"
+"96" "Iran" NA NA NA "IR" "Iran" "#762A83" "IR"
+"97" "Irlanti" NA NA NA "IE" "Ireland" "#CCE9A7" "IE"
+"98" "Islanti" NA NA NA "IS" "Iceland" "#E6F5D0" "IS"
+"99" "Iso-Britannia" NA NA NA "GB" "United Kingdom" "#36771C" "GB"
+"100" "Israel" NA NA NA "IL" "Israel" "#C2A5CF" "IL"
+"101" "It√§-Timor" NA NA NA "TL" "Timor-Leste" NA "TL"
+"102" "It√§valta" NA NA NA "AT" "Austria" "#92C858" "AT"
+"103" "Italia" NA NA NA "IT" "Italy" "#3B7D1D" "IT"
+"104" "Jamaika" NA NA NA "JM" "Jamaica" "#FDD788" "JM"
+"105" "Japani" NA NA NA "JP" "Japan" "#611A6D" "JP"
+"106" "Jemen" NA NA NA "YE" "Yemen" NA "YE"
+"107" "Jersey" NA NA NA "JE" "Jersey" NA "JE"
+"108" "Jordania" NA NA NA "JO" "Jordan" "#C6AAD2" "JO"
+"109" "Joulusaari" NA NA NA "CX" "Christmas Island" NA "CX"
+"110" "Justine Vandaevermaet" "Maalintekij‰" 1 1 NA NA NA NA
+"111" "Kambod≈æa" NA NA NA "KH" "Cambodia" "#B797C6" "KH"
+"112" "Kamerun" NA NA NA "CM" "Cameroon" "#BA5F08" "CM"
+"113" "Kanada" NA NA NA "CA" "Canada" "#CE2726" "CA"
+"114" "Kap Verde" NA NA NA "CV" "Cape Verde" NA "CV"
+"115" "Karibian Alankomaat" NA NA NA "BQ" "Caribbean Netherlands" NA "BQ"
+"116" "Katharina Naschenweng" "Maalintekij‰" 1 1 NA NA NA NA
+"117" "Katharina Schiechtl" "Maalintekij‰" 1 1 NA NA NA NA
+"118" "Kazakstan" NA NA NA "KZ" "Kazakhstan" NA "KZ"
+"119" "Kenia" NA NA NA "KE" "Kenya" "#9B4A06" "KE"
+"120" "Keski-Afrikan tasavalta" NA NA NA "CF" "Central African Republic" "#F5AA4E" "CF"
+"121" "Kiina" NA NA NA "CN" "China" "#40004B" "CN"
+"122" "Kirgisia" NA NA NA "KG" "Kyrgyzstan" NA "KG"
+"123" "Kiribati" NA NA NA "KI" "Kiribati" NA "KI"
+"124" "Kolumbia" NA NA NA "CO" "Colombia" "#BE1826" "CO"
+"125" "Komorit" NA NA NA "KM" "Comoros" "#FDD6A2" "KM"
+"126" "Kongon demokraattinen tasavalta" NA NA NA "CD" "Congo - Kinshasa" NA "CD"
+"127" "Kongon tasavalta" NA NA NA "CG" "Congo - Brazzaville" NA "CG"
+"128" "Kookossaaret (Keelingsaaret)" NA NA NA "CC" "Cocos (Keeling) Islands" NA "CC"
+"129" "Kreikka" NA NA NA "GR" "Greece" "#599C28" "GR"
+"130" "Kroatia" NA NA NA "HR" "Croatia" "#C6E79C" "HR"
+"131" "Kuuba" NA NA NA "CU" "Cuba" "#EF623E" "CU"
+"132" "Kuwait" NA NA NA "KW" "Kuwait" "#E2CEE4" "KW"
+"133" "Kypros" NA NA NA "CY" "Cyprus" NA "CY"
+"134" "L√§nsi-Sahara" NA NA NA "EH" "Western Sahara" NA "EH"
+"135" "Laos" NA NA NA "LA" "Laos" NA "LA"
+"136" "Latvia" NA NA NA "LV" "Latvia" NA "LV"
+"137" "Lea Schuller" "Maalintekij‰" 2 2 NA NA NA NA
+"138" "Lesotho" NA NA NA "LS" "Lesotho" "#FDBD6E" "LS"
+"139" "Libanon" NA NA NA "LB" "Lebanon" "#D4BCDB" "LB"
+"140" "Liberia" NA NA NA "LR" "Liberia" "#FCB661" "LR"
+"141" "Libya" NA NA NA "LY" "Libya" "#EE9D3C" "LY"
+"142" "Liechtenstein" NA NA NA "LI" "Liechtenstein" NA "LI"
+"143" "Liettua" NA NA NA "LT" "Lithuania" NA "LT"
+"144" "Luxemburg" NA NA NA "LU" "Luxembourg" NA "LU"
+"145" "Macao ‚Äì Kiinan e.h.a." NA NA NA "MO" "Macao SAR China" NA "MO"
+"146" "Madagaskar" NA NA NA "MG" "Madagascar" "#B35806" "MG"
+"147" "Malawi" NA NA NA "MW" "Malawi" "#C2650A" "MW"
+"148" "Malediivit" NA NA NA "MV" "Maldives" NA "MV"
+"149" "Malesia" NA NA NA "MY" "Malaysia" "#9970AB" "MY"
+"150" "Mali" NA NA NA "ML" "Mali" "#D37610" "ML"
+"151" "Malta" NA NA NA "MT" "Malta" NA "MT"
+"152" "Mansaari" NA NA NA "IM" "Isle of Man" NA "IM"
+"153" "Marie-Antoinette Katoto" "Maalintekij‰" 2 2 NA NA NA NA
+"154" "Marokko" NA NA NA "MA" "Morocco" "#9F4D06" "MA"
+"155" "Marshallinsaaret" NA NA NA "MH" "Marshall Islands" NA "MH"
+"156" "Martinique" NA NA NA "MQ" "Martinique" NA "MQ"
+"157" "Mauritania" NA NA NA "MR" "Mauritania" "#FAB25B" "MR"
+"158" "Mauritius" NA NA NA "MU" "Mauritius" "#FDCD8E" "MU"
+"159" "Mayotte" NA NA NA "YT" "Mayotte" NA "YT"
+"160" "Meksiko" NA NA NA "MX" "Mexico" "#B51026" "MX"
+"161" "Mikronesian liittovaltio" NA NA NA "FM" "Micronesia" NA "FM"
+"162" "Moldova" NA NA NA "MD" "Moldova" NA "MD"
+"163" "Monaco" NA NA NA "MC" "Monaco" NA "MC"
+"164" "Mongolia" NA NA NA "MN" "Mongolia" "#DDC8E1" "MN"
+"165" "Montenegro" NA NA NA "ME" "Montenegro" "#DFF2C5" "ME"
+"166" "Montserrat" NA NA NA "MS" "Montserrat" NA "MS"
+"167" "Mosambik" NA NA NA "MZ" "Mozambique" "#AF5606" "MZ"
+"168" "Myanmar (Burma)" NA NA NA "MM" "Myanmar (Burma)" NA "MM"
+"169" "Namibia" NA NA NA NA "Namibia" "#FDBA67" NA
+"170" "Nauru" NA NA NA "NR" "Nauru" NA "NR"
+"171" "Nepal" NA NA NA "NP" "Nepal" "#8B559B" "NP"
+"172" "Nicaragua" NA NA NA "NI" "Nicaragua" "#FDAE61" "NI"
+"173" "Niger" NA NA NA "NE" "Niger" "#C5690B" "NE"
+"174" "Nigeria" NA NA NA "NG" "Nigeria" "#7F3B08" "NG"
+"175" "Niue" NA NA NA "NU" "Niue" NA "NU"
+"176" "Norfolkinsaari" NA NA NA "NF" "Norfolk Island" NA "NF"
+"177" "Norja" NA NA NA "NO" "Norway" "#B9E188" "NO"
+"178" "Norsunluurannikko" NA NA NA "CI" "C√¥te d‚ÄôIvoire" NA "CI"
+"179" "Oman" NA NA NA "OM" "Oman" "#D9C2DE" "OM"
+"180" "P√§iv√§ntasaajan Guinea" NA NA NA "GQ" "Equatorial Guinea" "#FDD9A8" "GQ"
+"181" "Pakistan" NA NA NA "PK" "Pakistan" "#540F60" "PK"
+"182" "Palau" NA NA NA "PW" "Palau" NA "PW"
+"183" "Palestiinalaisalueet" NA NA NA "PS" "Palestinian Territories" NA "PS"
+"184" "Panama" NA NA NA "PA" "Panama" "#FDCF80" "PA"
+"185" "Papua-Uusi-Guinea" NA NA NA "PG" "Papua New Guinea" NA "PG"
+"186" "Paraguay" NA NA NA "PY" "Paraguay" "#FBA35B" "PY"
+"187" "Pernille Harder" "Maalintekij‰" 2 2 NA NA NA NA
+"188" "Peru" NA NA NA "PE" "Peru" "#D73027" "PE"
+"189" "Pitcairn" NA NA NA "PN" "Pitcairn Islands" NA "PN"
+"190" "Pohjois-Korea" NA NA NA "KP" "North Korea" NA "KP"
+"191" "Pohjois-Makedonia" NA NA NA "MK" "North Macedonia" NA "MK"
+"192" "Pohjois-Mariaanit" NA NA NA "MP" "Northern Mariana Islands" NA "MP"
+"193" "Portugali" NA NA NA "PT" "Portugal" "#66A731" "PT"
+"194" "Puerto Rico" NA NA NA "PR" "Puerto Rico" "#FDBE70" "PR"
+"195" "Puola" NA NA NA "PL" "Poland" "#468A1F" "PL"
+"196" "Qatar" NA NA NA "QA" "Qatar" NA "QA"
+"197" "R√©union" NA NA NA "RE" "R√©union" NA "RE"
+"198" "Ranska" "Mestari" 1 1 "FR" "France" "#31701B" "FR"
+"199" "Ranska" "V‰lier‰maa" 3 3 "FR" "France" "#31701B" "FR"
+"200" "Ranskan etel√§iset alueet" NA NA NA "TF" "French Southern Territories" NA "TF"
+"201" "Ranskan Guayana" NA NA NA "GF" "French Guiana" NA "GF"
+"202" "Ranskan Polynesia" NA NA NA "PF" "French Polynesia" NA "PF"
+"203" "Romania" NA NA NA "RO" "Romania" "#4B9020" "RO"
+"204" "Ruanda" NA NA NA "RW" "Rwanda" "#E58C23" "RW"
+"205" "Ruotsi" "Mestari" 1 1 "SE" "Sweden" "#82BE45" "SE"
+"206" "Ruotsi" "V‰lier‰maa" 4 4 "SE" "Sweden" "#82BE45" "SE"
+"207" "S√£o Tom√© ja Pr√≠ncipe" NA NA NA "ST" "S√£o Tom√© & Pr√≠ncipe" NA "ST"
+"208" "Saint-Barth√©lemy" NA NA NA "BL" "St. Barth√©lemy" NA "BL"
+"209" "Saint-Martin" NA NA NA "MF" "St. Martin" NA "MF"
+"210" "Saint-Pierre ja Miquelon" NA NA NA "PM" "St. Pierre & Miquelon" NA "PM"
+"211" "Saint Helena" NA NA NA "SH" "St. Helena" NA "SH"
+"212" "Saint Kitts ja Nevis" NA NA NA "KN" "St. Kitts & Nevis" NA "KN"
+"213" "Saint Lucia" NA NA NA "LC" "St. Lucia" NA "LC"
+"214" "Saint Vincent ja Grenadiinit" NA NA NA "VC" "St. Vincent & Grenadines" NA "VC"
+"215" "Saksa" "V‰lier‰maa" 2 2 "DE" "Germany" "#276419" "DE"
+"216" "Salomonsaaret" NA NA NA "SB" "Solomon Islands" NA "SB"
+"217" "Sambia" NA NA NA "ZM" "Zambia" "#D77911" "ZM"
+"218" "Samoa" NA NA NA "WS" "Samoa" NA "WS"
+"219" "San Marino" NA NA NA "SM" "San Marino" NA "SM"
+"220" "Saudi-Arabia" NA NA NA "SA" "Saudi Arabia" "#905EA1" "SA"
+"221" "Senegal" NA NA NA "SN" "Senegal" "#D0730F" "SN"
+"222" "Serbia" NA NA NA "RS" "Serbia" "#74B33A" "RS"
+"223" "Seychellit" NA NA NA "SC" "Seychelles" NA "SC"
+"224" "Sierra Leone" NA NA NA "SL" "Sierra Leone" "#EC9936" "SL"
+"225" "Singapore" NA NA NA "SG" "Singapore" "#CBB0D5" "SG"
+"226" "Sint Maarten" NA NA NA "SX" "Sint Maarten" NA "SX"
+"227" "Slovakia" NA NA NA "SK" "Slovakia" NA "SK"
+"228" "Slovenia" NA NA NA "SI" "Slovenia" "#D9EFBB" "SI"
+"229" "Somalia" NA NA NA "SO" "Somalia" "#E3881D" "SO"
+"230" "Sri Lanka" NA NA NA "LK" "Sri Lanka" "#AD8ABD" "LK"
+"231" "Stina Blackstenius" "Maalintekij‰" 3 3 NA NA NA NA
+"232" "Stina Blackstenius" "TopScorer" 1 1 NA NA NA NA
+"233" "Sudan" NA NA NA "SD" "Sudan" "#934607" "SD"
+"234" "Suomi" NA NA NA "FI" "Finland" "#B2DD7E" "FI"
+"235" "Suriname" NA NA NA "SR" "Suriname" NA "SR"
+"236" "Sveitsi" NA NA NA "CH" "Switzerland" "#9ACD62" "CH"
+"237" "Swazimaa" NA NA NA "SZ" "Eswatini" NA "SZ"
+"238" "Syyria" NA NA NA "SY" "Syria" "#B291C1" "SY"
+"239" "Tad≈æikistan" NA NA NA "TJ" "Tajikistan" NA "TJ"
+"240" "Taiwan" NA NA NA "TW" "Taiwan" "#A37DB3" "TW"
+"241" "Tansania" NA NA NA "TZ" "Tanzania" "#974807" "TZ"
+"242" "Tanska" NA NA NA "DK" "Denmark" "#A2D26B" "DK"
+"243" "Thaimaa" NA NA NA "TH" "Thailand" "#7A3288" "TH"
+"244" "Togo" NA NA NA "TG" "Togo" "#F1A142" "TG"
+"245" "Tokelau" NA NA NA "TK" "Tokelau" NA "TK"
+"246" "Tonga" NA NA NA "TO" "Tonga" NA "TO"
+"247" "Trinidad ja Tobago" NA NA NA "TT" "Trinidad & Tobago" NA "TT"
+"248" "Tunisia" NA NA NA "TN" "Tunisia" "#DA7D12" "TN"
+"249" "Turkki" NA NA NA "TR" "Turkey" "#2C6A1A" "TR"
+"250" "Turkmenistan" NA NA NA "TM" "Turkmenistan" NA "TM"
+"251" "Turks- ja Caicossaaret" NA NA NA "TC" "Turks & Caicos Islands" NA "TC"
+"252" "Tuvalu" NA NA NA "TV" "Tuvalu" NA "TV"
+"253" "T≈°ad" NA NA NA "TD" "Chad" "#DE8013" "TD"
+"254" "T≈°ekki" NA NA NA "CZ" "Czechia" NA "CZ"
+"255" "Uganda" NA NA NA "UG" "Uganda" "#A75106" "UG"
+"256" "Ukraina" NA NA NA "UA" "Ukraine" NA "UA"
+"257" "Unkari" NA NA NA "HU" "Hungary" "#5FA12D" "HU"
+"258" "Uruguay" NA NA NA "UY" "Uruguay" "#FDC778" "UY"
+"259" "Uusi-Kaledonia" NA NA NA "NC" "New Caledonia" NA "NC"
+"260" "Uusi-Seelanti" NA NA NA "NZ" "New Zealand" "#4575B4" "NZ"
+"261" "Uzbekistan" NA NA NA "UZ" "Uzbekistan" NA "UZ"
+"262" "Valko-Ven√§j√§" NA NA NA "BY" "Belarus" NA "BY"
+"263" "Vanuatu" NA NA NA "VU" "Vanuatu" NA "VU"
+"264" "Vatikaani" NA NA NA "VA" "Vatican City" NA "VA"
+"265" "Ven√§j√§" NA NA NA "RU" "Russia" NA "RU"
+"266" "Venezuela" NA NA NA "VE" "Venezuela" "#DB3A2B" "VE"
+"267" "Vietnam" NA NA NA "VN" "Vietnam" "#6F247B" "VN"
+"268" "Viro" NA NA NA "EE" "Estonia" NA "EE"
+"269" "Vivianne Miedema" "Maalintekij‰" 6 6 NA NA NA NA
+"270" "Vivianne Miedema" "TopScorer" 2 2 NA NA NA NA
+"271" "Wallis ja Futuna" NA NA NA "WF" "Wallis & Futuna" NA "WF"
+"272" "Wendie Renard" "Maalintekij‰" 1 1 NA NA NA NA
+"273" "Yhdysvallat" NA NA NA "US" "United States" "#A50026" "US"
+"274" "Yhdysvaltain erillissaaret" NA NA NA "UM" "U.S. Outlying Islands" NA "UM"
+"275" "Yhdysvaltain Neitsytsaaret" NA NA NA "VI" "U.S. Virgin Islands" NA "VI"
+"276" "Zimbabwe" NA NA NA "ZW" "Zimbabwe" "#CC6F0D" "ZW"
+"277" NA "Mestari" 1 1 NA NA NA NA
+"278" NA "TopScorer" 1 1 NA NA NA NA
+"279" NA "V‰lier‰maa" 4 4 NA NA NA NA

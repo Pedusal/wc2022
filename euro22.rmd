@@ -32,7 +32,10 @@ output: html_document
 ##install.packages("gt")
 ##library(gt)
 # library(dplyr)
+
+#devtools::install_github('rensa/ggflags')
 ```
+
 
 
 ```{r aloitus, include=FALSE}
@@ -54,6 +57,8 @@ veikkaukset <- lapply(myFiles, function(x) read_excel(x))
 ```{r alustetaan muuttujia, warning=FALSE, include=FALSE}
 Eurodata <- read.table("data/Eurodata.txt")
 Eurodata_lkm <- read.table("data/Eurodata_lkm.txt")
+en_fi_country_colors <- read.table("data/en_fi_country_colors.txt")
+
 
 ################### Hae oikea rivi ################
 
@@ -555,17 +560,21 @@ Eurodata_mestari <- subset(Eurodata_lkm, ((Tyyppi == "Mestari" |
                                             Tyyppi =="Välierämaa") &
                                             !is.na(Sisalto)))
 
-bp <- ggplot(Eurodata_mestari, aes(x=Tyyppi
+
+Eurodata_mestari <- Eurodata_mestari[order(-Eurodata_mestari$lkm),]
+
+
+bp <- ggplot(Eurodata_mestari, aes(x=reorder(Tyyppi, -lkm)
                               ,y=lkm
-                              ,fill=Sisalto 
+                              ,fill=reorder(Sisalto, -lkm)
                                     )) +
   #facet_wrap(~Tyyppi,ncol = 2)
   geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))    +
   xlab("") +
   ylab("Veikkausten määrä") +
   theme_classic() +
-  scale_fill_manual(values=c("red", "yellow2", "slateblue4", 
-                             "green3", "orange", "olivedrab2",
+  scale_fill_manual(values=c("red", "orange", "slateblue4", 
+                             "lightblue", "blue", "yellow2",
                              "blue")) +
   geom_text(aes(label=lkm),
             position = position_dodge(width=0.8),
@@ -578,32 +587,52 @@ print(bp)
 
 ```
 
+
+
 ```{r PIIRRA_mestarijakauma_tst, eval=FALSE, include=FALSE}
-library(gapminder)
+library(ggplot2)
+library(forcats)
+library(dplyr)
+#library(tidyverse)
+library(ggflags) 
+library(countrycode) # to convert country names to country codes
+#library(tidytext) # for reorder_within
+#library(scales) # for application of common formats to scale labels (e.g., comma, percent, dollar)
+
+#countrycode::guess_field(Eurodata_lkm$id, min_similarity= 80)
 
 ################# piirretaan mestarit
-gap_with_colors <-
-  data.frame(gapminder,
-             cc = I(country_colors[match(gapminder$country,
-                                         names(country_colors))]))
-
-
 Eurodata_mestari <- subset(Eurodata_lkm, ((Tyyppi == "Mestari" | 
                                             Tyyppi =="Välierämaa") &
-                                            !is.na(Sisalto)))
+                                            !is.na(Sisalto)
+                                          )
+                          )
+
+Eurodata_mestari <- Eurodata_mestari %>%
+  #filter((title %in% c("Lover") & country != "WW")) %>%
+  mutate(id_lower_case = tolower(id)) %>%  # tehdaan id:sta lowercase
+  mutate(lkm.fct = factor(lkm)) 
+#%>%
+  #mutate(lkm = fct_reorder(lkm.fct,lkm))
+Eurodata_mestari <- Eurodata_mestari[order(-Eurodata_mestari$lkm),]
+
 
 bp <- ggplot(Eurodata_mestari, aes(x=Tyyppi
                               ,y=lkm
-                              ,fill=Sisalto 
+                              #,fill=Sisalto 
                                     )) +
   #facet_wrap(~Tyyppi,ncol = 2)
   geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))    +
   xlab("") +
+  #geom_col() +
+  #geom_flag(x = 0, aes(country = id_lower_case), size = 10) +
+  geom_flag( aes(country = id_lower_case), size = 10) +
   ylab("Veikkausten määrä") +
   theme_classic() +
-  scale_fill_manual(values=c("", "yellow2", "slateblue4", 
-                             "green3", "orange", "olivedrab2",
-                             "blue")) +
+  #scale_fill_manual(values = en_fi_country_colors$cc) + 
+  #scale_fill_manual(values=c("red", "yellow2", "slateblue4", 
+   #                          "green3", "orange", "olivedrab2",
+    #                         "blue")) +
   geom_text(aes(label=lkm),
             position = position_dodge(width=0.8),
             vjust=1.5, colour="white", size=3.5)
@@ -612,14 +641,49 @@ bp <- ggplot(Eurodata_mestari, aes(x=Tyyppi
 
 
 print(bp)
-#######
-#######
-  # + theme_dark()                    +
-  #ylab("Otoksen poikkeama väestöstä (prosenttiyksikköä)")+
-  #scale_y_continuous() +
-  #scale_y_continuous(labels=percent_format()) + 
-  #labs(title = paste("Jääkiekkoa harrastavien poikien syntymäajat     \nneljänneksittäin kausilla 2004-2016, ","n =",toString(sum(jun[,6]))))
 
+
+bp <- ggplot(Eurodata_mestari, aes(x=reorder(Sisalto, -lkm)
+                              ,y=lkm
+                              ,fill=reorder(Sisalto, -lkm)
+                                    )) +
+  #geom_flag( aes(x=Tyyppi, country = id_lower_case)) + 
+  geom_flag( aes(country = id_lower_case)) + 
+  #geom_flag(y = -50, aes(image = id_lower_case))  +
+  geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))+
+  #xlab("") +
+  #ylab("Veikkausten määrä") +
+  theme_classic() +
+  #coord_flip() +
+  geom_text(aes(label=lkm),
+            position = position_dodge(width=0.8),
+            vjust=1.5, colour="white", size=3.5)
 print(bp)
+
+bp <- ggplot(Eurodata_mestari, aes(x=reorder(Sisalto, lkm)
+                              ,y=lkm
+                              #,fill=reorder(Sisalto, -lkm)
+                                    )) +
+  #geom_flag( aes(x=Tyyppi, country = id_lower_case)) + 
+  geom_flag( aes(country = id_lower_case)) + 
+  #geom_flag(y = -50, aes(image = id_lower_case))  +
+  geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))+
+  coord_flip() +
+  facet_wrap(~Tyyppi,ncol = 2)
+  #xlab("") +
+  #ylab("Veikkausten määrä") +
+  theme_classic() +
+  #coord_flip() +
+  #geom_text(aes(label=lkm),
+         #   position = position_dodge(width=0.8),
+          #  vjust=1.5, colour="white", size=3.5)
+print(bp)
+
+
+
+  ggplot(Eurodata_mestari,aes(Sisalto,lkm)) +
+  geom_col(aes(lkm)) +
+  geom_flag( aes(country = id_lower_case), size = 10) +
+  theme_minimal()
 
 ```
