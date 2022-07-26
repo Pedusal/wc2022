@@ -203,9 +203,37 @@ for (i in 1:length(maalintekijat[,1])) { # haetaan osallistujan maalintekijat
 
 ```{r LUO_final4taulu, echo=FALSE, warning=FALSE}
 ####### valiera taulu luonti #####################
-final4taulu <- matrix(NA,length(pelaajat)-1,5)
+final4taulu <- matrix(NA,length(pelaajat),5)
 final4taulu <- as.data.frame(final4taulu)
 ```
+
+
+```{r final4taulu TAYTTO, echo=FALSE}
+################# taytetaan final4taulu
+colnames(final4taulu) <- c("Mestari","Välierämaa1","Välierämaa2",
+                          "Välierämaa3","Välierämaa4")
+rownames(final4taulu) <- pelaajat
+
+## haetaan mestari tauluun
+for (i in 1:length(veikkaukset)) {
+  final4taulu[i,1] <- as.data.frame(veikkaukset[i])[5,18] #haetaan mestari
+}
+
+## haetaan valieramaat
+for (i in 1:length(veikkaukset)) {
+  final4taulu[i,2:5] <- sort( # aakkostetaan
+                          as.data.frame(veikkaukset[i])[5:8,17] #haetaan valiera
+                            )
+                          }
+
+#Tulokset <- c(as.vector(as.data.frame(veikkaukset[1])[5,18]), 
+#             as.vector(as.data.frame(veikkaukset[1])[5:8,17]))
+#tst <- as.data.frame(veikkaukset[2])[5,18]
+
+#final4taulu <- rbind(Tulokset,final4taulu)
+
+```
+
 
 
 ```{r aloitus moi, echo=FALSE, warning=FALSE}
@@ -505,28 +533,6 @@ as.datatable(
 ```
 
 
-```{r final4taulu TAYTTO, echo=FALSE}
-################# taytetaan final4taulu
-colnames(final4taulu) <- c("Mestari","Välierämaa1","Välierämaa2",
-                          "Välierämaa3","Välierämaa4")
-rownames(final4taulu) <- pelaajat[-1]
-
-## haetaan mestari tauluun
-for (i in 2:length(veikkaukset)) {
-  final4taulu[i-1,1] <- as.data.frame(veikkaukset[i])[5,18] #haetaan mestari
-}
-
-## haetaan valieramaat
-for (i in 2:length(veikkaukset)) {
-  final4taulu[i-1,2:5] <- sort( # aakkostetaan
-                          as.data.frame(veikkaukset[i])[5:8,17] #haetaan valiera
-                            )
-                          }
-
-#tst <- as.data.frame(veikkaukset[2])[5,18]
-
-
-```
 
 ## Mestari ja välierämaat
 
