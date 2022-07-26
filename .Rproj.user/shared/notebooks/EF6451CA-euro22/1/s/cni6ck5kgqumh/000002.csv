@@ -1,0 +1,4 @@
+"0","################ luo Maalintekijä taulu ja täytä se ######################"
+"0","maalintekijat <- matrix(NA,length(pelaajat)-1,6)"
+"0","colnames(maalintekijat) <- c(""nimi"", ""Maalintekija1"", ""Maalintekija2"", ""Maalintekija3"", ""Maalintekija4"", ""Maalintekija5"")"
+"0","maalintekijat <- as.data.frame(maalintekijat)"
