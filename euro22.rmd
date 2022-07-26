@@ -51,6 +51,15 @@ setwd("C:/Users/Pedu/Documents/GitHub/euro22/data")
 myFiles <- list.files(pattern = "xlsx$")
 veikkaukset <- lapply(myFiles, function(x) read_excel(x))
 
+
+### Funktio isoja alkukirjaimia varten
+simpleCap <- function(x) {
+  s <- strsplit(x, " ")[[1]]
+  paste(toupper(substring(s, 1,1)), substring(s, 2),
+      sep="", collapse=" ")
+}
+
+
 ```
 
 
@@ -225,15 +234,23 @@ for (i in 1:length(veikkaukset)) {
                           as.data.frame(veikkaukset[i])[5:8,17] #haetaan valiera
                             )
                           }
-
-#Tulokset <- c(as.vector(as.data.frame(veikkaukset[1])[5,18]), 
-#             as.vector(as.data.frame(veikkaukset[1])[5:8,17]))
-#tst <- as.data.frame(veikkaukset[2])[5,18]
-
-#final4taulu <- rbind(Tulokset,final4taulu)
-
+##### isot kirjaimet kaikille kaikkiin maihin
+  final4taulu <- as.data.frame(apply(final4taulu, c(1,2), simpleCap))
 ```
 
+```{r final4 pisteytys, message=FALSE, warning=FALSE, include=FALSE}
+valierat_lkm <- c()
+
+for (i in 2:length(pelaajat)) {
+
+valierat_lkm[i-1] <- length(
+              intersect(c(as.vector(final4taulu[1,2:5])), 
+                      c(as.vector(final4taulu[i,2:5])))
+            ) * 5
+
+}
+
+```
 
 
 ```{r aloitus moi, echo=FALSE, warning=FALSE}
@@ -370,12 +387,17 @@ for (u in y) {
 
 }
 
+#####
+##### Välierämaat pistetauluun
 
+pistetaulu$Välierät <- valierat_lkm
 
-
-### pistetaulu summaus
+#####
+#################### Pistetaulu summaus
 pistetaulu$Yhteensa <- apply(pistetaulu[1:6,1:length(pelatut_pelit_lkm$...2)+2], 1, sum)
 sort(pistetaulu$Yhteensa)
+
+pistetaulu$Yhteensa <- pistetaulu$Yhteensa + pistetaulu$Välierät
 
 
 ```
