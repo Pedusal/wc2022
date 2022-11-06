@@ -263,7 +263,7 @@ valierat_lkm[i-1] <- length(
 ## Sano moi
 #print("Hello Euro22")
 
-print(paste("Hello Euro22!", "Sivu päivitetty:", Sys.time()))
+print(paste("Hello MM22!", "Sivu päivitetty:", Sys.time()))
 
 ```
 Tervetuloa seuraamaan kisaveikkausta!
