@@ -1,11 +1,6 @@
----
-title: "euro22"
-author: "pedusal"
-date: "10 7 2022"
-output: html_document
----
+## ----child = "euro22.rmd"-----------------------------------------------------------------
 
-```{r setup, include=FALSE}
+## ----setup, include=FALSE-----------------------------------------------------------------
 
 rm(list=ls())  # REMOVE ALL OBJECTS
 ### Asenna hyvaksi havaitut paketit ######
@@ -34,11 +29,9 @@ rm(list=ls())  # REMOVE ALL OBJECTS
 # library(dplyr)
 
 #devtools::install_github('rensa/ggflags')
-```
 
 
-
-```{r aloitus, include=FALSE}
+## ----aloitus, include=FALSE---------------------------------------------------------------
 ####### Aseta tyoskentely kansio ja lataa veikkauset ###########
 
 #Get the working directory:
@@ -60,10 +53,9 @@ simpleCap <- function(x) {
 }
 
 
-```
 
 
-```{r alustetaan muuttujia, warning=FALSE, include=FALSE}
+## ----alustetaan muuttujia, warning=FALSE, include=FALSE-----------------------------------
 Eurodata <- read.table("Data/Eurodata.txt")
 Eurodata_lkm <- read.table("Data/Eurodata_lkm.txt")
 en_fi_country_colors <- read.table("Data/en_fi_country_colors.txt")
@@ -120,16 +112,14 @@ for (u in 2:length(pelaajat)) {
   #pelaaja <- veikkaus[[1,5]]
 }
 }
-```
 
 
-```{r df idea, warning=FALSE, include=FALSE}
+## ----df idea, warning=FALSE, include=FALSE------------------------------------------------
 ####### Tee jokaisesta vaikkauksesta oma dataframe ###########
 
-```
 
 
-```{r luodaan df:iä, warning=FALSE, include=FALSE}
+## ----luodaan df:iä, warning=FALSE, include=FALSE------------------------------------------
 
 ################# luo veikkaustaulu
 veikkaustaulu <- matrix(NA,length(pelaajat),length(pelit)+1)
@@ -159,16 +149,16 @@ colnames(pistetaulu) <- c(pt_nimet)
 pistetaulu <- as.data.frame(pistetaulu)
 #########################################################################
 
-```
 
-```{r LUO_maalintekijataulu, echo=FALSE, warning=FALSE}
+
+## ----LUO_maalintekijataulu, echo=FALSE, warning=FALSE-------------------------------------
 ################ luo Maalintekijä taulu ja täytä se ######################
 maalintekijat <- matrix(NA,length(pelaajat)-1,6)
 colnames(maalintekijat) <- c("nimi", "Maalintekija1", "Maalintekija2", "Maalintekija3", "Maalintekija4", "Maalintekija5")
 maalintekijat <- as.data.frame(maalintekijat)
-```
 
-```{r TAYTA_maalintekijataulu, echo=FALSE, warning=FALSE}
+
+## ----TAYTA_maalintekijataulu, echo=FALSE, warning=FALSE-----------------------------------
 ### sisalto
 if (length(veikkaukset) > 0) {
 for (uu in 2:length(veikkaukset)) {
@@ -211,17 +201,15 @@ for (i in 1:length(maalintekijat[,1])) { # haetaan osallistujan maalintekijat
 }
 }
 ###########################################################################
-```
 
 
-```{r LUO_final4taulu, echo=FALSE, warning=FALSE}
+## ----LUO_final4taulu, echo=FALSE, warning=FALSE-------------------------------------------
 ####### valiera taulu luonti #####################
 final4taulu <- matrix(NA,length(pelaajat),5)
 final4taulu <- as.data.frame(final4taulu)
-```
 
 
-```{r final4taulu TAYTTO, echo=FALSE}
+## ----final4taulu TAYTTO, echo=FALSE-------------------------------------------------------
 ################# taytetaan final4taulu
 colnames(final4taulu) <- c("Mestari","Välierämaa1","Välierämaa2",
                           "Välierämaa3","Välierämaa4")
@@ -242,9 +230,9 @@ for (i in 1:length(veikkaukset)) {
 ##### isot kirjaimet kaikille kaikkiin maihin
   final4taulu <- as.data.frame(apply(final4taulu, c(1,2), simpleCap))
 }
-```
 
-```{r final4 pisteytys, message=FALSE, warning=FALSE, include=FALSE}
+
+## ----final4 pisteytys, message=FALSE, warning=FALSE, include=FALSE------------------------
 valierat_lkm <- c()
 
 for (i in 2:length(pelaajat)) {
@@ -256,50 +244,47 @@ valierat_lkm[i-1] <- length(
 
 }
 
-```
 
 
-```{r aloitus moi, echo=FALSE, warning=FALSE}
+## ----aloitus moi, echo=FALSE, warning=FALSE-----------------------------------------------
 ## Sano moi
 #print("Hello Euro22")
 
 print(paste("Hello Euro22!", "Sivu päivitetty:", Sys.time()))
 
-```
-Tervetuloa seuraamaan kisaveikkausta!
-
-```{r pelipaiva 8, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
-## tee taulu
-library(ggplot2)
-Sys.Date()
-
-veikkaustaulu.t <- as.data.frame(t(veikkaustaulu)[-1,]) # transpose
-colnames(veikkaustaulu.t) <- c(pelaajat)
-
-paivan_pelit <- subset(veikkaustaulu, 
-
-bp <- ggplot(veikkaustaulu.t, aes(x=Ella,
-                                  y=pelit,
-                                  group = Tulokset  
-                                    )) +
-  geom_point(aes(color=Ella)) + 
-  geom_line(aes(color=Ella))+
-  geom_hline(yintercept = 0.25)+
-  facet_wrap(~kausi,ncol = 3)+
-  scale_color_gradient(low="#33CC33", high="#CCFFCC")+
-  theme_dark()+
-  #geom_smooth(method = "lm")+
-   xlab("Neljännes") +
-  #ylab("Otoksen poikkeama väestöstä (prosenttiyksikköä)")+
-  scale_y_continuous(labels=percent_format()) + 
-labs(title = paste("Jääkiekkoa harrastavien poikien syntymäajat \nneljänneksittäin kausilla 2004-2016, ","n =",toString(sum(jun[,6]))))
-
-print(bp)
-
-```
 
 
-```{r pistetaulu TAYTTo, warning=FALSE, include=FALSE}
+## ----pelipaiva 8, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE-----------------
+## ## tee taulu
+## library(ggplot2)
+## Sys.Date()
+## 
+## veikkaustaulu.t <- as.data.frame(t(veikkaustaulu)[-1,]) # transpose
+## colnames(veikkaustaulu.t) <- c(pelaajat)
+## 
+## paivan_pelit <- subset(veikkaustaulu,
+## 
+## bp <- ggplot(veikkaustaulu.t, aes(x=Ella,
+##                                   y=pelit,
+##                                   group = Tulokset
+##                                     )) +
+##   geom_point(aes(color=Ella)) +
+##   geom_line(aes(color=Ella))+
+##   geom_hline(yintercept = 0.25)+
+##   facet_wrap(~kausi,ncol = 3)+
+##   scale_color_gradient(low="#33CC33", high="#CCFFCC")+
+##   theme_dark()+
+##   #geom_smooth(method = "lm")+
+##    xlab("Neljännes") +
+##   #ylab("Otoksen poikkeama väestöstä (prosenttiyksikköä)")+
+##   scale_y_continuous(labels=percent_format()) +
+## labs(title = paste("Jääkiekkoa harrastavien poikien syntymäajat \nneljänneksittäin kausilla 2004-2016, ","n =",toString(sum(jun[,6]))))
+## 
+## print(bp)
+## 
+
+
+## ----pistetaulu TAYTTo, warning=FALSE, include=FALSE--------------------------------------
 if (length(veikkaukset) > 0) {
 
 ###### Taytetaan pistetaulu eli tehdaan tarkistus ja laitetaan pisteet #########
@@ -405,12 +390,9 @@ sort(pistetaulu$Yhteensa)
 pistetaulu$Yhteensa <- pistetaulu$Yhteensa + pistetaulu$Välierät
 
 }
-```
 
 
-## Pisteet
-
-```{r pisteet printtaus, echo=FALSE, message=FALSE, warning=FALSE}
+## ----pisteet printtaus, echo=FALSE, message=FALSE, warning=FALSE--------------------------
 #install.packages("formattable")
 library(formattable)
 library(DT)
@@ -456,10 +438,9 @@ as.datatable(formattable(pistetaulu,
 )
 
 
-```
 
 
-```{r veikkaustaulu TAYTTO, include=FALSE}
+## ----veikkaustaulu TAYTTO, include=FALSE--------------------------------------------------
 library(formattable)
 library(dplyr)
 #library(knitr)
@@ -505,12 +486,9 @@ for (uu in 2:(length(veikkaukset))) {
 }
 
 }
-```
 
 
-## Osallistujien rivit
-
-```{r veikkaustaulu piirtaminen, echo=FALSE}
+## ----veikkaustaulu piirtaminen, echo=FALSE------------------------------------------------
 library(formattable)
 library(dplyr)
 #library(knitr)
@@ -538,12 +516,9 @@ as.datatable(
                       )
 )
 
-```
 
 
-## Maalintekijät
-
-```{r maalintekijät piirtaminen, echo=FALSE}
+## ----maalintekijät piirtaminen, echo=FALSE------------------------------------------------
 library(formattable)
 library(dplyr)
 
@@ -562,13 +537,9 @@ as.datatable(
                       )
 )
 
-```
 
 
-
-## Mestari ja välierämaat
-
-```{r final4taulu PIIRTAMINE, echo=FALSE}
+## ----final4taulu PIIRTAMINE, echo=FALSE---------------------------------------------------
 ################# piirretaan final4taulu
 
 as.datatable(
@@ -586,142 +557,139 @@ as.datatable(
                       )
 )
 
-```
-
-### tack
-
-```{r PIIRRA_mestarijakauma, eval=FALSE, include=FALSE}
-library(ggplot2)
-################# piirretaan mestarit
-
-Eurodata_mestari <- subset(Eurodata_lkm, ((Tyyppi == "Mestari" | 
-                                            Tyyppi =="Välierämaa") &
-                                            !is.na(Sisalto)))
 
 
-Eurodata_mestari <- Eurodata_mestari[order(-Eurodata_mestari$lkm),]
+## ----PIIRRA_mestarijakauma, eval=FALSE, include=FALSE-------------------------------------
+## library(ggplot2)
+## ################# piirretaan mestarit
+## 
+## Eurodata_mestari <- subset(Eurodata_lkm, ((Tyyppi == "Mestari" |
+##                                             Tyyppi =="Välierämaa") &
+##                                             !is.na(Sisalto)))
+## 
+## 
+## Eurodata_mestari <- Eurodata_mestari[order(-Eurodata_mestari$lkm),]
+## 
+## 
+## bp <- ggplot(Eurodata_mestari, aes(x=reorder(Tyyppi, -lkm)
+##                               ,y=lkm
+##                               ,fill=reorder(Sisalto, -lkm)
+##                                     )) +
+##   #facet_wrap(~Tyyppi,ncol = 2)
+##   geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))    +
+##   xlab("") +
+##   ylab("Veikkausten määrä") +
+##   theme_classic() +
+##   scale_fill_manual(values=c("red", "orange", "slateblue4",
+##                              "lightblue", "blue", "yellow2",
+##                              "blue")) +
+##   geom_text(aes(label=lkm),
+##             position = position_dodge(width=0.8),
+##             vjust=1.5, colour="white", size=3.5)
+##   #geom_point(aes(color=Sisalto)) +
+##   #scale_color_gradient(low="#33CC33", high="#CCFFCC") +
+## 
+## 
+## print(bp)
+## 
 
 
-bp <- ggplot(Eurodata_mestari, aes(x=reorder(Tyyppi, -lkm)
-                              ,y=lkm
-                              ,fill=reorder(Sisalto, -lkm)
-                                    )) +
-  #facet_wrap(~Tyyppi,ncol = 2)
-  geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))    +
-  xlab("") +
-  ylab("Veikkausten määrä") +
-  theme_classic() +
-  scale_fill_manual(values=c("red", "orange", "slateblue4", 
-                             "lightblue", "blue", "yellow2",
-                             "blue")) +
-  geom_text(aes(label=lkm),
-            position = position_dodge(width=0.8),
-            vjust=1.5, colour="white", size=3.5)
-  #geom_point(aes(color=Sisalto)) +
-  #scale_color_gradient(low="#33CC33", high="#CCFFCC") +
+## ----PIIRRA_mestarijakauma_tst, eval=FALSE, include=FALSE---------------------------------
+## library(ggplot2)
+## library(forcats)
+## library(dplyr)
+## #library(tidyverse)
+## library(ggflags)
+## library(countrycode) # to convert country names to country codes
+## #library(tidytext) # for reorder_within
+## #library(scales) # for application of common formats to scale labels (e.g., comma, percent, dollar)
+## 
+## #countrycode::guess_field(Eurodata_lkm$id, min_similarity= 80)
+## 
+## ################# piirretaan mestarit
+## Eurodata_mestari <- subset(Eurodata_lkm, ((Tyyppi == "Mestari" |
+##                                             Tyyppi =="Välierämaa") &
+##                                             !is.na(Sisalto)
+##                                           )
+##                           )
+## 
+## Eurodata_mestari <- Eurodata_mestari %>%
+##   #filter((title %in% c("Lover") & country != "WW")) %>%
+##   mutate(id_lower_case = tolower(id)) %>%  # tehdaan id:sta lowercase
+##   mutate(lkm.fct = factor(lkm))
+## #%>%
+##   #mutate(lkm = fct_reorder(lkm.fct,lkm))
+## Eurodata_mestari <- Eurodata_mestari[order(-Eurodata_mestari$lkm),]
+## 
+## 
+## bp <- ggplot(Eurodata_mestari, aes(x=Tyyppi
+##                               ,y=lkm
+##                               #,fill=Sisalto
+##                                     )) +
+##   #facet_wrap(~Tyyppi,ncol = 2)
+##   geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))    +
+##   xlab("") +
+##   #geom_col() +
+##   #geom_flag(x = 0, aes(country = id_lower_case), size = 10) +
+##   geom_flag( aes(country = id_lower_case), size = 10) +
+##   ylab("Veikkausten määrä") +
+##   theme_classic() +
+##   #scale_fill_manual(values = en_fi_country_colors$cc) +
+##   #scale_fill_manual(values=c("red", "yellow2", "slateblue4",
+##    #                          "green3", "orange", "olivedrab2",
+##     #                         "blue")) +
+##   geom_text(aes(label=lkm),
+##             position = position_dodge(width=0.8),
+##             vjust=1.5, colour="white", size=3.5)
+##   #geom_point(aes(color=Sisalto)) +
+##   #scale_color_gradient(low="#33CC33", high="#CCFFCC") +
+## 
+## 
+## print(bp)
+## 
+## 
+## bp <- ggplot(Eurodata_mestari, aes(x=reorder(Sisalto, -lkm)
+##                               ,y=lkm
+##                               ,fill=reorder(Sisalto, -lkm)
+##                                     )) +
+##   #geom_flag( aes(x=Tyyppi, country = id_lower_case)) +
+##   geom_flag( aes(country = id_lower_case)) +
+##   #geom_flag(y = -50, aes(image = id_lower_case))  +
+##   geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))+
+##   #xlab("") +
+##   #ylab("Veikkausten määrä") +
+##   theme_classic() +
+##   #coord_flip() +
+##   geom_text(aes(label=lkm),
+##             position = position_dodge(width=0.8),
+##             vjust=1.5, colour="white", size=3.5)
+## print(bp)
+## 
+## bp <- ggplot(Eurodata_mestari, aes(x=reorder(Sisalto, lkm)
+##                               ,y=lkm
+##                               #,fill=reorder(Sisalto, -lkm)
+##                                     )) +
+##   #geom_flag( aes(x=Tyyppi, country = id_lower_case)) +
+##   geom_flag( aes(country = id_lower_case)) +
+##   #geom_flag(y = -50, aes(image = id_lower_case))  +
+##   geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))+
+##   coord_flip() +
+##   facet_wrap(~Tyyppi,ncol = 2)
+##   #xlab("") +
+##   #ylab("Veikkausten määrä") +
+##   theme_classic() +
+##   #coord_flip() +
+##   #geom_text(aes(label=lkm),
+##          #   position = position_dodge(width=0.8),
+##           #  vjust=1.5, colour="white", size=3.5)
+## print(bp)
+## 
+## 
+## 
+##   ggplot(Eurodata_mestari,aes(Sisalto,lkm)) +
+##   geom_col(aes(lkm)) +
+##   geom_flag( aes(country = id_lower_case), size = 10) +
+##   theme_minimal()
+## 
 
 
-print(bp)
-
-```
-
-
-
-```{r PIIRRA_mestarijakauma_tst, eval=FALSE, include=FALSE}
-library(ggplot2)
-library(forcats)
-library(dplyr)
-#library(tidyverse)
-library(ggflags) 
-library(countrycode) # to convert country names to country codes
-#library(tidytext) # for reorder_within
-#library(scales) # for application of common formats to scale labels (e.g., comma, percent, dollar)
-
-#countrycode::guess_field(Eurodata_lkm$id, min_similarity= 80)
-
-################# piirretaan mestarit
-Eurodata_mestari <- subset(Eurodata_lkm, ((Tyyppi == "Mestari" | 
-                                            Tyyppi =="Välierämaa") &
-                                            !is.na(Sisalto)
-                                          )
-                          )
-
-Eurodata_mestari <- Eurodata_mestari %>%
-  #filter((title %in% c("Lover") & country != "WW")) %>%
-  mutate(id_lower_case = tolower(id)) %>%  # tehdaan id:sta lowercase
-  mutate(lkm.fct = factor(lkm)) 
-#%>%
-  #mutate(lkm = fct_reorder(lkm.fct,lkm))
-Eurodata_mestari <- Eurodata_mestari[order(-Eurodata_mestari$lkm),]
-
-
-bp <- ggplot(Eurodata_mestari, aes(x=Tyyppi
-                              ,y=lkm
-                              #,fill=Sisalto 
-                                    )) +
-  #facet_wrap(~Tyyppi,ncol = 2)
-  geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))    +
-  xlab("") +
-  #geom_col() +
-  #geom_flag(x = 0, aes(country = id_lower_case), size = 10) +
-  geom_flag( aes(country = id_lower_case), size = 10) +
-  ylab("Veikkausten määrä") +
-  theme_classic() +
-  #scale_fill_manual(values = en_fi_country_colors$cc) + 
-  #scale_fill_manual(values=c("red", "yellow2", "slateblue4", 
-   #                          "green3", "orange", "olivedrab2",
-    #                         "blue")) +
-  geom_text(aes(label=lkm),
-            position = position_dodge(width=0.8),
-            vjust=1.5, colour="white", size=3.5)
-  #geom_point(aes(color=Sisalto)) +
-  #scale_color_gradient(low="#33CC33", high="#CCFFCC") +
-
-
-print(bp)
-
-
-bp <- ggplot(Eurodata_mestari, aes(x=reorder(Sisalto, -lkm)
-                              ,y=lkm
-                              ,fill=reorder(Sisalto, -lkm)
-                                    )) +
-  #geom_flag( aes(x=Tyyppi, country = id_lower_case)) + 
-  geom_flag( aes(country = id_lower_case)) + 
-  #geom_flag(y = -50, aes(image = id_lower_case))  +
-  geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))+
-  #xlab("") +
-  #ylab("Veikkausten määrä") +
-  theme_classic() +
-  #coord_flip() +
-  geom_text(aes(label=lkm),
-            position = position_dodge(width=0.8),
-            vjust=1.5, colour="white", size=3.5)
-print(bp)
-
-bp <- ggplot(Eurodata_mestari, aes(x=reorder(Sisalto, lkm)
-                              ,y=lkm
-                              #,fill=reorder(Sisalto, -lkm)
-                                    )) +
-  #geom_flag( aes(x=Tyyppi, country = id_lower_case)) + 
-  geom_flag( aes(country = id_lower_case)) + 
-  #geom_flag(y = -50, aes(image = id_lower_case))  +
-  geom_bar(stat="identity", width=0.7, position=position_dodge(width=0.8))+
-  coord_flip() +
-  facet_wrap(~Tyyppi,ncol = 2)
-  #xlab("") +
-  #ylab("Veikkausten määrä") +
-  theme_classic() +
-  #coord_flip() +
-  #geom_text(aes(label=lkm),
-         #   position = position_dodge(width=0.8),
-          #  vjust=1.5, colour="white", size=3.5)
-print(bp)
-
-
-
-  ggplot(Eurodata_mestari,aes(Sisalto,lkm)) +
-  geom_col(aes(lkm)) +
-  geom_flag( aes(country = id_lower_case), size = 10) +
-  theme_minimal()
-
-```

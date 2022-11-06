@@ -11,6 +11,21 @@ output: html_document
 ---
 
 ```{r setup, echo=FALSE}
+#rm(list=ls())  # REMOVE ALL OBJECTS
+### Asenna hyvaksi havaitut paketit ######
+ pkgs <- c("readxl", # used for data import
+           "dplyr",        # used for testing linear hypothesis
+           "knitr"  #used for data import
+           ,"gapminder"
+           ,"stringr"
+           ,"formattable"
+           ,"markdown"
+           ,"mame")
+ 
+           
+#install.packages(c(pkgs))
+#install.packages("formattable")
+#install.packages("DT")
 
 ####### Aseta tyoskentely kansio ja lataa veikkauset ###########
 
@@ -20,7 +35,7 @@ library(readxl)
 library(dplyr)
 library(knitr)
 #Setup the working directory:
-setwd("C:/Users/Pedu/Documents/GitHub/euro22/data")
+#setwd("C:/Users/Pedu/Documents/GitHub/euro22/data")
 myFiles <- list.files(pattern = "xlsx$")
 veikkaukset <- lapply(myFiles, function(x) read_excel(x))
 
@@ -56,7 +71,7 @@ en_fi_country_colors<-
              maa = (fi_FI[match(en_fi_country_colors$id,
                                          fi_FI$id),]))
 
-write.table(en_fi_country_colors, "data/en_fi_country_colors.txt")
+write.table(en_fi_country_colors, "Data/en_fi_country_colors.txt")
 #"Bosnia and Herzegovina"
 #Bosnia & Herzegovina
 ```
@@ -72,6 +87,7 @@ Eurodata <- data.frame(matrix(ncol = 7, nrow = 0))
 
 
 #####
+if (length(veikkaukset) > 0) {
 for (i in 1:length(veikkaukset)) {
   veikkaus_apu <- as.data.frame(veikkaukset[i])
   
@@ -128,12 +144,14 @@ for (i in 1:length(veikkaukset)) {
               )
  
 }
+}
 #####
 
 ### Eurodata col nimet   #########
 colnames(Eurodata) <- c("Nimi", "Tyyppi", "Tyyppikd",
                         "Sisalto","Sisälto_tarkenne", "Tyyppi_lkm", "__")
 
+if (length(veikkaukset)>0) {
 ## laitetaan iso alkukirjaimet KAIKKIALLE (jokaiseen muuttujaan)
 Eurodata <- as.data.frame(apply(Eurodata, c(1,2), simpleCap))
 
@@ -146,6 +164,7 @@ Eurodata[Eurodata == "Hollanti"] <- "Alankomaat"
 ## trimmaus
 Eurodata <- Eurodata %>% 
   mutate(across(where(is.character), str_trim, side = "both"))
+}
 ```
 
 ```{r Eurodata lkm, echo=FALSE}
@@ -168,47 +187,11 @@ Eurodata_lkm <- merge(Eurodata_lkm, en_fi_country_colors,
 
 
 ```{r Eurodatat data tiedostoon, echo=FALSE}
-write.table(Eurodata, "data/Eurodata.txt")
+write.table(Eurodata, "Data/Eurodata.txt")
 
-write.table(Eurodata_lkm, "data/Eurodata_lkm.txt")
+write.table(Eurodata_lkm, "Data/Eurodata_lkm.txt")
 
 ```
 
-```{r junioridata, echo=FALSE}
-syntyneet <- read.table("data/syntyneet.txt")
-vuodet = c("2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2015","2016")
-
-str(juniori)
 
 
-kks <- c("Tammi", "Helmi", "Maalis", "Huhti", "Touko", "Kes�","Hein�","Elo","Syys","Loka","Marras","Joulu")
-
-
-unique_jun2 = juniori %>% group_by(Sukupuoli, VVVV, KK, kausi) %>% count(KK) %>% mutate(lkm =n)
-
-neljannekset <- c("1-3","4-6","7-9","10-12")
-syntymakuukausi <- cut(unique_jun2$KK, breaks = binit, include.lowest = TRUE, labels = neljannekset)
-
-unique_jun2 <- data.frame(unique_jun2, syntymakuukausi)
-
-unique_jun2 = unique_jun2 %>% group_by(Sukupuoli, VVVV, kausi) %>% mutate(n = sum(lkm))%>% mutate(pct = lkm/n)
-
-unique_jun2 = unique_jun2 %>% group_by(Sukupuoli, VVVV, syntymakuukausi, kausi) %>% 
-  mutate(proportion = sum(pct),
-         maara=sum(lkm))
-```
-
-
-```{r junioridata, echo=FALSE}
-unique_jun <- merge(x = unique_jun2, y = syntyneet, by = c("VVVV", "KK"), all.x = TRUE)
-
-unique_jun <- unique_jun %>% mutate(ika = kausi - VVVV,
-                                    otoksenPoikkeamaVaestosta = pct.x - pct.y,
-                                    otoksenPoikkeamaVaestosta2 = proportion.x- proportion.y,
-                                    sukupuoli = ifelse(Sukupuoli == "Mies", "pojat", "tyt�t"), 
-                                    kausi1 = as.character(kausi))
-
-unique_jun <- unique_jun %>% mutate(otos = paste(kausi1,  sukupuoli))
-
-#write.table(unique_jun, "data/unijun.txt")
-```

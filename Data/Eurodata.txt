@@ -1,0 +1,1 @@
+"Nimi" "Tyyppi" "Tyyppikd" "Sisalto" "Sisälto_tarkenne" "Tyyppi_lkm" "__"

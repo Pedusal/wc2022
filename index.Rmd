@@ -1,7 +1,7 @@
 ---
-title: "index"
+title: "KISAVEIKKAUS2022"
 author: "pedusal"
-date: "10 7 2022"
+date: "10 10 2022"
 output:
   html_document:
     theme: cosmo
@@ -15,7 +15,9 @@ output:
 
 ***
   
-```{r child = "euro22.Rmd"}
+```{r child = "euro22.rmd"}
 ```
   
 ***
+
+
