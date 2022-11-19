@@ -47,7 +47,7 @@ library(readxl)
 library(dplyr)
 library(knitr)
 #Setup the working directory:
-#setwd("C:/Users/Pedu/Documents/GitHub/euro22/data")
+setwd("Data")
 myFiles <- list.files(pattern = "xlsx$")
 veikkaukset <- lapply(myFiles, function(x) read_excel(x))
 
@@ -196,6 +196,7 @@ for (i in 1:length(maalintekijat[,1])) { # haetaan osallistujan maalintekijat
   for (ii in 1:length(pelaajat_maalarit)) { # haetaan pelaaja
     maalari <-pelaajat_maalarit[ii]
     
+    if (length(maaliporssi[,1])>0)  { #suorita jos maaliporssissa maalintekijoita
     for (iii in 1:length(maaliporssi[,1])) { # katsotaan onko pelaaja maalipörssissa
       maalintekija <- maaliporssi[iii,1]
       if (is.na(maalintekija)) {
@@ -203,6 +204,7 @@ for (i in 1:length(maalintekijat[,1])) { # haetaan osallistujan maalintekijat
       } else if (maalari == maalintekija) { #jos maalari porssissa lisataan pisteita
         maalintekijat$Maalit[i] <- as.numeric(maalintekijat$Maalit[i]) + 
                                       as.numeric(maaliporssi[iii,3])
+      }
       }
     }
     
@@ -235,10 +237,13 @@ for (i in 1:length(veikkaukset)) {
 
 ## haetaan valieramaat
 for (i in 1:length(veikkaukset)) {
+  if (!(is.na(as.data.frame(veikkaukset[i])[8,17]))) { # tarkistetaan ettei ole NA
   final4taulu[i,2:5] <- sort( # aakkostetaan
                           as.data.frame(veikkaukset[i])[5:8,17] #haetaan valiera
                             )
-                          }
+  }
+}
+  
 ##### isot kirjaimet kaikille kaikkiin maihin
   final4taulu <- as.data.frame(apply(final4taulu, c(1,2), simpleCap))
 }
@@ -300,7 +305,7 @@ print(bp)
 
 
 ```{r pistetaulu TAYTTo, warning=FALSE, include=FALSE}
-if (length(veikkaukset) > 0) {
+if (!(is.na(oikearivi[1,6]))) { # tarkistetaan ovatko pelit alkaneet
 
 ###### Taytetaan pistetaulu eli tehdaan tarkistus ja laitetaan pisteet #########
 
