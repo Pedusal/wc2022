@@ -455,7 +455,8 @@ as.datatable(formattable(pistetaulu,
                       dom = 't',
                       scrollX = TRUE,
                       #scrollCollapse = TRUE,
-                      fixedColumns = list(leftColumns = 2)
+                      fixedColumns = list(leftColumns = 2),
+                      pageLength = 100 #nakyvien rivien lkm
                       #order = list(list(2, 'desc'))
             )
 )
@@ -538,8 +539,10 @@ as.datatable(
                       columnDefs = list(list(
                         className = 'dt-center', targets = 3:length(pelit)-1)),
                       scrollX = TRUE,
+                      scrollY = "300px", #y scrolli ja taulun pituus
                       #scrollCollapse = TRUE,
-                      fixedColumns = list(leftColumns = 2)
+                      fixedColumns = list(leftColumns = 2),
+                      pageLength = 100 #nakyvien rivien lkm
                       )
 )
 
@@ -563,7 +566,8 @@ as.datatable(
                         ),
                       scrollX = TRUE,
                       scrollCollapse = TRUE,
-                      fixedColumns = list(leftColumns = 2)
+                      fixedColumns = list(leftColumns = 2),
+                      pageLength = 100 #nakyvien rivien lkm
                       )
 )
 
@@ -587,7 +591,8 @@ as.datatable(
                         ),
                       scrollX = TRUE,
                       #scrollCollapse = TRUE,
-                      fixedColumns = list(leftColumns = 2)
+                      fixedColumns = list(leftColumns = 2),
+                      pageLength = 100 #nakyvien rivien lkm
                       )
 )
 
