@@ -1,0 +1,31 @@
+---
+title: "add_tulos"
+author: "pedusal"
+date: "2022-11-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	message = FALSE,
+	warning = FALSE,
+	include = FALSE
+)
+
+
+getwd()
+
+tulokset <- read_excel("Data/11oikearivi.xlsx")
+
+ottelutulokset <- matrix(NA,2,length(tulokset$...3)-2)
+
+```
+
+```{r cars}
+
+```
+
+```{r pressure, echo=FALSE}
+
+```
+

@@ -404,7 +404,7 @@ pistetaulu$Välierät <- valierat_lkm
 
 #####
 #################### Pistetaulu summaus
-pistetaulu$Yhteensa <- apply(pistetaulu[1:6,1:length(pelatut_pelit_lkm$...2)+2], 1, sum)
+pistetaulu$Yhteensa <- apply(pistetaulu[1:(length(pelaajat)-1),2:length(pelatut_pelit_lkm$...2)+2], 1, sum)
 sort(pistetaulu$Yhteensa)
 
 pistetaulu$Yhteensa <- pistetaulu$Yhteensa + pistetaulu$Välierät
