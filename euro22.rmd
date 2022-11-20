@@ -34,6 +34,13 @@ rm(list=ls())  # REMOVE ALL OBJECTS
 # library(dplyr)
 
 #devtools::install_github('rensa/ggflags')
+
+## NEEDED
+# bonukset
+
+## NICE TO HAVE
+# kiinnitä tulosrivit
+# top 10 oma taulu?
 ```
 
 
