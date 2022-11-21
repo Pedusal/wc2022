@@ -96,7 +96,7 @@ ottelut_links_df <- linkit %>%
 ```
 
 ```{r funktiot}
-#session <- bow("https://www.livescores.com/football/world-cup/group-a/qatar-vs-ecuador/587251/?tz=2/")
+#session <- bow("https://www.livescores.com/football/world-cup/group-a/senegal-vs-netherlands/663891/?tz=2")
 
 fottelu_pvm <- function(session) {
   
