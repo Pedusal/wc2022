@@ -198,7 +198,38 @@ glimpse(head(ottelut_tulokset_df_ALL, 4))
 ```
 
 
+```{r maalintekija}
+#tournament-table-tabs-and-content > div.topScorers__tableWrapper > div
+url <- "https://s5.sir.sportradar.com/sportradar/en/1/season/59630"
 
+session <- bow(url)
+
+session
+
+sessio_html <- scrape(session) %>% 
+  html_nodes("#sr-container > div > div > div.container.container-main.contair-full-height-flex-auto > div > div > div > div:nth-child(8) > div.panel.margin-bottom > div > div > div > div > div > div > div > table")
+
+#detail
+#mc
+#tournament-table"
+
+ac_top_scorers <- sessio_html %>% 
+  html_table() %>% 
+  flatten_df() %>% 
+  select(-Ref.) %>% 
+
+#content-center > div > div:nth-child(3)
+
+linkki_df <- xml_find_all(sessio_html, xpath = "//a")
+
+linkit <- bind_rows(lapply(html_attrs(linkki_df), function(x) data.frame(as.list(x), stringsAsFactors=FALSE)))
+
+linkit <- linkit %>% filter(grepl('group', href))
+
+linkit <- linkit %>% filter(grepl('vs', href))
+
+linkit <- linkit %>% filter(class == "Td")
+```
 
 
 ```{r cars}
