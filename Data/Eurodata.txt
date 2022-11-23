@@ -1,1 +1,639 @@
 "Nimi" "Tyyppi" "Tyyppikd" "Sisalto" "Sisälto_tarkenne" "Tyyppi_lkm" "__"
+"1" "A. Nurmi" "TopScorer" "TS" "Cristiano Ronaldo" "Portugali" NA NA
+"2" "A. Nurmi" "Mestari" "M" "Argentiina" NA NA NA
+"3" "A. Nurmi" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"4" "A. Nurmi" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"5" "A. Nurmi" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"6" "A. Nurmi" "Välierämaa" "Välierämaa4" "Ranska" NA NA NA
+"7" "A. Nurmi" "Maalintekijä" "Maalintekijä1" "Robert Lewandowski" "Puola" NA NA
+"8" "A. Nurmi" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"9" "A. Nurmi" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"10" "A. Nurmi" "Maalintekijä" "Maalintekijä4" "Achraf Hakimi" "Marokko" NA NA
+"11" "A. Nurmi" "Maalintekijä" "Maalintekijä5" "Pedri" "Espanja" NA NA
+"12" "ALPO SIIKAVA" "TopScorer" "TS" "Lionel Messi" "Arg" NA NA
+"13" "ALPO SIIKAVA" "Mestari" "M" "Brasilia" NA NA NA
+"14" "ALPO SIIKAVA" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"15" "ALPO SIIKAVA" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"16" "ALPO SIIKAVA" "Välierämaa" "Välierämaa3" "Espanja" NA NA NA
+"17" "ALPO SIIKAVA" "Välierämaa" "Välierämaa4" "Ranska" NA NA NA
+"18" "ALPO SIIKAVA" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Argentiina" NA NA
+"19" "ALPO SIIKAVA" "Maalintekijä" "Maalintekijä2" "Alvaro Morata" "Espanja" NA NA
+"20" "ALPO SIIKAVA" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"21" "ALPO SIIKAVA" "Maalintekijä" "Maalintekijä4" "Andre Silva" "Portugali" NA NA
+"22" "ALPO SIIKAVA" "Maalintekijä" "Maalintekijä5" "Serge Gnabry" "Saksa" NA NA
+"23" "Anssi Lipsonen" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"24" "Anssi Lipsonen" "Mestari" "M" "Argentiina" NA NA NA
+"25" "Anssi Lipsonen" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"26" "Anssi Lipsonen" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"27" "Anssi Lipsonen" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"28" "Anssi Lipsonen" "Välierämaa" "Välierämaa4" "Brasilia" NA NA NA
+"29" "Anssi Lipsonen" "Maalintekijä" "Maalintekijä1" "Robert Lewandowski" "Puola" NA NA
+"30" "Anssi Lipsonen" "Maalintekijä" "Maalintekijä2" "Harry Kane" "Englanti" NA NA
+"31" "Anssi Lipsonen" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"32" "Anssi Lipsonen" "Maalintekijä" "Maalintekijä4" "Luka Modric" "Kroatia" NA NA
+"33" "Anssi Lipsonen" "Maalintekijä" "Maalintekijä5" "Mikkel Damsgaard" "Tanska" NA NA
+"34" "Arto Kiviranta" "TopScorer" "TS" "Lautaro Matinez" "Argentiina" NA NA
+"35" "Arto Kiviranta" "Mestari" "M" "Argentiina" NA NA NA
+"36" "Arto Kiviranta" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"37" "Arto Kiviranta" "Välierämaa" "Välierämaa2" "Saksa" NA NA NA
+"38" "Arto Kiviranta" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"39" "Arto Kiviranta" "Välierämaa" "Välierämaa4" "Alankomaat" NA NA NA
+"40" "Arto Kiviranta" "Maalintekijä" "Maalintekijä1" "Lautaro Matinez" "Argentiina" NA NA
+"41" "Arto Kiviranta" "Maalintekijä" "Maalintekijä2" "Frenkie De Jong" "Alankomaat" NA NA
+"42" "Arto Kiviranta" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"43" "Arto Kiviranta" "Maalintekijä" "Maalintekijä4" "Jamal Musiala" "Saksa" NA NA
+"44" "Arto Kiviranta" "Maalintekijä" "Maalintekijä5" "Raheem Sterling" "Englanti" NA NA
+"45" "Daniel Vornanen" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"46" "Daniel Vornanen" "Mestari" "M" "Brasilia" NA NA NA
+"47" "Daniel Vornanen" "Välierämaa" "Välierämaa1" "Englanti" NA NA NA
+"48" "Daniel Vornanen" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"49" "Daniel Vornanen" "Välierämaa" "Välierämaa3" "Belgia" NA NA NA
+"50" "Daniel Vornanen" "Välierämaa" "Välierämaa4" "Espanja" NA NA NA
+"51" "Daniel Vornanen" "Maalintekijä" "Maalintekijä1" "Darwin Nunez" "Uruguay" NA NA
+"52" "Daniel Vornanen" "Maalintekijä" "Maalintekijä2" "Robert Lewandowski" "Puola" NA NA
+"53" "Daniel Vornanen" "Maalintekijä" "Maalintekijä3" "Harry Kane" "Englanti" NA NA
+"54" "Daniel Vornanen" "Maalintekijä" "Maalintekijä4" "Kylian Mbappe" "Ranska" NA NA
+"55" "Daniel Vornanen" "Maalintekijä" "Maalintekijä5" "Lautaro Martinez" "Argentiina" NA NA
+"56" "Elias Turunen" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"57" "Elias Turunen" "Mestari" "M" "Brasilia" NA NA NA
+"58" "Elias Turunen" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"59" "Elias Turunen" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"60" "Elias Turunen" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"61" "Elias Turunen" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
+"62" "Elias Turunen" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"63" "Elias Turunen" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "Ranska" NA NA
+"64" "Elias Turunen" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"65" "Elias Turunen" "Maalintekijä" "Maalintekijä4" "Lionel Messi" "Argentiina" NA NA
+"66" "Elias Turunen" "Maalintekijä" "Maalintekijä5" "Cody Gakpo" "Alankomaat" NA NA
+"67" "FC EJM" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"68" "FC EJM" "Mestari" "M" "Alankomaat" NA NA NA
+"69" "FC EJM" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"70" "FC EJM" "Välierämaa" "Välierämaa2" "Alankomaat" NA NA NA
+"71" "FC EJM" "Välierämaa" "Välierämaa3" "Argentina" NA NA NA
+"72" "FC EJM" "Välierämaa" "Välierämaa4" "Brasila" NA NA NA
+"73" "FC EJM" "Maalintekijä" "Maalintekijä1" "Nathan Ake" "Alankomaat" NA NA
+"74" "FC EJM" "Maalintekijä" "Maalintekijä2" "Harry Kane" "Englanti" NA NA
+"75" "FC EJM" "Maalintekijä" "Maalintekijä3" "Leandro Trossard" "Belgia" NA NA
+"76" "FC EJM" "Maalintekijä" "Maalintekijä4" "Lautaro Martinez" "Argentina" NA NA
+"77" "FC EJM" "Maalintekijä" "Maalintekijä5" "Eric Dier" "Englanti" NA NA
+"78" "Hannimari Pihkanen" "TopScorer" "TS" "Robert Lewandowski" "Puola" NA NA
+"79" "Hannimari Pihkanen" "Mestari" "M" "Portugali" NA NA NA
+"80" "Hannimari Pihkanen" "Välierämaa" "Välierämaa1" "Englanti" NA NA NA
+"81" "Hannimari Pihkanen" "Välierämaa" "Välierämaa2" "Saksa" NA NA NA
+"82" "Hannimari Pihkanen" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"83" "Hannimari Pihkanen" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"84" "Hannimari Pihkanen" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"85" "Hannimari Pihkanen" "Maalintekijä" "Maalintekijä2" "Harry Maguire" "Englanti" NA NA
+"86" "Hannimari Pihkanen" "Maalintekijä" "Maalintekijä3" "Alvaro Morata" "Espanja" NA NA
+"87" "Hannimari Pihkanen" "Maalintekijä" "Maalintekijä4" "Neymar" "Brasilia" NA NA
+"88" "Hannimari Pihkanen" "Maalintekijä" "Maalintekijä5" "Cristiano Ronaldo" "Portugali" NA NA
+"89" "Heikki Katajisto" "TopScorer" "TS" "Lionel Messi" "Argentiina" NA NA
+"90" "Heikki Katajisto" "Mestari" "M" "Argentiina" NA NA NA
+"91" "Heikki Katajisto" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"92" "Heikki Katajisto" "Välierämaa" "Välierämaa2" "Belgia" NA NA NA
+"93" "Heikki Katajisto" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"94" "Heikki Katajisto" "Välierämaa" "Välierämaa4" "Brasilia" NA NA NA
+"95" "Heikki Katajisto" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Argentiina" NA NA
+"96" "Heikki Katajisto" "Maalintekijä" "Maalintekijä2" "Neymar" "Brasilia" NA NA
+"97" "Heikki Katajisto" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"98" "Heikki Katajisto" "Maalintekijä" "Maalintekijä4" "Romelu Lukaku" "Belgia" NA NA
+"99" "Heikki Katajisto" "Maalintekijä" "Maalintekijä5" "Harry Kane" "Englanti" NA NA
+"100" "Henri Väätäinen" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"101" "Henri Väätäinen" "Mestari" "M" "Ranska" NA NA NA
+"102" "Henri Väätäinen" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"103" "Henri Väätäinen" "Välierämaa" "Välierämaa2" "Ranska" NA NA NA
+"104" "Henri Väätäinen" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"105" "Henri Väätäinen" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
+"106" "Henri Väätäinen" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"107" "Henri Väätäinen" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"108" "Henri Väätäinen" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"109" "Henri Väätäinen" "Maalintekijä" "Maalintekijä4" "Kylian Mbappe" "Ranska" NA NA
+"110" "Henri Väätäinen" "Maalintekijä" "Maalintekijä5" "Tusan Tadic" "Serbia" NA NA
+"111" "Ilari Lipsonen" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"112" "Ilari Lipsonen" "Mestari" "M" "Argentiina" NA NA NA
+"113" "Ilari Lipsonen" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"114" "Ilari Lipsonen" "Välierämaa" "Välierämaa2" "Ranska" NA NA NA
+"115" "Ilari Lipsonen" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"116" "Ilari Lipsonen" "Välierämaa" "Välierämaa4" "Puola" NA NA NA
+"117" "Ilari Lipsonen" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Argentiina" NA NA
+"118" "Ilari Lipsonen" "Maalintekijä" "Maalintekijä2" "Antoine Griezmann" "Ranska" NA NA
+"119" "Ilari Lipsonen" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"120" "Ilari Lipsonen" "Maalintekijä" "Maalintekijä4" "Robert Lewandowski" "Puola" NA NA
+"121" "Ilari Lipsonen" "Maalintekijä" "Maalintekijä5" "Song Heung-Min" "Etelä-Korea" NA NA
+"122" "Ismo Melanen" "TopScorer" "TS" "Lionel Messi" "Argentiina" NA NA
+"123" "Ismo Melanen" "Mestari" "M" "Argentiina" NA NA NA
+"124" "Ismo Melanen" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"125" "Ismo Melanen" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"126" "Ismo Melanen" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"127" "Ismo Melanen" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
+"128" "Ismo Melanen" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"129" "Ismo Melanen" "Maalintekijä" "Maalintekijä2" "Julian Alvarez" "Argentiina" NA NA
+"130" "Ismo Melanen" "Maalintekijä" "Maalintekijä3" "Lionel Messi" "Argentiina" NA NA
+"131" "Ismo Melanen" "Maalintekijä" "Maalintekijä4" "Rodrygo" "Brasilia" NA NA
+"132" "Ismo Melanen" "Maalintekijä" "Maalintekijä5" "Cristiano Ronaldo" "Portugali" NA NA
+"133" "Jallu Kurittu" "TopScorer" "TS" "Neymar" "Brasilia" NA NA
+"134" "Jallu Kurittu" "Mestari" "M" "Argentiina" NA NA NA
+"135" "Jallu Kurittu" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"136" "Jallu Kurittu" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"137" "Jallu Kurittu" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"138" "Jallu Kurittu" "Välierämaa" "Välierämaa4" "Englanti" NA NA NA
+"139" "Jallu Kurittu" "Maalintekijä" "Maalintekijä1" "Paulo Dybala" "Argentiina" NA NA
+"140" "Jallu Kurittu" "Maalintekijä" "Maalintekijä2" "Bukayo Saka" "Englanti" NA NA
+"141" "Jallu Kurittu" "Maalintekijä" "Maalintekijä3" "Andre Silva" "Portugali" NA NA
+"142" "Jallu Kurittu" "Maalintekijä" "Maalintekijä4" "Kylian Mbappe" "Ranska" NA NA
+"143" "Jallu Kurittu" "Maalintekijä" "Maalintekijä5" "Neymar" "Brasilia" NA NA
+"144" "Jami Inkinen" "TopScorer" "TS" "Lionel Messi" "Argentiina" NA NA
+"145" "Jami Inkinen" "Mestari" "M" "Brasilia" NA NA NA
+"146" "Jami Inkinen" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"147" "Jami Inkinen" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"148" "Jami Inkinen" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"149" "Jami Inkinen" "Välierämaa" "Välierämaa4" "Espanja" NA NA NA
+"150" "Jami Inkinen" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Argentiina" NA NA
+"151" "Jami Inkinen" "Maalintekijä" "Maalintekijä2" "Neymar" "Brasilia" NA NA
+"152" "Jami Inkinen" "Maalintekijä" "Maalintekijä3" "Harry Kane" "Englanti" NA NA
+"153" "Jami Inkinen" "Maalintekijä" "Maalintekijä4" "Memphis Depay" "Alankomaat" NA NA
+"154" "Jami Inkinen" "Maalintekijä" "Maalintekijä5" "Kylian Mbappe" "Ranska" NA NA
+"155" "Jan Åkerberg" "TopScorer" "TS" "Lionel Messi" "Arg" NA NA
+"156" "Jan Åkerberg" "Mestari" "M" "Ranska" NA NA NA
+"157" "Jan Åkerberg" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"158" "Jan Åkerberg" "Välierämaa" "Välierämaa2" "Alankomaat" NA NA NA
+"159" "Jan Åkerberg" "Välierämaa" "Välierämaa3" "Belgia" NA NA NA
+"160" "Jan Åkerberg" "Välierämaa" "Välierämaa4" "Brasilia" NA NA NA
+"161" "Jan Åkerberg" "Maalintekijä" "Maalintekijä1" "Kylian Mbappe" "Ranska" NA NA
+"162" "Jan Åkerberg" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"163" "Jan Åkerberg" "Maalintekijä" "Maalintekijä3" "Memphis Depay" "Alankomaat" NA NA
+"164" "Jan Åkerberg" "Maalintekijä" "Maalintekijä4" "Romelu Lukaku" "Belgia" NA NA
+"165" "Jan Åkerberg" "Maalintekijä" "Maalintekijä5" "Harry Kane" "Englanti" NA NA
+"166" "Jani Toikkanen" "TopScorer" "TS" "Harry Kane" "ENG" NA NA
+"167" "Jani Toikkanen" "Mestari" "M" "Englanti" NA NA NA
+"168" "Jani Toikkanen" "Välierämaa" "Välierämaa1" "Englanti" NA NA NA
+"169" "Jani Toikkanen" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"170" "Jani Toikkanen" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"171" "Jani Toikkanen" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"172" "Jani Toikkanen" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"173" "Jani Toikkanen" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"174" "Jani Toikkanen" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"175" "Jani Toikkanen" "Maalintekijä" "Maalintekijä4" "Cristiano Ronaldo" "Portugali" NA NA
+"176" "Jani Toikkanen" "Maalintekijä" "Maalintekijä5" "Neymar" "Brasilia" NA NA
+"177" "Jari-Pekka Halonen" "TopScorer" "TS" "Vinicius Jr." "Ranska" NA NA
+"178" "Jari-Pekka Halonen" "Mestari" "M" "Argentina" NA NA NA
+"179" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"180" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa2" "Ranska" NA NA NA
+"181" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa3" "Saksa" NA NA NA
+"182" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"183" "Jari-Pekka Halonen" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Ranska" NA NA
+"184" "Jari-Pekka Halonen" "Maalintekijä" "Maalintekijä2" "Gabriel Jesus" "Brasilia" NA NA
+"185" "Jari-Pekka Halonen" "Maalintekijä" "Maalintekijä3" "Rafael Leao" "Portugali" NA NA
+"186" "Jari-Pekka Halonen" "Maalintekijä" "Maalintekijä4" "Callum Wilson" "Englanti" NA NA
+"187" "Jari-Pekka Halonen" "Maalintekijä" "Maalintekijä5" "Lautaro Martinez" "Argentiina" NA NA
+"188" "Jarkko Siikava" "TopScorer" "TS" "Lionel Messi" "Arg" NA NA
+"189" "Jarkko Siikava" "Mestari" "M" "Argentiina" NA NA NA
+"190" "Jarkko Siikava" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"191" "Jarkko Siikava" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"192" "Jarkko Siikava" "Välierämaa" "Välierämaa3" "Saksa" NA NA NA
+"193" "Jarkko Siikava" "Välierämaa" "Välierämaa4" "Espanja" NA NA NA
+"194" "Jarkko Siikava" "Maalintekijä" "Maalintekijä1" "Neymar" "Brasilia" NA NA
+"195" "Jarkko Siikava" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"196" "Jarkko Siikava" "Maalintekijä" "Maalintekijä3" "Cristian Eriksen" "Tanska" NA NA
+"197" "Jarkko Siikava" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
+"198" "Jarkko Siikava" "Maalintekijä" "Maalintekijä5" "Kylian Mpabbe" "Ranska" NA NA
+"199" "Jarmo Hietarinta" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"200" "Jarmo Hietarinta" "Mestari" "M" "Brasilia" NA NA NA
+"201" "Jarmo Hietarinta" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"202" "Jarmo Hietarinta" "Välierämaa" "Välierämaa2" "Englanti" NA NA NA
+"203" "Jarmo Hietarinta" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"204" "Jarmo Hietarinta" "Välierämaa" "Välierämaa4" "Saksa" NA NA NA
+"205" "Jarmo Hietarinta" "Maalintekijä" "Maalintekijä1" "Kylian Mbappe" "Ranska" NA NA
+"206" "Jarmo Hietarinta" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"207" "Jarmo Hietarinta" "Maalintekijä" "Maalintekijä3" "Harry Kane" "Englanti" NA NA
+"208" "Jarmo Hietarinta" "Maalintekijä" "Maalintekijä4" "Vinicius Jr" "Brasilia" NA NA
+"209" "Jarmo Hietarinta" "Maalintekijä" "Maalintekijä5" "Michy Batshuayi" "Belgia" NA NA
+"210" "Jarno Warsa-Ritaranta" "TopScorer" "TS" "Lionel Messi" "Arg" NA NA
+"211" "Jarno Warsa-Ritaranta" "Mestari" "M" "Argentiina" NA NA NA
+"212" "Jarno Warsa-Ritaranta" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"213" "Jarno Warsa-Ritaranta" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"214" "Jarno Warsa-Ritaranta" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"215" "Jarno Warsa-Ritaranta" "Välierämaa" "Välierämaa4" "Saksa" NA NA NA
+"216" "Jarno Warsa-Ritaranta" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Argentiina" NA NA
+"217" "Jarno Warsa-Ritaranta" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "Ranska" NA NA
+"218" "Jarno Warsa-Ritaranta" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"219" "Jarno Warsa-Ritaranta" "Maalintekijä" "Maalintekijä4" "Thomas Muller" "Saksa" NA NA
+"220" "Jarno Warsa-Ritaranta" "Maalintekijä" "Maalintekijä5" "Lautaro Martinez" "Argentiina" NA NA
+"221" "Jesse Tanner" "TopScorer" "TS" "Neymar" "Brasilia" NA NA
+"222" "Jesse Tanner" "Mestari" "M" "Argentiina" NA NA NA
+"223" "Jesse Tanner" "Välierämaa" "Välierämaa1" "Espanja" NA NA NA
+"224" "Jesse Tanner" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"225" "Jesse Tanner" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"226" "Jesse Tanner" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"227" "Jesse Tanner" "Maalintekijä" "Maalintekijä1" "Neymar" "Brasilia" NA NA
+"228" "Jesse Tanner" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"229" "Jesse Tanner" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"230" "Jesse Tanner" "Maalintekijä" "Maalintekijä4" "Raheem Sterling" "Englanti" NA NA
+"231" "Jesse Tanner" "Maalintekijä" "Maalintekijä5" "Alvaro Morata" "Espanja" NA NA
+"232" "Joni Tamminen" "TopScorer" "TS" "Luis Suarez" "Uruguay" NA NA
+"233" "Joni Tamminen" "Mestari" "M" "Uruguay" NA NA NA
+"234" "Joni Tamminen" "Välierämaa" "Välierämaa1" "Uruguay" NA NA NA
+"235" "Joni Tamminen" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"236" "Joni Tamminen" "Välierämaa" "Välierämaa3" "Serbia" NA NA NA
+"237" "Joni Tamminen" "Välierämaa" "Välierämaa4" "Tanska" NA NA NA
+"238" "Joni Tamminen" "Maalintekijä" "Maalintekijä1" "Luis Suarez" "Uruguay" NA NA
+"239" "Joni Tamminen" "Maalintekijä" "Maalintekijä2" "Virgil Van Dijk" "Alankomaat" NA NA
+"240" "Joni Tamminen" "Maalintekijä" "Maalintekijä3" "Krepin Diatta" "Senegal" NA NA
+"241" "Joni Tamminen" "Maalintekijä" "Maalintekijä4" "Angel Di Maria" "Argentiina" NA NA
+"242" "Joni Tamminen" "Maalintekijä" "Maalintekijä5" "Andreas Skov Olsen" "Tanska" NA NA
+"243" "Jukka Salmi" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"244" "Jukka Salmi" "Mestari" "M" "Brasilia" NA NA NA
+"245" "Jukka Salmi" "Välierämaa" "Välierämaa1" "Englanti" NA NA NA
+"246" "Jukka Salmi" "Välierämaa" "Välierämaa2" "Belgia" NA NA NA
+"247" "Jukka Salmi" "Välierämaa" "Välierämaa3" "Argentiina" NA NA NA
+"248" "Jukka Salmi" "Välierämaa" "Välierämaa4" "Brasilia" NA NA NA
+"249" "Jukka Salmi" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"250" "Jukka Salmi" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "Ranska" NA NA
+"251" "Jukka Salmi" "Maalintekijä" "Maalintekijä3" "Alexis Vega" "Meksiko" NA NA
+"252" "Jukka Salmi" "Maalintekijä" "Maalintekijä4" "Lautaro Martinez" "Argentiina" NA NA
+"253" "Jukka Salmi" "Maalintekijä" "Maalintekijä5" "Memphis Depay" "Alankomaat" NA NA
+"254" "Jukka Inkinen" "TopScorer" "TS" "Neymar" "Brasilia" NA NA
+"255" "Jukka Inkinen" "Mestari" "M" "Brasilia" NA NA NA
+"256" "Jukka Inkinen" "Välierämaa" "Välierämaa1" "Alankomaat" NA NA NA
+"257" "Jukka Inkinen" "Välierämaa" "Välierämaa2" "Ranska" NA NA NA
+"258" "Jukka Inkinen" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"259" "Jukka Inkinen" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
+"260" "Jukka Inkinen" "Maalintekijä" "Maalintekijä1" "Neymar" "Brasilia" NA NA
+"261" "Jukka Inkinen" "Maalintekijä" "Maalintekijä2" "Memphis Depay" "Alankomaat" NA NA
+"262" "Jukka Inkinen" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"263" "Jukka Inkinen" "Maalintekijä" "Maalintekijä4" "Lautaro Martinez" "Argentiina" NA NA
+"264" "Jukka Inkinen" "Maalintekijä" "Maalintekijä5" "Darwin Nunez" "Uruguay" NA NA
+"265" "Juuso Tamminen" "TopScorer" "TS" "Lionel Messi" "Argentiina" NA NA
+"266" "Juuso Tamminen" "Mestari" "M" "Argentiina" NA NA NA
+"267" "Juuso Tamminen" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"268" "Juuso Tamminen" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"269" "Juuso Tamminen" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"270" "Juuso Tamminen" "Välierämaa" "Välierämaa4" "Espanja" NA NA NA
+"271" "Juuso Tamminen" "Maalintekijä" "Maalintekijä1" "Federico Valverde" "Uruguay" NA NA
+"272" "Juuso Tamminen" "Maalintekijä" "Maalintekijä2" "Cody Gakpo" "Alankomaat" NA NA
+"273" "Juuso Tamminen" "Maalintekijä" "Maalintekijä3" "Raphinha" "Brasilia" NA NA
+"274" "Juuso Tamminen" "Maalintekijä" "Maalintekijä4" "Lionel Messi" "Argentiina" NA NA
+"275" "Juuso Tamminen" "Maalintekijä" "Maalintekijä5" "Serge Gnabry" "Saksa" NA NA
+"276" "Kari Lehti" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"277" "Kari Lehti" "Mestari" "M" "Argentiina" NA NA NA
+"278" "Kari Lehti" "Välierämaa" "Välierämaa1" "Englanti" NA NA NA
+"279" "Kari Lehti" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"280" "Kari Lehti" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"281" "Kari Lehti" "Välierämaa" "Välierämaa4" "Senegal" NA NA NA
+"282" "Kari Lehti" "Maalintekijä" "Maalintekijä1" "Cristiano Ronaldo" "Portugali" NA NA
+"283" "Kari Lehti" "Maalintekijä" "Maalintekijä2" "Neymar" "Brasilia" NA NA
+"284" "Kari Lehti" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"285" "Kari Lehti" "Maalintekijä" "Maalintekijä4" "Lionel Messi" "Argentiina" NA NA
+"286" "Kari Lehti" "Maalintekijä" "Maalintekijä5" "Aleksandar Mitrovic" "Serbia" NA NA
+"287" "Kari Vornanen" "TopScorer" "TS" "Kylian Mbappé" "Ranska" NA NA
+"288" "Kari Vornanen" "Mestari" "M" "Englanti" NA NA NA
+"289" "Kari Vornanen" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"290" "Kari Vornanen" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"291" "Kari Vornanen" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"292" "Kari Vornanen" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
+"293" "Kari Vornanen" "Maalintekijä" "Maalintekijä1" "Memphis Depay" "Alankomaat" NA NA
+"294" "Kari Vornanen" "Maalintekijä" "Maalintekijä2" "Phil Foden" "Englanti" NA NA
+"295" "Kari Vornanen" "Maalintekijä" "Maalintekijä3" "Robert Lewandowski" "Puola" NA NA
+"296" "Kari Vornanen" "Maalintekijä" "Maalintekijä4" "Cristian Romero" "Argentiina" NA NA
+"297" "Kari Vornanen" "Maalintekijä" "Maalintekijä5" "Kylian Mbappe" "Ranska" NA NA
+"298" "Kasper Määttä" "TopScorer" "TS" "Neymar" "Brasilia" NA NA
+"299" "Kasper Määttä" "Mestari" "M" "Argentiina" NA NA NA
+"300" "Kasper Määttä" "Välierämaa" "Välierämaa1" "Argentina" NA NA NA
+"301" "Kasper Määttä" "Välierämaa" "Välierämaa2" "Portugali" NA NA NA
+"302" "Kasper Määttä" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"303" "Kasper Määttä" "Välierämaa" "Välierämaa4" "Alankomaat" NA NA NA
+"304" "Kasper Määttä" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Argentiina" NA NA
+"305" "Kasper Määttä" "Maalintekijä" "Maalintekijä2" "Harry Kane" "Englanti" NA NA
+"306" "Kasper Määttä" "Maalintekijä" "Maalintekijä3" "Cristiano Ronaldo" "Portugali" NA NA
+"307" "Kasper Määttä" "Maalintekijä" "Maalintekijä4" "Neymar" "Brasilia" NA NA
+"308" "Kasper Määttä" "Maalintekijä" "Maalintekijä5" "Kylian Mbappe" "Ranska" NA NA
+"309" "Kim Raimi" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"310" "Kim Raimi" "Mestari" "M" "Brasilia" NA NA NA
+"311" "Kim Raimi" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"312" "Kim Raimi" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"313" "Kim Raimi" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"314" "Kim Raimi" "Välierämaa" "Välierämaa4" "Portugali" NA NA NA
+"315" "Kim Raimi" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Argentiina" NA NA
+"316" "Kim Raimi" "Maalintekijä" "Maalintekijä2" "Cody Gakpo" "Alankomaat" NA NA
+"317" "Kim Raimi" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"318" "Kim Raimi" "Maalintekijä" "Maalintekijä4" "Kylian Mbappe" "Ranska" NA NA
+"319" "Kim Raimi" "Maalintekijä" "Maalintekijä5" "Harry Kane" "Englanti" NA NA
+"320" "Kimmo Turunen" "TopScorer" "TS" "Memphis Depay" "Alankomaat" NA NA
+"321" "Kimmo Turunen" "Mestari" "M" "Brasilia" NA NA NA
+"322" "Kimmo Turunen" "Välierämaa" "Välierämaa1" "Alankomaat" NA NA NA
+"323" "Kimmo Turunen" "Välierämaa" "Välierämaa2" "Belgia" NA NA NA
+"324" "Kimmo Turunen" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"325" "Kimmo Turunen" "Välierämaa" "Välierämaa4" "Saksa" NA NA NA
+"326" "Kimmo Turunen" "Maalintekijä" "Maalintekijä1" "Memphis Depay" "Alankomaat" NA NA
+"327" "Kimmo Turunen" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "Ranska" NA NA
+"328" "Kimmo Turunen" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"329" "Kimmo Turunen" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
+"330" "Kimmo Turunen" "Maalintekijä" "Maalintekijä5" "Angel Di Maria" "Argentiina" NA NA
+"331" "Konsta Kinnunen" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"332" "Konsta Kinnunen" "Mestari" "M" "Argentiina" NA NA NA
+"333" "Konsta Kinnunen" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"334" "Konsta Kinnunen" "Välierämaa" "Välierämaa2" "Englanti" NA NA NA
+"335" "Konsta Kinnunen" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"336" "Konsta Kinnunen" "Välierämaa" "Välierämaa4" "Saksa" NA NA NA
+"337" "Konsta Kinnunen" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Argentiina" NA NA
+"338" "Konsta Kinnunen" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "Ranska" NA NA
+"339" "Konsta Kinnunen" "Maalintekijä" "Maalintekijä3" "Gabriel Jesus" "Brasilia" NA NA
+"340" "Konsta Kinnunen" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
+"341" "Konsta Kinnunen" "Maalintekijä" "Maalintekijä5" "Darwin Nunez" "Uruguay" NA NA
+"342" "Lasse Pasila" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"343" "Lasse Pasila" "Mestari" "M" "Brasilia" NA NA NA
+"344" "Lasse Pasila" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"345" "Lasse Pasila" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"346" "Lasse Pasila" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"347" "Lasse Pasila" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
+"348" "Lasse Pasila" "Maalintekijä" "Maalintekijä1" "Kylian Mbappe" "Ranska" NA NA
+"349" "Lasse Pasila" "Maalintekijä" "Maalintekijä2" "Harry Kane" "Englanti" NA NA
+"350" "Lasse Pasila" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"351" "Lasse Pasila" "Maalintekijä" "Maalintekijä4" "Romelu Lukaku" "Belgia" NA NA
+"352" "Lasse Pasila" "Maalintekijä" "Maalintekijä5" "Lauturo Martinez" "Argentiina" NA NA
+"353" "Luukas Turunen" "TopScorer" "TS" "Lionel Messi" "Argentina" NA NA
+"354" "Luukas Turunen" "Mestari" "M" "Brasilia" NA NA NA
+"355" "Luukas Turunen" "Välierämaa" "Välierämaa1" "Argentina" NA NA NA
+"356" "Luukas Turunen" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"357" "Luukas Turunen" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"358" "Luukas Turunen" "Välierämaa" "Välierämaa4" "Portugali" NA NA NA
+"359" "Luukas Turunen" "Maalintekijä" "Maalintekijä1" "Romelu Lukaku" "Belgia" NA NA
+"360" "Luukas Turunen" "Maalintekijä" "Maalintekijä2" "Neymar" "Brasilia" NA NA
+"361" "Luukas Turunen" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"362" "Luukas Turunen" "Maalintekijä" "Maalintekijä4" "Lionel Messi" "Argentina" NA NA
+"363" "Luukas Turunen" "Maalintekijä" "Maalintekijä5" "Lautaro Martinez" "Argentina" NA NA
+"364" "Maria Aalto" "TopScorer" "TS" "Cristiano Ronaldo" "Portugali" NA NA
+"365" "Maria Aalto" "Mestari" "M" "Argentiina" NA NA NA
+"366" "Maria Aalto" "Välierämaa" "Välierämaa1" "Alankomaat" NA NA NA
+"367" "Maria Aalto" "Välierämaa" "Välierämaa2" "Espanja" NA NA NA
+"368" "Maria Aalto" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"369" "Maria Aalto" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
+"370" "Maria Aalto" "Maalintekijä" "Maalintekijä1" "Kylian Mbappe" "Ranska" NA NA
+"371" "Maria Aalto" "Maalintekijä" "Maalintekijä2" "Neymar" "Brasilia" NA NA
+"372" "Maria Aalto" "Maalintekijä" "Maalintekijä3" "Robert Lewandowski" "Puola" NA NA
+"373" "Maria Aalto" "Maalintekijä" "Maalintekijä4" "Lionel Messi" "Argentiina" NA NA
+"374" "Maria Aalto" "Maalintekijä" "Maalintekijä5" "Kevin De Bruyne" "Belgia" NA NA
+"375" "Marko Seine" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"376" "Marko Seine" "Mestari" "M" "Brasilia" NA NA NA
+"377" "Marko Seine" "Välierämaa" "Välierämaa1" "Saksa" NA NA NA
+"378" "Marko Seine" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"379" "Marko Seine" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"380" "Marko Seine" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"381" "Marko Seine" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"382" "Marko Seine" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"383" "Marko Seine" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"384" "Marko Seine" "Maalintekijä" "Maalintekijä4" "Memphis Depay" "Alankomaat" NA NA
+"385" "Marko Seine" "Maalintekijä" "Maalintekijä5" "Romelu Lukaku" "Belgia" NA NA
+"386" "Miikka Merinen" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"387" "Miikka Merinen" "Mestari" "M" "Brasilia" NA NA NA
+"388" "Miikka Merinen" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"389" "Miikka Merinen" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"390" "Miikka Merinen" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"391" "Miikka Merinen" "Välierämaa" "Välierämaa4" "Portugali" NA NA NA
+"392" "Miikka Merinen" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"393" "Miikka Merinen" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "Ranska" NA NA
+"394" "Miikka Merinen" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"395" "Miikka Merinen" "Maalintekijä" "Maalintekijä4" "Lautaro Martinez" "Argentiina" NA NA
+"396" "Miikka Merinen" "Maalintekijä" "Maalintekijä5" "Darwin Nunez" "Uruguay" NA NA
+"397" "Mika Hyrske" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"398" "Mika Hyrske" "Mestari" "M" "Brasilia" NA NA NA
+"399" "Mika Hyrske" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"400" "Mika Hyrske" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"401" "Mika Hyrske" "Välierämaa" "Välierämaa3" "Saksa" NA NA NA
+"402" "Mika Hyrske" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"403" "Mika Hyrske" "Maalintekijä" "Maalintekijä1" "Kylian Mbappe" "Ranska" NA NA
+"404" "Mika Hyrske" "Maalintekijä" "Maalintekijä2" "Robert Lewandowski" "Puola" NA NA
+"405" "Mika Hyrske" "Maalintekijä" "Maalintekijä3" "Harry Kane" "Englanti" NA NA
+"406" "Mika Hyrske" "Maalintekijä" "Maalintekijä4" "Lautaro Martinez" "Argentiina" NA NA
+"407" "Mika Hyrske" "Maalintekijä" "Maalintekijä5" "Gabriel Jesus" "Brasilia" NA NA
+"408" "Miko Hietarinta" "TopScorer" "TS" "Lionel Messi" "ARG" NA NA
+"409" "Miko Hietarinta" "Mestari" "M" "Argentina" NA NA NA
+"410" "Miko Hietarinta" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"411" "Miko Hietarinta" "Välierämaa" "Välierämaa2" "Argentina" NA NA NA
+"412" "Miko Hietarinta" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"413" "Miko Hietarinta" "Välierämaa" "Välierämaa4" "Ranska" NA NA NA
+"414" "Miko Hietarinta" "Maalintekijä" "Maalintekijä1" "Darwin Nunez" "Uruguay" NA NA
+"415" "Miko Hietarinta" "Maalintekijä" "Maalintekijä2" "Harry Kane" "Englanti" NA NA
+"416" "Miko Hietarinta" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"417" "Miko Hietarinta" "Maalintekijä" "Maalintekijä4" "Lionel Messi" "Argentina" NA NA
+"418" "Miko Hietarinta" "Maalintekijä" "Maalintekijä5" "Kylian Mbappe" "Ranska" NA NA
+"419" "Niko Vehviläinen" "TopScorer" "TS" "Neymar" "Brasilia" NA NA
+"420" "Niko Vehviläinen" "Mestari" "M" "Brasilia" NA NA NA
+"421" "Niko Vehviläinen" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"422" "Niko Vehviläinen" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"423" "Niko Vehviläinen" "Välierämaa" "Välierämaa3" "Argentiina" NA NA NA
+"424" "Niko Vehviläinen" "Välierämaa" "Välierämaa4" "Espanja" NA NA NA
+"425" "Niko Vehviläinen" "Maalintekijä" "Maalintekijä1" "Neymar" "Brasilia" NA NA
+"426" "Niko Vehviläinen" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"427" "Niko Vehviläinen" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"428" "Niko Vehviläinen" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
+"429" "Niko Vehviläinen" "Maalintekijä" "Maalintekijä5" "Cody Gakpo" "Alankomaat" NA NA
+"430" "Otto Viherto" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"431" "Otto Viherto" "Mestari" "M" "Brasilia" NA NA NA
+"432" "Otto Viherto" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"433" "Otto Viherto" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"434" "Otto Viherto" "Välierämaa" "Välierämaa3" "Saksa" NA NA NA
+"435" "Otto Viherto" "Välierämaa" "Välierämaa4" "Ranska" NA NA NA
+"436" "Otto Viherto" "Maalintekijä" "Maalintekijä1" "Kylian Mbappe" "Ranska" NA NA
+"437" "Otto Viherto" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
+"438" "Otto Viherto" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
+"439" "Otto Viherto" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
+"440" "Otto Viherto" "Maalintekijä" "Maalintekijä5" "Romelu Lukaku" "Belgia" NA NA
+"441" "Pekka Tukiainen" "TopScorer" "TS" "Lautaro Martinez" "Arg" NA NA
+"442" "Pekka Tukiainen" "Mestari" "M" "Brasilia" NA NA NA
+"443" "Pekka Tukiainen" "Välierämaa" "Välierämaa1" "Uruguay" NA NA NA
+"444" "Pekka Tukiainen" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"445" "Pekka Tukiainen" "Välierämaa" "Välierämaa3" "Argentiina" NA NA NA
+"446" "Pekka Tukiainen" "Välierämaa" "Välierämaa4" "Tanska" NA NA NA
+"447" "Pekka Tukiainen" "Maalintekijä" "Maalintekijä1" "Federico Valverde" "Uruguay" NA NA
+"448" "Pekka Tukiainen" "Maalintekijä" "Maalintekijä2" "Dusan Vlahovic" "Serbia" NA NA
+"449" "Pekka Tukiainen" "Maalintekijä" "Maalintekijä3" "Serge Gnabry" "Saksa" NA NA
+"450" "Pekka Tukiainen" "Maalintekijä" "Maalintekijä4" "Leandro Trossard" "Belgia" NA NA
+"451" "Pekka Tukiainen" "Maalintekijä" "Maalintekijä5" "Kasper Dolberg" "Tanska" NA NA
+"452" "Pentti Nieminen" "TopScorer" "TS" "Neymar" "Brasilia" NA NA
+"453" "Pentti Nieminen" "Mestari" "M" "Brasilia" NA NA NA
+"454" "Pentti Nieminen" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"455" "Pentti Nieminen" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"456" "Pentti Nieminen" "Välierämaa" "Välierämaa3" "Uruguay" NA NA NA
+"457" "Pentti Nieminen" "Välierämaa" "Välierämaa4" "Ranska" NA NA NA
+"458" "Pentti Nieminen" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"459" "Pentti Nieminen" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "Ranska" NA NA
+"460" "Pentti Nieminen" "Maalintekijä" "Maalintekijä3" "Darwin Nunez" "Uruguay" NA NA
+"461" "Pentti Nieminen" "Maalintekijä" "Maalintekijä4" "Neymar" "Brasilia" NA NA
+"462" "Pentti Nieminen" "Maalintekijä" "Maalintekijä5" "Lionel Messi" "Argentiina" NA NA
+"463" "Petteri Salo" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"464" "Petteri Salo" "Mestari" "M" "Brasilia" NA NA NA
+"465" "Petteri Salo" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"466" "Petteri Salo" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"467" "Petteri Salo" "Välierämaa" "Välierämaa3" "Espanja" NA NA NA
+"468" "Petteri Salo" "Välierämaa" "Välierämaa4" "Ranska" NA NA NA
+"469" "Petteri Salo" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"470" "Petteri Salo" "Maalintekijä" "Maalintekijä2" "Cristiano Ronaldo" "Portugali" NA NA
+"471" "Petteri Salo" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"472" "Petteri Salo" "Maalintekijä" "Maalintekijä4" "Lionel Messi" "Argentiina" NA NA
+"473" "Petteri Salo" "Maalintekijä" "Maalintekijä5" "Neymar" "Brasilia" NA NA
+"474" "PIETARI KOJO" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"475" "PIETARI KOJO" "Mestari" "M" "Brasilia" NA NA NA
+"476" "PIETARI KOJO" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"477" "PIETARI KOJO" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"478" "PIETARI KOJO" "Välierämaa" "Välierämaa3" "Belgia" NA NA NA
+"479" "PIETARI KOJO" "Välierämaa" "Välierämaa4" "Englanti" NA NA NA
+"480" "PIETARI KOJO" "Maalintekijä" "Maalintekijä1" "Robert Lewandowski" "Puola" NA NA
+"481" "PIETARI KOJO" "Maalintekijä" "Maalintekijä2" "Harry Kane" "Englanti" NA NA
+"482" "PIETARI KOJO" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"483" "PIETARI KOJO" "Maalintekijä" "Maalintekijä4" "Memphis Depay" "Alankomaat" NA NA
+"484" "PIETARI KOJO" "Maalintekijä" "Maalintekijä5" "Kevin DeBruyne" "Belgia" NA NA
+"485" "Riku Sutka" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"486" "Riku Sutka" "Mestari" "M" "Brasilia" NA NA NA
+"487" "Riku Sutka" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"488" "Riku Sutka" "Välierämaa" "Välierämaa2" "Argentina" NA NA NA
+"489" "Riku Sutka" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"490" "Riku Sutka" "Välierämaa" "Välierämaa4" "Englanti" NA NA NA
+"491" "Riku Sutka" "Maalintekijä" "Maalintekijä1" "Neymar" "Brasilia" NA NA
+"492" "Riku Sutka" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentina" NA NA
+"493" "Riku Sutka" "Maalintekijä" "Maalintekijä3" "Ivan Perisic" "Kroatia" NA NA
+"494" "Riku Sutka" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
+"495" "Riku Sutka" "Maalintekijä" "Maalintekijä5" "Andreas Skov Olsen" "Tanska" NA NA
+"496" "Ritva Malmström" "TopScorer" "TS" "Neymar" "Brasilia" NA NA
+"497" "Ritva Malmström" "Mestari" "M" "Argentiina" NA NA NA
+"498" "Ritva Malmström" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"499" "Ritva Malmström" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"500" "Ritva Malmström" "Välierämaa" "Välierämaa3" "Alankomaat" NA NA NA
+"501" "Ritva Malmström" "Välierämaa" "Välierämaa4" "Espanja" NA NA NA
+"502" "Ritva Malmström" "Maalintekijä" "Maalintekijä1" "Robert Lewandowski" "Puola" NA NA
+"503" "Ritva Malmström" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "Ranska" NA NA
+"504" "Ritva Malmström" "Maalintekijä" "Maalintekijä3" "Lionel Messi" "Argentiina" NA NA
+"505" "Ritva Malmström" "Maalintekijä" "Maalintekijä4" "Kevin De Bruyne" "Belgia" NA NA
+"506" "Ritva Malmström" "Maalintekijä" "Maalintekijä5" "Memphis Depay" "Alankomaat" NA NA
+"507" "Roba" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"508" "Roba" "Mestari" "M" "Brasilia" NA NA NA
+"509" "Roba" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"510" "Roba" "Välierämaa" "Välierämaa2" "Ranska" NA NA NA
+"511" "Roba" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"512" "Roba" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"513" "Roba" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"514" "Roba" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "Ranska" NA NA
+"515" "Roba" "Maalintekijä" "Maalintekijä3" "Lautaro Martinez" "Argentiina" NA NA
+"516" "Roba" "Maalintekijä" "Maalintekijä4" "Cristiano Ronaldo" "Portugali" NA NA
+"517" "Roba" "Maalintekijä" "Maalintekijä5" "Neymar" "Brasilia" NA NA
+"518" "Samuli K" "TopScorer" "TS" "Lautaro Martinez" "Arg" NA NA
+"519" "Samuli K" "Mestari" "M" "Argentiina" NA NA NA
+"520" "Samuli K" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"521" "Samuli K" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"522" "Samuli K" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"523" "Samuli K" "Välierämaa" "Välierämaa4" "Tanska" NA NA NA
+"524" "Samuli K" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"525" "Samuli K" "Maalintekijä" "Maalintekijä2" "Vinicius Jr" "Brasilia" NA NA
+"526" "Samuli K" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"527" "Samuli K" "Maalintekijä" "Maalintekijä4" "Aleksandar Mitrovic" "Serbia" NA NA
+"528" "Samuli K" "Maalintekijä" "Maalintekijä5" "Lautaro Martinez" "Argentiina" NA NA
+"529" "Tapio Nikkilä" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"530" "Tapio Nikkilä" "Mestari" "M" "Brasilia" NA NA NA
+"531" "Tapio Nikkilä" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"532" "Tapio Nikkilä" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
+"533" "Tapio Nikkilä" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"534" "Tapio Nikkilä" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
+"535" "Tapio Nikkilä" "Maalintekijä" "Maalintekijä1" "Robert Lewandowski" "Puola" NA NA
+"536" "Tapio Nikkilä" "Maalintekijä" "Maalintekijä2" "Romelu Lukaku" "Senegal" NA NA
+"537" "Tapio Nikkilä" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"538" "Tapio Nikkilä" "Maalintekijä" "Maalintekijä4" "Darwin Nunez" "Uruguay" NA NA
+"539" "Tapio Nikkilä" "Maalintekijä" "Maalintekijä5" "Harry Kane" "Englanti" NA NA
+"540" "Tatu Paasimaa" "TopScorer" "TS" "Romelo Lukaku" "Belgia" NA NA
+"541" "Tatu Paasimaa" "Mestari" "M" "Belgia" NA NA NA
+"542" "Tatu Paasimaa" "Välierämaa" "Välierämaa1" "Tanska" NA NA NA
+"543" "Tatu Paasimaa" "Välierämaa" "Välierämaa2" "Argentina" NA NA NA
+"544" "Tatu Paasimaa" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"545" "Tatu Paasimaa" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
+"546" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä1" "Neymar" "Brasilia" NA NA
+"547" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä2" "Romelo Lukaku" "Belgia" NA NA
+"548" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä3" "Aleksandar Mitrovic" "Serbia" NA NA
+"549" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
+"550" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä5" "Lionel Messi" "Argentina" NA NA
+"551" "Teemu Jaronen" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"552" "Teemu Jaronen" "Mestari" "M" "Englanti" NA NA NA
+"553" "Teemu Jaronen" "Välierämaa" "Välierämaa1" "Englanti" NA NA NA
+"554" "Teemu Jaronen" "Välierämaa" "Välierämaa2" "Saksa" NA NA NA
+"555" "Teemu Jaronen" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"556" "Teemu Jaronen" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"557" "Teemu Jaronen" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"558" "Teemu Jaronen" "Maalintekijä" "Maalintekijä2" "Phil Foden" "Englanti" NA NA
+"559" "Teemu Jaronen" "Maalintekijä" "Maalintekijä3" "Bruno Fernandes" "Portugali" NA NA
+"560" "Teemu Jaronen" "Maalintekijä" "Maalintekijä4" "Romelu Lukaku" "Belgia" NA NA
+"561" "Teemu Jaronen" "Maalintekijä" "Maalintekijä5" "Robert Lewandowski" "Puola" NA NA
+"562" "Toni Tuominen" "TopScorer" "TS" "Lautaro Martinez" "Argentiina" NA NA
+"563" "Toni Tuominen" "Mestari" "M" "Ranska" NA NA NA
+"564" "Toni Tuominen" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"565" "Toni Tuominen" "Välierämaa" "Välierämaa2" "Ranska" NA NA NA
+"566" "Toni Tuominen" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
+"567" "Toni Tuominen" "Välierämaa" "Välierämaa4" "Portugali" NA NA NA
+"568" "Toni Tuominen" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"569" "Toni Tuominen" "Maalintekijä" "Maalintekijä2" "Lautaro Martinez" "Argentiina" NA NA
+"570" "Toni Tuominen" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"571" "Toni Tuominen" "Maalintekijä" "Maalintekijä4" "Vinicius Jr" "Brasilia" NA NA
+"572" "Toni Tuominen" "Maalintekijä" "Maalintekijä5" "Rafael Leao" "Portugali" NA NA
+"573" "Topi Tanner" "TopScorer" "TS" "Cristiano Ronaldo" "Portugali" NA NA
+"574" "Topi Tanner" "Mestari" "M" "Ranska" NA NA NA
+"575" "Topi Tanner" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"576" "Topi Tanner" "Välierämaa" "Välierämaa2" "Portugali" NA NA NA
+"577" "Topi Tanner" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
+"578" "Topi Tanner" "Välierämaa" "Välierämaa4" "Brasilia" NA NA NA
+"579" "Topi Tanner" "Maalintekijä" "Maalintekijä1" "Lionel Messi" "Argentiina" NA NA
+"580" "Topi Tanner" "Maalintekijä" "Maalintekijä2" "Cristiano Ronaldo" "Portugali" NA NA
+"581" "Topi Tanner" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
+"582" "Topi Tanner" "Maalintekijä" "Maalintekijä4" "Neymar" "Brasilia" NA NA
+"583" "Topi Tanner" "Maalintekijä" "Maalintekijä5" "Harry Kane" "Englanti" NA NA
+"584" "Tuomo Fasta" "TopScorer" "TS" "Kylian Mbappe" "FRA" NA NA
+"585" "Tuomo Fasta" "Mestari" "M" "Ranska" NA NA NA
+"586" "Tuomo Fasta" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"587" "Tuomo Fasta" "Välierämaa" "Välierämaa2" "Brasiloa" NA NA NA
+"588" "Tuomo Fasta" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"589" "Tuomo Fasta" "Välierämaa" "Välierämaa4" "Espanja" NA NA NA
+"590" "Tuomo Fasta" "Maalintekijä" "Maalintekijä1" "Harry Kane" "ENG" NA NA
+"591" "Tuomo Fasta" "Maalintekijä" "Maalintekijä2" "Kylian Mbappe" "FRA" NA NA
+"592" "Tuomo Fasta" "Maalintekijä" "Maalintekijä3" "Lautaro Martinez" "ARG" NA NA
+"593" "Tuomo Fasta" "Maalintekijä" "Maalintekijä4" "Gabriel Jesus" "BRA" NA NA
+"594" "Tuomo Fasta" "Maalintekijä" "Maalintekijä5" "Alvaro Morata" "ESP" NA NA
+"595" "V. Nurmi Jr" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"596" "V. Nurmi Jr" "Mestari" "M" "Argentiina" NA NA NA
+"597" "V. Nurmi Jr" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"598" "V. Nurmi Jr" "Välierämaa" "Välierämaa2" "Englanti" NA NA NA
+"599" "V. Nurmi Jr" "Välierämaa" "Välierämaa3" "Espanja" NA NA NA
+"600" "V. Nurmi Jr" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"601" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä1" "Luka Modric" "Kroatia" NA NA
+"602" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä2" "Darwin Nunez" "Uruguay" NA NA
+"603" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä3" "Vinicius Jr" "Brasilia" NA NA
+"604" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä4" "Diogo Jota" "Portugali" NA NA
+"605" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä5" "Raheem Sterling" "Englanti" NA NA
+"606" "Vesa Kosonen" "TopScorer" "TS" "Gabriel Jesus" "BRA" NA NA
+"607" "Vesa Kosonen" "Mestari" "M" "Brasilia" NA NA NA
+"608" "Vesa Kosonen" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
+"609" "Vesa Kosonen" "Välierämaa" "Välierämaa2" "Belgia" NA NA NA
+"610" "Vesa Kosonen" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"611" "Vesa Kosonen" "Välierämaa" "Välierämaa4" "Argentiina" NA NA NA
+"612" "Vesa Kosonen" "Maalintekijä" "Maalintekijä1" "Gabriel Jesus" "Brasilia" NA NA
+"613" "Vesa Kosonen" "Maalintekijä" "Maalintekijä2" "Romelu Lukaku" "Belgia" NA NA
+"614" "Vesa Kosonen" "Maalintekijä" "Maalintekijä3" "Phil Foden" "Englanti" NA NA
+"615" "Vesa Kosonen" "Maalintekijä" "Maalintekijä4" "Cody Gakpo" "Alankomaat" NA NA
+"616" "Vesa Kosonen" "Maalintekijä" "Maalintekijä5" "Cristiano Ronaldo" "Portugali" NA NA
+"617" "Ville Juuti" "TopScorer" "TS" "Serge Gnabry" "Saksa" NA NA
+"618" "Ville Juuti" "Mestari" "M" "Saksa" NA NA NA
+"619" "Ville Juuti" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
+"620" "Ville Juuti" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
+"621" "Ville Juuti" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
+"622" "Ville Juuti" "Välierämaa" "Välierämaa4" "Saksa" NA NA NA
+"623" "Ville Juuti" "Maalintekijä" "Maalintekijä1" "Kylian Mbappe" "Ranska" NA NA
+"624" "Ville Juuti" "Maalintekijä" "Maalintekijä2" "Neymar" "Brasilia" NA NA
+"625" "Ville Juuti" "Maalintekijä" "Maalintekijä3" "Serge Gnabry" "Saksa" NA NA
+"626" "Ville Juuti" "Maalintekijä" "Maalintekijä4" "Ferran Torres" "Espanja" NA NA
+"627" "Ville Juuti" "Maalintekijä" "Maalintekijä5" "Memphis Depay" "Alankomaat" NA NA
+"628" "Ville Sutka" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
+"629" "Ville Sutka" "Mestari" "M" "Argentina" NA NA NA
+"630" "Ville Sutka" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
+"631" "Ville Sutka" "Välierämaa" "Välierämaa2" "Argentina" NA NA NA
+"632" "Ville Sutka" "Välierämaa" "Välierämaa3" "Espanja" NA NA NA
+"633" "Ville Sutka" "Välierämaa" "Välierämaa4" "Saksa" NA NA NA
+"634" "Ville Sutka" "Maalintekijä" "Maalintekijä1" "Kylian Mbappe" "Ranska" NA NA
+"635" "Ville Sutka" "Maalintekijä" "Maalintekijä2" "Harry Kane" "Englanti" NA NA
+"636" "Ville Sutka" "Maalintekijä" "Maalintekijä3" "Lautaro Martinez" "Argentiina" NA NA
+"637" "Ville Sutka" "Maalintekijä" "Maalintekijä4" "Vinicius Jr" "Brasilia" NA NA
+"638" "Ville Sutka" "Maalintekijä" "Maalintekijä5" "Neymar" "Brasilia" NA NA

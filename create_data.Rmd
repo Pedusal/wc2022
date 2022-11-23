@@ -35,7 +35,7 @@ library(readxl)
 library(dplyr)
 library(knitr)
 #Setup the working directory:
-#setwd("C:/Users/Pedu/Documents/GitHub/euro22/data")
+setwd("Data")
 myFiles <- list.files(pattern = "xlsx$")
 veikkaukset <- lapply(myFiles, function(x) read_excel(x))
 
@@ -51,7 +51,7 @@ simpleCap <- function(x) {
 ```
 
 
-``` {r Ladataan maiden nimia ja laitetaan talteen}
+```{undefined eval=FALSE, include=FALSE}
 library(gapminder)
 
 
@@ -88,7 +88,7 @@ Eurodata <- data.frame(matrix(ncol = 7, nrow = 0))
 
 #####
 if (length(veikkaukset) > 0) {
-for (i in 1:length(veikkaukset)) {
+for (i in 2:length(veikkaukset)) {
   veikkaus_apu <- as.data.frame(veikkaukset[i])
   
   #TopScorer
