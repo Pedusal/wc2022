@@ -575,7 +575,7 @@ as.datatable(
             #selection = 'none', #filter = 'none',
             rownames = '',  #rivin alussa ei mitaan
             extensions = c(#'Buttons',
-                           'FixedColumns'),
+                           'FixedColumns', "FixedHeader"), #kiinnitykset
             options = list(
                       dom = 't',
                       columnDefs = list(list(
@@ -583,7 +583,8 @@ as.datatable(
                       scrollX = TRUE,
                       scrollY = "400px", #y scrolli ja taulun pituus
                       #scrollCollapse = TRUE,
-                      fixedColumns = list(leftColumns = 2),
+                      fixedColumns = list(leftColumns = 2), #kiinnitetyt cols
+                      fixedHeader = TRUE, #kiinnitetty tulosrivi
                       pageLength = 100 #nakyvien rivien lkm
                       )
 )
