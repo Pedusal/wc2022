@@ -36,7 +36,7 @@ rm(list=ls())  # REMOVE ALL OBJECTS
 #devtools::install_github('rensa/ggflags')
 
 ## NEEDED
-# bonukset
+# mestari pisteet
 
 ## NICE TO HAVE
 # kiinnitä tulosrivit
@@ -573,7 +573,7 @@ as.datatable(
             )
             ,
             #selection = 'none', #filter = 'none',
-            rownames = '', 
+            rownames = '',  #rivin alussa ei mitaan
             extensions = c(#'Buttons',
                            'FixedColumns'),
             options = list(
@@ -581,7 +581,7 @@ as.datatable(
                       columnDefs = list(list(
                         className = 'dt-center', targets = 3:length(pelit)-1)),
                       scrollX = TRUE,
-                      scrollY = "300px", #y scrolli ja taulun pituus
+                      scrollY = "400px", #y scrolli ja taulun pituus
                       #scrollCollapse = TRUE,
                       fixedColumns = list(leftColumns = 2),
                       pageLength = 100 #nakyvien rivien lkm
@@ -600,6 +600,7 @@ library(dplyr)
 as.datatable(
   formattable(maalintekijat)
   ,
+   rownames = '',  #rivin alussa ei mitaan
             options = list(
                       dom = 't',
                       columnDefs = list(list(
@@ -609,6 +610,7 @@ as.datatable(
                       scrollX = TRUE,
                       scrollCollapse = TRUE,
                       fixedColumns = list(leftColumns = 2),
+                      scrollY = "400px", #y scrolli ja taulun pituus
                       pageLength = 100 #nakyvien rivien lkm
                       )
 )
