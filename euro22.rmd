@@ -475,7 +475,7 @@ myForm <- function(x) {
               formatter('span',
                         style = x ~ style(
                           color = ifelse(x > 0, "blue",
-                                         ifelse(x < 0, red, "white"))
+                                  ifelse(x < 0, red, "white"))
                         ))
 }
 
@@ -496,6 +496,7 @@ as.datatable(formattable(pistetaulu,
             options = list(
                       dom = 't',
                       scrollX = TRUE,
+                      scrollY = "800px", #y scrolli ja taulun pituus
                       #scrollCollapse = TRUE,
                       fixedColumns = list(leftColumns = 2),
                       pageLength = 100 #nakyvien rivien lkm
@@ -611,7 +612,7 @@ as.datatable(
                       scrollX = TRUE,
                       scrollCollapse = TRUE,
                       fixedColumns = list(leftColumns = 2),
-                      scrollY = "400px", #y scrolli ja taulun pituus
+                      scrollY = "500px", #y scrolli ja taulun pituus
                       pageLength = 100 #nakyvien rivien lkm
                       )
 )
@@ -637,13 +638,50 @@ as.datatable(
                       scrollX = TRUE,
                       #scrollCollapse = TRUE,
                       fixedColumns = list(leftColumns = 2),
-                      pageLength = 100 #nakyvien rivien lkm
+                       scrollY = "400px", #y scrolli ja taulun pituus
+                      scrollY = "400px", #y scrolli ja taulun pituusre
+                      pageLength = 100 #nakyvien rivien lkm,
+                      
                       )
 )
 
 ```
 
 ### tack
+
+### Extrat
+
+
+#### Pelaajat joiden maalista bonuspisteitä
+```{r PIIRRA_bonusmaalintekijat, echo=FALSE}
+bonus_tekijat <- subset(Eurodata, ((Tyyppi == "Maalintekijä"& 
+                                    Sisalto %in% bonus_maalarit$Sisalto     ) &
+                                            !is.na(Sisalto)))
+
+# valitataan halutut kolumnit
+bonus_tekijat <- subset(bonus_tekijat, select = c('Nimi','Sisalto','Sisälto_tarkenne'))
+colnames(bonus_tekijat) <- c("Nimi","Pelaaja","Maa")
+
+
+as.datatable(
+  formattable(bonus_tekijat),
+  rownames = '',  #rivin alussa ei mitaan
+            options = list(
+                      dom = 't',
+                      columnDefs = list(list(
+                        className = 'dt-center', 
+                        targets = 1:3)
+                        ),
+                      scrollX = TRUE,
+                      #scrollCollapse = TRUE,
+                      fixedColumns = list(leftColumns = 2),
+                       scrollY = "400px", #y scrolli ja taulun pituus
+                      scrollY = "400px", #y scrolli ja taulun pituusre
+                      pageLength = 100 #nakyvien rivien lkm,
+                      
+                      )
+)
+```
 
 ```{r PIIRRA_mestarijakauma, eval=FALSE, include=FALSE}
 library(ggplot2)
@@ -666,12 +704,10 @@ bp <- ggplot(Eurodata_mestari, aes(x=reorder(Tyyppi, -lkm)
   xlab("") +
   ylab("Veikkausten määrä") +
   theme_classic() +
-  scale_fill_manual(values=c("red", "orange", "slateblue4", 
-                             "lightblue", "blue", "yellow2",
-                             "blue")) +
+  #scale_fill_manual(values=c("red", "orange", "slateblue4","lightblue", "blue", "yellow2","blue")) +
   geom_text(aes(label=lkm),
             position = position_dodge(width=0.8),
-            vjust=1.5, colour="white", size=3.5)
+            vjust=1.5, colour="white", size=2.0)
   #geom_point(aes(color=Sisalto)) +
   #scale_color_gradient(low="#33CC33", high="#CCFFCC") +
 

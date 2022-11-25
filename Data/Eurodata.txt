@@ -602,7 +602,7 @@
 "601" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä1" "Luka Modric" "Kroatia" NA NA
 "602" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä2" "Darwin Nunez" "Uruguay" NA NA
 "603" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä3" "Vinicius Jr" "Brasilia" NA NA
-"604" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä4" "Diogo Jota" "Portugali" NA NA
+"604" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä4" "Angel Di Maria" "Argentiina" NA NA
 "605" "V. Nurmi Jr" "Maalintekijä" "Maalintekijä5" "Raheem Sterling" "Englanti" NA NA
 "606" "Vesa Kosonen" "TopScorer" "TS" "Gabriel Jesus" "BRA" NA NA
 "607" "Vesa Kosonen" "Mestari" "M" "Brasilia" NA NA NA
@@ -637,3 +637,14 @@
 "636" "Ville Sutka" "Maalintekijä" "Maalintekijä3" "Lautaro Martinez" "Argentiina" NA NA
 "637" "Ville Sutka" "Maalintekijä" "Maalintekijä4" "Vinicius Jr" "Brasilia" NA NA
 "638" "Ville Sutka" "Maalintekijä" "Maalintekijä5" "Neymar" "Brasilia" NA NA
+"639" "Ville Kolu" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
+"640" "Ville Kolu" "Mestari" "M" "Englanti" NA NA NA
+"641" "Ville Kolu" "Välierämaa" "Välierämaa1" "Englanti" NA NA NA
+"642" "Ville Kolu" "Välierämaa" "Välierämaa2" "Alankomaat" NA NA NA
+"643" "Ville Kolu" "Välierämaa" "Välierämaa3" "Belgia" NA NA NA
+"644" "Ville Kolu" "Välierämaa" "Välierämaa4" "Ranska" NA NA NA
+"645" "Ville Kolu" "Maalintekijä" "Maalintekijä1" "Harry Kane" "Englanti" NA NA
+"646" "Ville Kolu" "Maalintekijä" "Maalintekijä2" "Dusan Vlahovic" "Serbia" NA NA
+"647" "Ville Kolu" "Maalintekijä" "Maalintekijä3" "Memphis Depay" "Alankomaat" NA NA
+"648" "Ville Kolu" "Maalintekijä" "Maalintekijä4" "Darwin Nunez" "Uruguay" NA NA
+"649" "Ville Kolu" "Maalintekijä" "Maalintekijä5" "Thomas Müller" "Saksa" NA NA
