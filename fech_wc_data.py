@@ -1,16 +1,3 @@
----
-title: "webhaku"
-author: "pedusal"
-date: "2022-11-06"
-output: html_document
----
-
-```{python eval=FALSE, include=FALSE}
-
-
-```
-
-```{python}
 #Fetch WC data
 
 import requests
@@ -39,16 +26,7 @@ response = requests.get(url=base_url + "match", headers=headers)
 assert response.status_code == 200
 
 matches_df = pd.DataFrame.from_dict(response.json()["data"])
-#print(matches_df)
-
-```
-
-```{python}
-matches_df.to_csv('Data/ottelut_tulokset.csv', sep='\t')
-```
+print(matches_df)
 
 
-```{r}
-write.table(matches_df, "Data/ottelut_tulokset.txt")
-```
 
