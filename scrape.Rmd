@@ -5,11 +5,6 @@ date: "2022-11-06"
 output: html_document
 ---
 
-```{python eval=FALSE, include=FALSE}
-
-
-```
-
 ```{python}
 #Fetch WC data
 
@@ -44,11 +39,27 @@ matches_df = pd.DataFrame.from_dict(response.json()["data"])
 ```
 
 ```{python}
-matches_df.to_csv('Data/ottelut_tulokset.csv', sep='\t')
+maalintekijat = matches_df['home_scorers'] + matches_df['away_scorers']
+
+
+maalintekijat_df = pd.DataFrame.from_dict(maalintekijat)
+
+maalintekijat = " ".join(''.join(l) for l in maalintekijat)
+
+print(maalintekijat)
+
+maalintekijat_df = pd.DataFrame.from_dict(maalintekijat)
+
 ```
 
 
-```{r}
-write.table(matches_df, "Data/ottelut_tulokset.txt")
+
+
+```{python}
+
+matches_df.to_json('Data/ottelut_tulokset.json')
+
+matches_df.to_csv('Data/ottelut_tulokset.txt')
 ```
+
 

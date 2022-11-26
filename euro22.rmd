@@ -71,6 +71,8 @@ simpleCap <- function(x) {
 
 
 ```{r alustetaan muuttujia, warning=FALSE, include=FALSE}
+library(tidyr)
+
 Eurodata <- read.table("Data/Eurodata.txt")
 Eurodata_lkm <- read.table("Data/Eurodata_lkm.txt")
 en_fi_country_colors <- read.table("Data/en_fi_country_colors.txt")
@@ -80,10 +82,28 @@ en_fi_country_colors <- read.table("Data/en_fi_country_colors.txt")
 
 oikearivi <- read_excel("Data/11oikearivi.xlsx")
 
+#ottelut_tulokset <- read.table("Data/ottelut_tulokset.txt", sep = ",")
+
+#ottelut_tulokset <- read.csv("Data/ottelut_tulokset.csv", sep = "\t")
+
+#ottelut_tulokset <- read.csv2("Data/ottelut_tulokset.csv", sep = "\t")
+
+#unnest(ottelut_tulokset$home_scorers)
+
+#ottelut_tulokset <- read_("Data/ottelut_tulokset.csv", sep = "\t")
+
 ######## maaliporssi df luonti#################
 maaliporssi <- oikearivi %>%   
   filter(!is.na(oikearivi[,10])
                  )
+
+#maaliporssi1 <-  subset(ottelut_tulokset, select = c(home_scorers,away_scorers))
+
+#unlist(maaliporssi1$home_scorers)
+
+#lapply(maaliporssi1$home_scorers, unlist)
+
+#maaliporssi1 <- as.data.frame(ottelut_tulokset$away_scorers)
 
 maaliporssi  <- as.data.frame(maaliporssi[-1,10:12])
 
