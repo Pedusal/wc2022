@@ -10,6 +10,7 @@ output: html_document
 
 import requests
 import pandas as pd
+import numpy as np
 
 user_email = "test-api@invalid-gmail.com"
 password = "password"
@@ -39,7 +40,14 @@ matches_df = pd.DataFrame.from_dict(response.json()["data"])
 ```
 
 ```{python}
-gs = pd.DataFrame.from_dict(response.json()["data"])
+#korvataan ylimaaranen batsuhbu
+matches_df Michy Batshuayi
+
+matches_df['home_scorers'] = (
+  np.where((matches_df['home_scorers'] == 'Michy Batshuayi'), #& (matches_df['away_team_id'] == 32), 
+  'Breel Embolo', matches_df['home_scorers'])
+  )
+
 
 
 maalintekijat = matches_df['home_scorers'] + matches_df['away_scorers']
