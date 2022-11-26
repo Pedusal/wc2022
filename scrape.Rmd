@@ -39,14 +39,12 @@ matches_df = pd.DataFrame.from_dict(response.json()["data"])
 ```
 
 ```{python}
+gs = pd.DataFrame.from_dict(response.json()["data"])
+
+
 maalintekijat = matches_df['home_scorers'] + matches_df['away_scorers']
 
-
-maalintekijat_df = pd.DataFrame.from_dict(maalintekijat)
-
-maalintekijat = " ".join(''.join(l) for l in maalintekijat)
-
-print(maalintekijat)
+maalintekijat = maalintekijat.explode().str.split(',').explode()
 
 maalintekijat_df = pd.DataFrame.from_dict(maalintekijat)
 
@@ -56,10 +54,10 @@ maalintekijat_df = pd.DataFrame.from_dict(maalintekijat)
 
 
 ```{python}
+matches_df.to_csv('Data/ottelut_tulokset.csv')
 
-matches_df.to_json('Data/ottelut_tulokset.json')
+maalintekijat_df.to_csv('Data/maalintekijat.csv', encoding = 'utf-8-sig')
 
-matches_df.to_csv('Data/ottelut_tulokset.txt')
 ```
 
 

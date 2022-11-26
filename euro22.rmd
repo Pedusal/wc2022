@@ -84,29 +84,24 @@ oikearivi <- read_excel("Data/11oikearivi.xlsx")
 
 #ottelut_tulokset <- read.table("Data/ottelut_tulokset.txt", sep = ",")
 
-#ottelut_tulokset <- read.csv("Data/ottelut_tulokset.csv", sep = "\t")
+ottelut_tulokset <- read.csv("Data/ottelut_tulokset.csv")
 
-#ottelut_tulokset <- read.csv2("Data/ottelut_tulokset.csv", sep = "\t")
-
-#unnest(ottelut_tulokset$home_scorers)
-
-#ottelut_tulokset <- read_("Data/ottelut_tulokset.csv", sep = "\t")
+scorers <- read.csv("Data/maalintekijat.csv")
 
 ######## maaliporssi df luonti#################
 maaliporssi <- oikearivi %>%   
   filter(!is.na(oikearivi[,10])
                  )
 
-#maaliporssi1 <-  subset(ottelut_tulokset, select = c(home_scorers,away_scorers))
-
-#unlist(maaliporssi1$home_scorers)
-
-#lapply(maaliporssi1$home_scorers, unlist)
-
-#maaliporssi1 <- as.data.frame(ottelut_tulokset$away_scorers)
-
 maaliporssi  <- as.data.frame(maaliporssi[-1,10:12])
 
+
+scorers <- scorers %>% filter(X0 != "null",
+                   X0 != "")
+
+scorers <- scorers  %>% group_by(X0) %>% count(X0) %>% mutate(lkm =n)
+
+scorers <- iconv(scorers,from="UTF-8",to="ASCII//TRANSLIT")
 ###### Muokkaaa  sopivaksi #############
 
 oikearivi <- oikearivi %>%   
