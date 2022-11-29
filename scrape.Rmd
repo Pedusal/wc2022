@@ -41,12 +41,12 @@ matches_df = pd.DataFrame.from_dict(response.json()["data"])
 
 ```{python}
 #korvataan ylimaaranen batsuhbu
-matches_df Michy Batshuayi
+# matches_df Michy Batshuayi
 
-matches_df['home_scorers'] = (
-  np.where((matches_df['home_scorers'] == 'Michy Batshuayi'), #& (matches_df['away_team_id'] == 32), 
-  'Breel Embolo', matches_df['home_scorers'])
-  )
+#matches_df['home_scorers'] = (
+#  'Breel Embolo', matches_df['home_scorers'])
+#  np.where((matches_df['home_scorers'] == 'Michy Batshuayi'), #& (matches_df['away_team_id'] == 32), 
+#  )
 
 
 
