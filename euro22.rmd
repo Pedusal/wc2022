@@ -511,7 +511,7 @@ as.datatable(formattable(pistetaulu,
             options = list(
                       dom = 't',
                       scrollX = TRUE,
-                      scrollY = "800px", #y scrolli ja taulun pituus
+                      scrollY = "660px", #y scrolli ja taulun pituus
                       #scrollCollapse = TRUE,
                       fixedColumns = list(leftColumns = 2),
                       pageLength = 100 #nakyvien rivien lkm
