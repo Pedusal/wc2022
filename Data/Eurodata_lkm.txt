@@ -164,175 +164,174 @@
 "163" "Länsi-Sahara" NA NA NA "EH" "Western Sahara" NA "EH"
 "164" "Laos" NA NA NA "LA" "Laos" NA "LA"
 "165" "Latvia" NA NA NA "LV" "Latvia" NA "LV"
-"166" "Lautaro Martinez" "Maalintekijä" 14 14 NA NA NA NA
+"166" "Lautaro Martinez" "Maalintekijä" 15 15 NA NA NA NA
 "167" "Lautaro Martinez" "TopScorer" 3 3 NA NA NA NA
-"168" "Lautaro Matinez" "Maalintekijä" 1 1 NA NA NA NA
-"169" "Lautaro Matinez" "TopScorer" 1 1 NA NA NA NA
-"170" "Lauturo Martinez" "Maalintekijä" 1 1 NA NA NA NA
-"171" "Leandro Trossard" "Maalintekijä" 2 2 NA NA NA NA
-"172" "Lesotho" NA NA NA "LS" "Lesotho" "#FDBD6E" "LS"
-"173" "Libanon" NA NA NA "LB" "Lebanon" "#D4BCDB" "LB"
-"174" "Liberia" NA NA NA "LR" "Liberia" "#FCB661" "LR"
-"175" "Libya" NA NA NA "LY" "Libya" "#EE9D3C" "LY"
-"176" "Liechtenstein" NA NA NA "LI" "Liechtenstein" NA "LI"
-"177" "Liettua" NA NA NA "LT" "Lithuania" NA "LT"
-"178" "Lionel Messi" "Maalintekijä" 32 32 NA NA NA NA
-"179" "Lionel Messi" "TopScorer" 10 10 NA NA NA NA
-"180" "Luis Suarez" "Maalintekijä" 1 1 NA NA NA NA
-"181" "Luis Suarez" "TopScorer" 1 1 NA NA NA NA
-"182" "Luka Modric" "Maalintekijä" 2 2 NA NA NA NA
-"183" "Luxemburg" NA NA NA "LU" "Luxembourg" NA "LU"
-"184" "Macao – Kiinan e.h.a." NA NA NA "MO" "Macao SAR China" NA "MO"
-"185" "Madagaskar" NA NA NA "MG" "Madagascar" "#B35806" "MG"
-"186" "Malawi" NA NA NA "MW" "Malawi" "#C2650A" "MW"
-"187" "Malediivit" NA NA NA "MV" "Maldives" NA "MV"
-"188" "Malesia" NA NA NA "MY" "Malaysia" "#9970AB" "MY"
-"189" "Mali" NA NA NA "ML" "Mali" "#D37610" "ML"
-"190" "Malta" NA NA NA "MT" "Malta" NA "MT"
-"191" "Mansaari" NA NA NA "IM" "Isle of Man" NA "IM"
-"192" "Marokko" NA NA NA "MA" "Morocco" "#9F4D06" "MA"
-"193" "Marshallinsaaret" NA NA NA "MH" "Marshall Islands" NA "MH"
-"194" "Martinique" NA NA NA "MQ" "Martinique" NA "MQ"
-"195" "Mauritania" NA NA NA "MR" "Mauritania" "#FAB25B" "MR"
-"196" "Mauritius" NA NA NA "MU" "Mauritius" "#FDCD8E" "MU"
-"197" "Mayotte" NA NA NA "YT" "Mayotte" NA "YT"
-"198" "Meksiko" NA NA NA "MX" "Mexico" "#B51026" "MX"
-"199" "Memphis Depay" "Maalintekijä" 11 11 NA NA NA NA
-"200" "Memphis Depay" "TopScorer" 1 1 NA NA NA NA
-"201" "Michy Batshuayi" "Maalintekijä" 1 1 NA NA NA NA
-"202" "Mikkel Damsgaard" "Maalintekijä" 1 1 NA NA NA NA
-"203" "Mikronesian liittovaltio" NA NA NA "FM" "Micronesia" NA "FM"
-"204" "Moldova" NA NA NA "MD" "Moldova" NA "MD"
-"205" "Monaco" NA NA NA "MC" "Monaco" NA "MC"
-"206" "Mongolia" NA NA NA "MN" "Mongolia" "#DDC8E1" "MN"
-"207" "Montenegro" NA NA NA "ME" "Montenegro" "#DFF2C5" "ME"
-"208" "Montserrat" NA NA NA "MS" "Montserrat" NA "MS"
-"209" "Mosambik" NA NA NA "MZ" "Mozambique" "#AF5606" "MZ"
-"210" "Myanmar (Burma)" NA NA NA "MM" "Myanmar (Burma)" NA "MM"
-"211" "Namibia" NA NA NA NA "Namibia" "#FDBA67" NA
-"212" "Nathan Ake" "Maalintekijä" 1 1 NA NA NA NA
-"213" "Nauru" NA NA NA "NR" "Nauru" NA "NR"
-"214" "Nepal" NA NA NA "NP" "Nepal" "#8B559B" "NP"
-"215" "Neymar" "Maalintekijä" 33 33 NA NA NA NA
-"216" "Neymar" "TopScorer" 7 7 NA NA NA NA
-"217" "Nicaragua" NA NA NA "NI" "Nicaragua" "#FDAE61" "NI"
-"218" "Niger" NA NA NA "NE" "Niger" "#C5690B" "NE"
-"219" "Nigeria" NA NA NA "NG" "Nigeria" "#7F3B08" "NG"
-"220" "Niue" NA NA NA "NU" "Niue" NA "NU"
-"221" "Norfolkinsaari" NA NA NA "NF" "Norfolk Island" NA "NF"
-"222" "Norja" NA NA NA "NO" "Norway" "#B9E188" "NO"
-"223" "Norsunluurannikko" NA NA NA "CI" "Côte d’Ivoire" NA "CI"
-"224" "Oman" NA NA NA "OM" "Oman" "#D9C2DE" "OM"
-"225" "Päiväntasaajan Guinea" NA NA NA "GQ" "Equatorial Guinea" "#FDD9A8" "GQ"
-"226" "Pakistan" NA NA NA "PK" "Pakistan" "#540F60" "PK"
-"227" "Palau" NA NA NA "PW" "Palau" NA "PW"
-"228" "Palestiinalaisalueet" NA NA NA "PS" "Palestinian Territories" NA "PS"
-"229" "Panama" NA NA NA "PA" "Panama" "#FDCF80" "PA"
-"230" "Papua-Uusi-Guinea" NA NA NA "PG" "Papua New Guinea" NA "PG"
-"231" "Paraguay" NA NA NA "PY" "Paraguay" "#FBA35B" "PY"
-"232" "Paulo Dybala" "Maalintekijä" 1 1 NA NA NA NA
-"233" "Pedri" "Maalintekijä" 1 1 NA NA NA NA
-"234" "Peru" NA NA NA "PE" "Peru" "#D73027" "PE"
-"235" "Phil Foden" "Maalintekijä" 3 3 NA NA NA NA
-"236" "Pitcairn" NA NA NA "PN" "Pitcairn Islands" NA "PN"
-"237" "Pohjois-Korea" NA NA NA "KP" "North Korea" NA "KP"
-"238" "Pohjois-Makedonia" NA NA NA "MK" "North Macedonia" NA "MK"
-"239" "Pohjois-Mariaanit" NA NA NA "MP" "Northern Mariana Islands" NA "MP"
-"240" "Portugali" "Mestari" 1 1 "PT" "Portugal" "#66A731" "PT"
-"241" "Portugali" "Välierämaa" 6 6 "PT" "Portugal" "#66A731" "PT"
-"242" "Puerto Rico" NA NA NA "PR" "Puerto Rico" "#FDBE70" "PR"
-"243" "Puola" "Välierämaa" 1 1 "PL" "Poland" "#468A1F" "PL"
-"244" "Qatar" NA NA NA "QA" "Qatar" NA "QA"
-"245" "Rafael Leao" "Maalintekijä" 2 2 NA NA NA NA
-"246" "Raheem Sterling" "Maalintekijä" 3 3 NA NA NA NA
-"247" "Ranska" "Välierämaa" 39 39 "FR" "France" "#31701B" "FR"
-"248" "Ranska" "Mestari" 5 5 "FR" "France" "#31701B" "FR"
-"249" "Ranskan eteläiset alueet" NA NA NA "TF" "French Southern Territories" NA "TF"
-"250" "Ranskan Guayana" NA NA NA "GF" "French Guiana" NA "GF"
-"251" "Ranskan Polynesia" NA NA NA "PF" "French Polynesia" NA "PF"
-"252" "Raphinha" "Maalintekijä" 1 1 NA NA NA NA
-"253" "Réunion" NA NA NA "RE" "Réunion" NA "RE"
-"254" "Robert Lewandowski" "Maalintekijä" 11 11 NA NA NA NA
-"255" "Robert Lewandowski" "TopScorer" 1 1 NA NA NA NA
-"256" "Rodrygo" "Maalintekijä" 1 1 NA NA NA NA
-"257" "Romania" NA NA NA "RO" "Romania" "#4B9020" "RO"
-"258" "Romelo Lukaku" "Maalintekijä" 1 1 NA NA NA NA
-"259" "Romelo Lukaku" "TopScorer" 1 1 NA NA NA NA
-"260" "Romelu Lukaku" "Maalintekijä" 9 9 NA NA NA NA
-"261" "Ruanda" NA NA NA "RW" "Rwanda" "#E58C23" "RW"
-"262" "Ruotsi" NA NA NA "SE" "Sweden" "#82BE45" "SE"
-"263" "Saint Helena" NA NA NA "SH" "St. Helena" NA "SH"
-"264" "Saint Kitts ja Nevis" NA NA NA "KN" "St. Kitts & Nevis" NA "KN"
-"265" "Saint Lucia" NA NA NA "LC" "St. Lucia" NA "LC"
-"266" "Saint Vincent ja Grenadiinit" NA NA NA "VC" "St. Vincent & Grenadines" NA "VC"
-"267" "Saint-Barthélemy" NA NA NA "BL" "St. Barthélemy" NA "BL"
-"268" "Saint-Martin" NA NA NA "MF" "St. Martin" NA "MF"
-"269" "Saint-Pierre ja Miquelon" NA NA NA "PM" "St. Pierre & Miquelon" NA "PM"
-"270" "Saksa" "Välierämaa" 14 14 "DE" "Germany" "#276419" "DE"
-"271" "Saksa" "Mestari" 1 1 "DE" "Germany" "#276419" "DE"
-"272" "Salomonsaaret" NA NA NA "SB" "Solomon Islands" NA "SB"
-"273" "Sambia" NA NA NA "ZM" "Zambia" "#D77911" "ZM"
-"274" "Samoa" NA NA NA "WS" "Samoa" NA "WS"
-"275" "San Marino" NA NA NA "SM" "San Marino" NA "SM"
-"276" "São Tomé ja Príncipe" NA NA NA "ST" "São Tomé & Príncipe" NA "ST"
-"277" "Saudi-Arabia" NA NA NA "SA" "Saudi Arabia" "#905EA1" "SA"
-"278" "Senegal" "Välierämaa" 1 1 "SN" "Senegal" "#D0730F" "SN"
-"279" "Serbia" "Välierämaa" 1 1 "RS" "Serbia" "#74B33A" "RS"
-"280" "Serge Gnabry" "Maalintekijä" 4 4 NA NA NA NA
-"281" "Serge Gnabry" "TopScorer" 1 1 NA NA NA NA
-"282" "Seychellit" NA NA NA "SC" "Seychelles" NA "SC"
-"283" "Sierra Leone" NA NA NA "SL" "Sierra Leone" "#EC9936" "SL"
-"284" "Singapore" NA NA NA "SG" "Singapore" "#CBB0D5" "SG"
-"285" "Sint Maarten" NA NA NA "SX" "Sint Maarten" NA "SX"
-"286" "Slovakia" NA NA NA "SK" "Slovakia" NA "SK"
-"287" "Slovenia" NA NA NA "SI" "Slovenia" "#D9EFBB" "SI"
-"288" "Somalia" NA NA NA "SO" "Somalia" "#E3881D" "SO"
-"289" "Song Heung-Min" "Maalintekijä" 1 1 NA NA NA NA
-"290" "Sri Lanka" NA NA NA "LK" "Sri Lanka" "#AD8ABD" "LK"
-"291" "Sudan" NA NA NA "SD" "Sudan" "#934607" "SD"
-"292" "Suomi" NA NA NA "FI" "Finland" "#B2DD7E" "FI"
-"293" "Suriname" NA NA NA "SR" "Suriname" NA "SR"
-"294" "Sveitsi" NA NA NA "CH" "Switzerland" "#9ACD62" "CH"
-"295" "Swazimaa" NA NA NA "SZ" "Eswatini" NA "SZ"
-"296" "Syyria" NA NA NA "SY" "Syria" "#B291C1" "SY"
-"297" "Tadžikistan" NA NA NA "TJ" "Tajikistan" NA "TJ"
-"298" "Taiwan" NA NA NA "TW" "Taiwan" "#A37DB3" "TW"
-"299" "Tansania" NA NA NA "TZ" "Tanzania" "#974807" "TZ"
-"300" "Tanska" "Välierämaa" 4 4 "DK" "Denmark" "#A2D26B" "DK"
-"301" "Thaimaa" NA NA NA "TH" "Thailand" "#7A3288" "TH"
-"302" "Thomas Muller" "Maalintekijä" 2 2 NA NA NA NA
-"303" "Togo" NA NA NA "TG" "Togo" "#F1A142" "TG"
-"304" "Tokelau" NA NA NA "TK" "Tokelau" NA "TK"
-"305" "Tonga" NA NA NA "TO" "Tonga" NA "TO"
-"306" "Trinidad ja Tobago" NA NA NA "TT" "Trinidad & Tobago" NA "TT"
-"307" "Tšad" NA NA NA "TD" "Chad" "#DE8013" "TD"
-"308" "Tšekki" NA NA NA "CZ" "Czechia" NA "CZ"
-"309" "Tunisia" NA NA NA "TN" "Tunisia" "#DA7D12" "TN"
-"310" "Turkki" NA NA NA "TR" "Turkey" "#2C6A1A" "TR"
-"311" "Turkmenistan" NA NA NA "TM" "Turkmenistan" NA "TM"
-"312" "Turks- ja Caicossaaret" NA NA NA "TC" "Turks & Caicos Islands" NA "TC"
-"313" "Tusan Tadic" "Maalintekijä" 1 1 NA NA NA NA
-"314" "Tuvalu" NA NA NA "TV" "Tuvalu" NA "TV"
-"315" "Uganda" NA NA NA "UG" "Uganda" "#A75106" "UG"
-"316" "Ukraina" NA NA NA "UA" "Ukraine" NA "UA"
-"317" "Unkari" NA NA NA "HU" "Hungary" "#5FA12D" "HU"
-"318" "Uruguay" "Mestari" 1 1 "UY" "Uruguay" "#FDC778" "UY"
-"319" "Uruguay" "Välierämaa" 3 3 "UY" "Uruguay" "#FDC778" "UY"
-"320" "Uusi-Kaledonia" NA NA NA "NC" "New Caledonia" NA "NC"
-"321" "Uusi-Seelanti" NA NA NA "NZ" "New Zealand" "#4575B4" "NZ"
-"322" "Uzbekistan" NA NA NA "UZ" "Uzbekistan" NA "UZ"
-"323" "Valko-Venäjä" NA NA NA "BY" "Belarus" NA "BY"
-"324" "Vanuatu" NA NA NA "VU" "Vanuatu" NA "VU"
-"325" "Vatikaani" NA NA NA "VA" "Vatican City" NA "VA"
-"326" "Venäjä" NA NA NA "RU" "Russia" NA "RU"
-"327" "Venezuela" NA NA NA "VE" "Venezuela" "#DB3A2B" "VE"
-"328" "Vietnam" NA NA NA "VN" "Vietnam" "#6F247B" "VN"
-"329" "Vinicius Jr" "Maalintekijä" 5 5 NA NA NA NA
-"330" "Vinicius Jr." "TopScorer" 1 1 NA NA NA NA
-"331" "Virgil Van Dijk" "Maalintekijä" 1 1 NA NA NA NA
-"332" "Viro" NA NA NA "EE" "Estonia" NA "EE"
-"333" "Wallis ja Futuna" NA NA NA "WF" "Wallis & Futuna" NA "WF"
-"334" "Yhdysvallat" NA NA NA "US" "United States" "#A50026" "US"
-"335" "Yhdysvaltain erillissaaret" NA NA NA "UM" "U.S. Outlying Islands" NA "UM"
-"336" "Yhdysvaltain Neitsytsaaret" NA NA NA "VI" "U.S. Virgin Islands" NA "VI"
-"337" "Zimbabwe" NA NA NA "ZW" "Zimbabwe" "#CC6F0D" "ZW"
+"168" "Lautaro Matinez" "TopScorer" 1 1 NA NA NA NA
+"169" "Lauturo Martinez" "Maalintekijä" 1 1 NA NA NA NA
+"170" "Leandro Trossard" "Maalintekijä" 2 2 NA NA NA NA
+"171" "Lesotho" NA NA NA "LS" "Lesotho" "#FDBD6E" "LS"
+"172" "Libanon" NA NA NA "LB" "Lebanon" "#D4BCDB" "LB"
+"173" "Liberia" NA NA NA "LR" "Liberia" "#FCB661" "LR"
+"174" "Libya" NA NA NA "LY" "Libya" "#EE9D3C" "LY"
+"175" "Liechtenstein" NA NA NA "LI" "Liechtenstein" NA "LI"
+"176" "Liettua" NA NA NA "LT" "Lithuania" NA "LT"
+"177" "Lionel Messi" "Maalintekijä" 32 32 NA NA NA NA
+"178" "Lionel Messi" "TopScorer" 10 10 NA NA NA NA
+"179" "Luis Suarez" "Maalintekijä" 1 1 NA NA NA NA
+"180" "Luis Suarez" "TopScorer" 1 1 NA NA NA NA
+"181" "Luka Modric" "Maalintekijä" 2 2 NA NA NA NA
+"182" "Luxemburg" NA NA NA "LU" "Luxembourg" NA "LU"
+"183" "Macao – Kiinan e.h.a." NA NA NA "MO" "Macao SAR China" NA "MO"
+"184" "Madagaskar" NA NA NA "MG" "Madagascar" "#B35806" "MG"
+"185" "Malawi" NA NA NA "MW" "Malawi" "#C2650A" "MW"
+"186" "Malediivit" NA NA NA "MV" "Maldives" NA "MV"
+"187" "Malesia" NA NA NA "MY" "Malaysia" "#9970AB" "MY"
+"188" "Mali" NA NA NA "ML" "Mali" "#D37610" "ML"
+"189" "Malta" NA NA NA "MT" "Malta" NA "MT"
+"190" "Mansaari" NA NA NA "IM" "Isle of Man" NA "IM"
+"191" "Marokko" NA NA NA "MA" "Morocco" "#9F4D06" "MA"
+"192" "Marshallinsaaret" NA NA NA "MH" "Marshall Islands" NA "MH"
+"193" "Martinique" NA NA NA "MQ" "Martinique" NA "MQ"
+"194" "Mauritania" NA NA NA "MR" "Mauritania" "#FAB25B" "MR"
+"195" "Mauritius" NA NA NA "MU" "Mauritius" "#FDCD8E" "MU"
+"196" "Mayotte" NA NA NA "YT" "Mayotte" NA "YT"
+"197" "Meksiko" NA NA NA "MX" "Mexico" "#B51026" "MX"
+"198" "Memphis Depay" "Maalintekijä" 11 11 NA NA NA NA
+"199" "Memphis Depay" "TopScorer" 1 1 NA NA NA NA
+"200" "Michy Batshuayi" "Maalintekijä" 1 1 NA NA NA NA
+"201" "Mikkel Damsgaard" "Maalintekijä" 1 1 NA NA NA NA
+"202" "Mikronesian liittovaltio" NA NA NA "FM" "Micronesia" NA "FM"
+"203" "Moldova" NA NA NA "MD" "Moldova" NA "MD"
+"204" "Monaco" NA NA NA "MC" "Monaco" NA "MC"
+"205" "Mongolia" NA NA NA "MN" "Mongolia" "#DDC8E1" "MN"
+"206" "Montenegro" NA NA NA "ME" "Montenegro" "#DFF2C5" "ME"
+"207" "Montserrat" NA NA NA "MS" "Montserrat" NA "MS"
+"208" "Mosambik" NA NA NA "MZ" "Mozambique" "#AF5606" "MZ"
+"209" "Myanmar (Burma)" NA NA NA "MM" "Myanmar (Burma)" NA "MM"
+"210" "Namibia" NA NA NA NA "Namibia" "#FDBA67" NA
+"211" "Nathan Ake" "Maalintekijä" 1 1 NA NA NA NA
+"212" "Nauru" NA NA NA "NR" "Nauru" NA "NR"
+"213" "Nepal" NA NA NA "NP" "Nepal" "#8B559B" "NP"
+"214" "Neymar" "Maalintekijä" 33 33 NA NA NA NA
+"215" "Neymar" "TopScorer" 7 7 NA NA NA NA
+"216" "Nicaragua" NA NA NA "NI" "Nicaragua" "#FDAE61" "NI"
+"217" "Niger" NA NA NA "NE" "Niger" "#C5690B" "NE"
+"218" "Nigeria" NA NA NA "NG" "Nigeria" "#7F3B08" "NG"
+"219" "Niue" NA NA NA "NU" "Niue" NA "NU"
+"220" "Norfolkinsaari" NA NA NA "NF" "Norfolk Island" NA "NF"
+"221" "Norja" NA NA NA "NO" "Norway" "#B9E188" "NO"
+"222" "Norsunluurannikko" NA NA NA "CI" "Côte d’Ivoire" NA "CI"
+"223" "Oman" NA NA NA "OM" "Oman" "#D9C2DE" "OM"
+"224" "Päiväntasaajan Guinea" NA NA NA "GQ" "Equatorial Guinea" "#FDD9A8" "GQ"
+"225" "Pakistan" NA NA NA "PK" "Pakistan" "#540F60" "PK"
+"226" "Palau" NA NA NA "PW" "Palau" NA "PW"
+"227" "Palestiinalaisalueet" NA NA NA "PS" "Palestinian Territories" NA "PS"
+"228" "Panama" NA NA NA "PA" "Panama" "#FDCF80" "PA"
+"229" "Papua-Uusi-Guinea" NA NA NA "PG" "Papua New Guinea" NA "PG"
+"230" "Paraguay" NA NA NA "PY" "Paraguay" "#FBA35B" "PY"
+"231" "Paulo Dybala" "Maalintekijä" 1 1 NA NA NA NA
+"232" "Pedri" "Maalintekijä" 1 1 NA NA NA NA
+"233" "Peru" NA NA NA "PE" "Peru" "#D73027" "PE"
+"234" "Phil Foden" "Maalintekijä" 3 3 NA NA NA NA
+"235" "Pitcairn" NA NA NA "PN" "Pitcairn Islands" NA "PN"
+"236" "Pohjois-Korea" NA NA NA "KP" "North Korea" NA "KP"
+"237" "Pohjois-Makedonia" NA NA NA "MK" "North Macedonia" NA "MK"
+"238" "Pohjois-Mariaanit" NA NA NA "MP" "Northern Mariana Islands" NA "MP"
+"239" "Portugali" "Mestari" 1 1 "PT" "Portugal" "#66A731" "PT"
+"240" "Portugali" "Välierämaa" 6 6 "PT" "Portugal" "#66A731" "PT"
+"241" "Puerto Rico" NA NA NA "PR" "Puerto Rico" "#FDBE70" "PR"
+"242" "Puola" "Välierämaa" 1 1 "PL" "Poland" "#468A1F" "PL"
+"243" "Qatar" NA NA NA "QA" "Qatar" NA "QA"
+"244" "Rafael Leao" "Maalintekijä" 2 2 NA NA NA NA
+"245" "Raheem Sterling" "Maalintekijä" 3 3 NA NA NA NA
+"246" "Ranska" "Välierämaa" 39 39 "FR" "France" "#31701B" "FR"
+"247" "Ranska" "Mestari" 5 5 "FR" "France" "#31701B" "FR"
+"248" "Ranskan eteläiset alueet" NA NA NA "TF" "French Southern Territories" NA "TF"
+"249" "Ranskan Guayana" NA NA NA "GF" "French Guiana" NA "GF"
+"250" "Ranskan Polynesia" NA NA NA "PF" "French Polynesia" NA "PF"
+"251" "Raphinha" "Maalintekijä" 1 1 NA NA NA NA
+"252" "Réunion" NA NA NA "RE" "Réunion" NA "RE"
+"253" "Robert Lewandowski" "Maalintekijä" 11 11 NA NA NA NA
+"254" "Robert Lewandowski" "TopScorer" 1 1 NA NA NA NA
+"255" "Rodrygo" "Maalintekijä" 1 1 NA NA NA NA
+"256" "Romania" NA NA NA "RO" "Romania" "#4B9020" "RO"
+"257" "Romelo Lukaku" "Maalintekijä" 1 1 NA NA NA NA
+"258" "Romelo Lukaku" "TopScorer" 1 1 NA NA NA NA
+"259" "Romelu Lukaku" "Maalintekijä" 9 9 NA NA NA NA
+"260" "Ruanda" NA NA NA "RW" "Rwanda" "#E58C23" "RW"
+"261" "Ruotsi" NA NA NA "SE" "Sweden" "#82BE45" "SE"
+"262" "Saint Helena" NA NA NA "SH" "St. Helena" NA "SH"
+"263" "Saint Kitts ja Nevis" NA NA NA "KN" "St. Kitts & Nevis" NA "KN"
+"264" "Saint Lucia" NA NA NA "LC" "St. Lucia" NA "LC"
+"265" "Saint Vincent ja Grenadiinit" NA NA NA "VC" "St. Vincent & Grenadines" NA "VC"
+"266" "Saint-Barthélemy" NA NA NA "BL" "St. Barthélemy" NA "BL"
+"267" "Saint-Martin" NA NA NA "MF" "St. Martin" NA "MF"
+"268" "Saint-Pierre ja Miquelon" NA NA NA "PM" "St. Pierre & Miquelon" NA "PM"
+"269" "Saksa" "Välierämaa" 14 14 "DE" "Germany" "#276419" "DE"
+"270" "Saksa" "Mestari" 1 1 "DE" "Germany" "#276419" "DE"
+"271" "Salomonsaaret" NA NA NA "SB" "Solomon Islands" NA "SB"
+"272" "Sambia" NA NA NA "ZM" "Zambia" "#D77911" "ZM"
+"273" "Samoa" NA NA NA "WS" "Samoa" NA "WS"
+"274" "San Marino" NA NA NA "SM" "San Marino" NA "SM"
+"275" "São Tomé ja Príncipe" NA NA NA "ST" "São Tomé & Príncipe" NA "ST"
+"276" "Saudi-Arabia" NA NA NA "SA" "Saudi Arabia" "#905EA1" "SA"
+"277" "Senegal" "Välierämaa" 1 1 "SN" "Senegal" "#D0730F" "SN"
+"278" "Serbia" "Välierämaa" 1 1 "RS" "Serbia" "#74B33A" "RS"
+"279" "Serge Gnabry" "Maalintekijä" 4 4 NA NA NA NA
+"280" "Serge Gnabry" "TopScorer" 1 1 NA NA NA NA
+"281" "Seychellit" NA NA NA "SC" "Seychelles" NA "SC"
+"282" "Sierra Leone" NA NA NA "SL" "Sierra Leone" "#EC9936" "SL"
+"283" "Singapore" NA NA NA "SG" "Singapore" "#CBB0D5" "SG"
+"284" "Sint Maarten" NA NA NA "SX" "Sint Maarten" NA "SX"
+"285" "Slovakia" NA NA NA "SK" "Slovakia" NA "SK"
+"286" "Slovenia" NA NA NA "SI" "Slovenia" "#D9EFBB" "SI"
+"287" "Somalia" NA NA NA "SO" "Somalia" "#E3881D" "SO"
+"288" "Song Heung-Min" "Maalintekijä" 1 1 NA NA NA NA
+"289" "Sri Lanka" NA NA NA "LK" "Sri Lanka" "#AD8ABD" "LK"
+"290" "Sudan" NA NA NA "SD" "Sudan" "#934607" "SD"
+"291" "Suomi" NA NA NA "FI" "Finland" "#B2DD7E" "FI"
+"292" "Suriname" NA NA NA "SR" "Suriname" NA "SR"
+"293" "Sveitsi" NA NA NA "CH" "Switzerland" "#9ACD62" "CH"
+"294" "Swazimaa" NA NA NA "SZ" "Eswatini" NA "SZ"
+"295" "Syyria" NA NA NA "SY" "Syria" "#B291C1" "SY"
+"296" "Tadžikistan" NA NA NA "TJ" "Tajikistan" NA "TJ"
+"297" "Taiwan" NA NA NA "TW" "Taiwan" "#A37DB3" "TW"
+"298" "Tansania" NA NA NA "TZ" "Tanzania" "#974807" "TZ"
+"299" "Tanska" "Välierämaa" 4 4 "DK" "Denmark" "#A2D26B" "DK"
+"300" "Thaimaa" NA NA NA "TH" "Thailand" "#7A3288" "TH"
+"301" "Thomas Muller" "Maalintekijä" 2 2 NA NA NA NA
+"302" "Togo" NA NA NA "TG" "Togo" "#F1A142" "TG"
+"303" "Tokelau" NA NA NA "TK" "Tokelau" NA "TK"
+"304" "Tonga" NA NA NA "TO" "Tonga" NA "TO"
+"305" "Trinidad ja Tobago" NA NA NA "TT" "Trinidad & Tobago" NA "TT"
+"306" "Tšad" NA NA NA "TD" "Chad" "#DE8013" "TD"
+"307" "Tšekki" NA NA NA "CZ" "Czechia" NA "CZ"
+"308" "Tunisia" NA NA NA "TN" "Tunisia" "#DA7D12" "TN"
+"309" "Turkki" NA NA NA "TR" "Turkey" "#2C6A1A" "TR"
+"310" "Turkmenistan" NA NA NA "TM" "Turkmenistan" NA "TM"
+"311" "Turks- ja Caicossaaret" NA NA NA "TC" "Turks & Caicos Islands" NA "TC"
+"312" "Tusan Tadic" "Maalintekijä" 1 1 NA NA NA NA
+"313" "Tuvalu" NA NA NA "TV" "Tuvalu" NA "TV"
+"314" "Uganda" NA NA NA "UG" "Uganda" "#A75106" "UG"
+"315" "Ukraina" NA NA NA "UA" "Ukraine" NA "UA"
+"316" "Unkari" NA NA NA "HU" "Hungary" "#5FA12D" "HU"
+"317" "Uruguay" "Mestari" 1 1 "UY" "Uruguay" "#FDC778" "UY"
+"318" "Uruguay" "Välierämaa" 3 3 "UY" "Uruguay" "#FDC778" "UY"
+"319" "Uusi-Kaledonia" NA NA NA "NC" "New Caledonia" NA "NC"
+"320" "Uusi-Seelanti" NA NA NA "NZ" "New Zealand" "#4575B4" "NZ"
+"321" "Uzbekistan" NA NA NA "UZ" "Uzbekistan" NA "UZ"
+"322" "Valko-Venäjä" NA NA NA "BY" "Belarus" NA "BY"
+"323" "Vanuatu" NA NA NA "VU" "Vanuatu" NA "VU"
+"324" "Vatikaani" NA NA NA "VA" "Vatican City" NA "VA"
+"325" "Venäjä" NA NA NA "RU" "Russia" NA "RU"
+"326" "Venezuela" NA NA NA "VE" "Venezuela" "#DB3A2B" "VE"
+"327" "Vietnam" NA NA NA "VN" "Vietnam" "#6F247B" "VN"
+"328" "Vinicius Jr" "Maalintekijä" 5 5 NA NA NA NA
+"329" "Vinicius Jr." "TopScorer" 1 1 NA NA NA NA
+"330" "Virgil Van Dijk" "Maalintekijä" 1 1 NA NA NA NA
+"331" "Viro" NA NA NA "EE" "Estonia" NA "EE"
+"332" "Wallis ja Futuna" NA NA NA "WF" "Wallis & Futuna" NA "WF"
+"333" "Yhdysvallat" NA NA NA "US" "United States" "#A50026" "US"
+"334" "Yhdysvaltain erillissaaret" NA NA NA "UM" "U.S. Outlying Islands" NA "UM"
+"335" "Yhdysvaltain Neitsytsaaret" NA NA NA "VI" "U.S. Virgin Islands" NA "VI"
+"336" "Zimbabwe" NA NA NA "ZW" "Zimbabwe" "#CC6F0D" "ZW"

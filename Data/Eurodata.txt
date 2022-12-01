@@ -38,7 +38,7 @@
 "37" "Arto Kiviranta" "Välierämaa" "Välierämaa2" "Saksa" NA NA NA
 "38" "Arto Kiviranta" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
 "39" "Arto Kiviranta" "Välierämaa" "Välierämaa4" "Alankomaat" NA NA NA
-"40" "Arto Kiviranta" "Maalintekijä" "Maalintekijä1" "Lautaro Matinez" "Argentiina" NA NA
+"40" "Arto Kiviranta" "Maalintekijä" "Maalintekijä1" "Lautaro Martinez" "Argentiina" NA NA
 "41" "Arto Kiviranta" "Maalintekijä" "Maalintekijä2" "Frenkie De Jong" "Alankomaat" NA NA
 "42" "Arto Kiviranta" "Maalintekijä" "Maalintekijä3" "Kylian Mbappe" "Ranska" NA NA
 "43" "Arto Kiviranta" "Maalintekijä" "Maalintekijä4" "Jamal Musiala" "Saksa" NA NA
