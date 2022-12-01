@@ -196,7 +196,7 @@
 "195" "Jarkko Siikava" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
 "196" "Jarkko Siikava" "Maalintekijä" "Maalintekijä3" "Cristian Eriksen" "Tanska" NA NA
 "197" "Jarkko Siikava" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
-"198" "Jarkko Siikava" "Maalintekijä" "Maalintekijä5" "Kylian Mbabbe" "Ranska" NA NA
+"198" "Jarkko Siikava" "Maalintekijä" "Maalintekijä5" "Kylian Mbappe" "Ranska" NA NA
 "199" "Jarmo Hietarinta" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
 "200" "Jarmo Hietarinta" "Mestari" "M" "Brasilia" NA NA NA
 "201" "Jarmo Hietarinta" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
@@ -350,7 +350,7 @@
 "349" "Lasse Pasila" "Maalintekijä" "Maalintekijä2" "Harry Kane" "Englanti" NA NA
 "350" "Lasse Pasila" "Maalintekijä" "Maalintekijä3" "Neymar" "Brasilia" NA NA
 "351" "Lasse Pasila" "Maalintekijä" "Maalintekijä4" "Romelu Lukaku" "Belgia" NA NA
-"352" "Lasse Pasila" "Maalintekijä" "Maalintekijä5" "Lauturo Martinez" "Argentiina" NA NA
+"352" "Lasse Pasila" "Maalintekijä" "Maalintekijä5" "Lautaro Martinez" "Argentiina" NA NA
 "353" "Luukas Turunen" "TopScorer" "TS" "Lionel Messi" "Argentina" NA NA
 "354" "Luukas Turunen" "Mestari" "M" "Brasilia" NA NA NA
 "355" "Luukas Turunen" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
@@ -545,7 +545,7 @@
 "544" "Tatu Paasimaa" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
 "545" "Tatu Paasimaa" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
 "546" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä1" "Neymar" "Brasilia" NA NA
-"547" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä2" "Romelo Lukaku" "Belgia" NA NA
+"547" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä2" "Romelu Lukaku" "Belgia" NA NA
 "548" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä3" "Aleksandar Mitrovic" "Serbia" NA NA
 "549" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
 "550" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä5" "Lionel Messi" "Argentina" NA NA
