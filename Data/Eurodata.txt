@@ -69,8 +69,8 @@
 "68" "FC EJM" "Mestari" "M" "Alankomaat" NA NA NA
 "69" "FC EJM" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
 "70" "FC EJM" "Välierämaa" "Välierämaa2" "Alankomaat" NA NA NA
-"71" "FC EJM" "Välierämaa" "Välierämaa3" "Argentina" NA NA NA
-"72" "FC EJM" "Välierämaa" "Välierämaa4" "Brasila" NA NA NA
+"71" "FC EJM" "Välierämaa" "Välierämaa3" "Argentiina" NA NA NA
+"72" "FC EJM" "Välierämaa" "Välierämaa4" "Brasilia" NA NA NA
 "73" "FC EJM" "Maalintekijä" "Maalintekijä1" "Nathan Ake" "Alankomaat" NA NA
 "74" "FC EJM" "Maalintekijä" "Maalintekijä2" "Harry Kane" "Englanti" NA NA
 "75" "FC EJM" "Maalintekijä" "Maalintekijä3" "Leandro Trossard" "Belgia" NA NA
@@ -176,7 +176,7 @@
 "175" "Jani Toikkanen" "Maalintekijä" "Maalintekijä4" "Cristiano Ronaldo" "Portugali" NA NA
 "176" "Jani Toikkanen" "Maalintekijä" "Maalintekijä5" "Neymar" "Brasilia" NA NA
 "177" "Jari-Pekka Halonen" "TopScorer" "TS" "Vinicius Jr." "Ranska" NA NA
-"178" "Jari-Pekka Halonen" "Mestari" "M" "Argentina" NA NA NA
+"178" "Jari-Pekka Halonen" "Mestari" "M" "Argentinau" NA NA NA
 "179" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
 "180" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa2" "Ranska" NA NA NA
 "181" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa3" "Saksa" NA NA NA
@@ -196,7 +196,7 @@
 "195" "Jarkko Siikava" "Maalintekijä" "Maalintekijä2" "Lionel Messi" "Argentiina" NA NA
 "196" "Jarkko Siikava" "Maalintekijä" "Maalintekijä3" "Cristian Eriksen" "Tanska" NA NA
 "197" "Jarkko Siikava" "Maalintekijä" "Maalintekijä4" "Harry Kane" "Englanti" NA NA
-"198" "Jarkko Siikava" "Maalintekijä" "Maalintekijä5" "Kylian Mpabbe" "Ranska" NA NA
+"198" "Jarkko Siikava" "Maalintekijä" "Maalintekijä5" "Kylian Mbabbe" "Ranska" NA NA
 "199" "Jarmo Hietarinta" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
 "200" "Jarmo Hietarinta" "Mestari" "M" "Brasilia" NA NA NA
 "201" "Jarmo Hietarinta" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
@@ -353,7 +353,7 @@
 "352" "Lasse Pasila" "Maalintekijä" "Maalintekijä5" "Lauturo Martinez" "Argentiina" NA NA
 "353" "Luukas Turunen" "TopScorer" "TS" "Lionel Messi" "Argentina" NA NA
 "354" "Luukas Turunen" "Mestari" "M" "Brasilia" NA NA NA
-"355" "Luukas Turunen" "Välierämaa" "Välierämaa1" "Argentina" NA NA NA
+"355" "Luukas Turunen" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
 "356" "Luukas Turunen" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
 "357" "Luukas Turunen" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
 "358" "Luukas Turunen" "Välierämaa" "Välierämaa4" "Portugali" NA NA NA
@@ -407,9 +407,9 @@
 "406" "Mika Hyrske" "Maalintekijä" "Maalintekijä4" "Lautaro Martinez" "Argentiina" NA NA
 "407" "Mika Hyrske" "Maalintekijä" "Maalintekijä5" "Gabriel Jesus" "Brasilia" NA NA
 "408" "Miko Hietarinta" "TopScorer" "TS" "Lionel Messi" "ARG" NA NA
-"409" "Miko Hietarinta" "Mestari" "M" "Argentina" NA NA NA
+"409" "Miko Hietarinta" "Mestari" "M" "Argentiina" NA NA NA
 "410" "Miko Hietarinta" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
-"411" "Miko Hietarinta" "Välierämaa" "Välierämaa2" "Argentina" NA NA NA
+"411" "Miko Hietarinta" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
 "412" "Miko Hietarinta" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
 "413" "Miko Hietarinta" "Välierämaa" "Välierämaa4" "Ranska" NA NA NA
 "414" "Miko Hietarinta" "Maalintekijä" "Maalintekijä1" "Darwin Nunez" "Uruguay" NA NA
@@ -486,7 +486,7 @@
 "485" "Riku Sutka" "TopScorer" "TS" "Harry Kane" "Englanti" NA NA
 "486" "Riku Sutka" "Mestari" "M" "Brasilia" NA NA NA
 "487" "Riku Sutka" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
-"488" "Riku Sutka" "Välierämaa" "Välierämaa2" "Argentina" NA NA NA
+"488" "Riku Sutka" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
 "489" "Riku Sutka" "Välierämaa" "Välierämaa3" "Ranska" NA NA NA
 "490" "Riku Sutka" "Välierämaa" "Välierämaa4" "Englanti" NA NA NA
 "491" "Riku Sutka" "Maalintekijä" "Maalintekijä1" "Neymar" "Brasilia" NA NA
@@ -541,7 +541,7 @@
 "540" "Tatu Paasimaa" "TopScorer" "TS" "Romelo Lukaku" "Belgia" NA NA
 "541" "Tatu Paasimaa" "Mestari" "M" "Belgia" NA NA NA
 "542" "Tatu Paasimaa" "Välierämaa" "Välierämaa1" "Tanska" NA NA NA
-"543" "Tatu Paasimaa" "Välierämaa" "Välierämaa2" "Argentina" NA NA NA
+"543" "Tatu Paasimaa" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
 "544" "Tatu Paasimaa" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
 "545" "Tatu Paasimaa" "Välierämaa" "Välierämaa4" "Belgia" NA NA NA
 "546" "Tatu Paasimaa" "Maalintekijä" "Maalintekijä1" "Neymar" "Brasilia" NA NA
@@ -585,7 +585,7 @@
 "584" "Tuomo Fasta" "TopScorer" "TS" "Kylian Mbappe" "FRA" NA NA
 "585" "Tuomo Fasta" "Mestari" "M" "Ranska" NA NA NA
 "586" "Tuomo Fasta" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
-"587" "Tuomo Fasta" "Välierämaa" "Välierämaa2" "Brasiloa" NA NA NA
+"587" "Tuomo Fasta" "Välierämaa" "Välierämaa2" "Brasilia" NA NA NA
 "588" "Tuomo Fasta" "Välierämaa" "Välierämaa3" "Englanti" NA NA NA
 "589" "Tuomo Fasta" "Välierämaa" "Välierämaa4" "Espanja" NA NA NA
 "590" "Tuomo Fasta" "Maalintekijä" "Maalintekijä1" "Harry Kane" "ENG" NA NA
@@ -627,9 +627,9 @@
 "626" "Ville Juuti" "Maalintekijä" "Maalintekijä4" "Ferran Torres" "Espanja" NA NA
 "627" "Ville Juuti" "Maalintekijä" "Maalintekijä5" "Memphis Depay" "Alankomaat" NA NA
 "628" "Ville Sutka" "TopScorer" "TS" "Kylian Mbappe" "Ranska" NA NA
-"629" "Ville Sutka" "Mestari" "M" "Argentina" NA NA NA
+"629" "Ville Sutka" "Mestari" "M" "Argentiina" NA NA NA
 "630" "Ville Sutka" "Välierämaa" "Välierämaa1" "Ranska" NA NA NA
-"631" "Ville Sutka" "Välierämaa" "Välierämaa2" "Argentina" NA NA NA
+"631" "Ville Sutka" "Välierämaa" "Välierämaa2" "Argentiina" NA NA NA
 "632" "Ville Sutka" "Välierämaa" "Välierämaa3" "Espanja" NA NA NA
 "633" "Ville Sutka" "Välierämaa" "Välierämaa4" "Saksa" NA NA NA
 "634" "Ville Sutka" "Maalintekijä" "Maalintekijä1" "Kylian Mbappe" "Ranska" NA NA
@@ -647,4 +647,4 @@
 "646" "Ville Kolu" "Maalintekijä" "Maalintekijä2" "Dusan Vlahovic" "Serbia" NA NA
 "647" "Ville Kolu" "Maalintekijä" "Maalintekijä3" "Memphis Depay" "Alankomaat" NA NA
 "648" "Ville Kolu" "Maalintekijä" "Maalintekijä4" "Darwin Nunez" "Uruguay" NA NA
-"649" "Ville Kolu" "Maalintekijä" "Maalintekijä5" "Thomas Müller" "Saksa" NA NA
+"649" "Ville Kolu" "Maalintekijä" "Maalintekijä5" "Thomas Muller" "Saksa" NA NA
