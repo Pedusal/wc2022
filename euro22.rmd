@@ -109,7 +109,7 @@ oikearivi <- oikearivi %>%
                  )
 
 ############## luo pelit vector
-pelit <- c(1:(length(oikearivi$...3)-2))
+pelit <- c(1:(length(oikearivi$...3)))
 #pelit[1] <- c("Nimi")
 #pelit[2] <- c("Yhteensa")
 
