@@ -719,7 +719,9 @@ bp <- ggplot(Eurodata_mestari, aes(x=reorder(Tyyppi, -lkm)
   xlab("") +
   ylab("Veikkausten määrä") +
   theme_classic() +
-  #scale_fill_manual(values=c("red", "orange", "slateblue4","lightblue", "blue", "yellow2","blue")) +
+  scale_fill_manual(name = "Maa",
+            values=Eurodata_mestari$cc
+            ) +
   geom_text(aes(label=lkm),
             position = position_dodge(width=0.8),
             vjust=1.5, colour="white", size=2.0)

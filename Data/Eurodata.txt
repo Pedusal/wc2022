@@ -176,7 +176,7 @@
 "175" "Jani Toikkanen" "Maalintekijä" "Maalintekijä4" "Cristiano Ronaldo" "Portugali" NA NA
 "176" "Jani Toikkanen" "Maalintekijä" "Maalintekijä5" "Neymar" "Brasilia" NA NA
 "177" "Jari-Pekka Halonen" "TopScorer" "TS" "Vinicius Jr." "Ranska" NA NA
-"178" "Jari-Pekka Halonen" "Mestari" "M" "Argentinau" NA NA NA
+"178" "Jari-Pekka Halonen" "Mestari" "M" "Argentiina" NA NA NA
 "179" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa1" "Brasilia" NA NA NA
 "180" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa2" "Ranska" NA NA NA
 "181" "Jari-Pekka Halonen" "Välierämaa" "Välierämaa3" "Saksa" NA NA NA
@@ -298,7 +298,7 @@
 "297" "Kari Vornanen" "Maalintekijä" "Maalintekijä5" "Kylian Mbappe" "Ranska" NA NA
 "298" "Kasper Määttä" "TopScorer" "TS" "Neymar" "Brasilia" NA NA
 "299" "Kasper Määttä" "Mestari" "M" "Argentiina" NA NA NA
-"300" "Kasper Määttä" "Välierämaa" "Välierämaa1" "Argentina" NA NA NA
+"300" "Kasper Määttä" "Välierämaa" "Välierämaa1" "Argentiina" NA NA NA
 "301" "Kasper Määttä" "Välierämaa" "Välierämaa2" "Portugali" NA NA NA
 "302" "Kasper Määttä" "Välierämaa" "Välierämaa3" "Brasilia" NA NA NA
 "303" "Kasper Määttä" "Välierämaa" "Välierämaa4" "Alankomaat" NA NA NA
