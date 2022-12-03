@@ -645,9 +645,30 @@ as.datatable(
 
 ```{r final4taulu PIIRTAMINE, echo=FALSE}
 ################# piirretaan final4taulu
+library(formattable)
+library(dplyr)
+
+# Define color_tile_mean function
+ color_tile_mean <- function (...) {
+  formatter("span", style = function(x) {
+    style(display = "block",
+          padding = "0 4px", 
+          `border-radius` = "4px", 
+          `background-color` = ifelse(x %in% pudonneet$...19, "red", "white")) # Remember to change the colors!
+  })}
 
 as.datatable(
-  formattable(final4taulu)
+  formattable(final4taulu,
+              list(
+                Nimi = formatter("span", style = ~ style(
+                  color = "black",font.weight = "bold"))
+                #,Yhteensa = color_tile("white", "green")
+                #,Maalit = color_tile("white", "red"),
+                #,area(col=1:length(final4taulu[1,]) ) ~ color_tile(
+                 # "transparent", "lightskyblue")
+                ,area(col=1:length(final4taulu[1,]) ) ~ color_tile_mean()
+              )
+  )
   ,
             options = list(
                       dom = 't',
