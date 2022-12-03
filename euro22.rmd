@@ -697,9 +697,11 @@ as.datatable(
                       )
 )
 ```
+#### Välierä ja mestari -veikkausten jakauma
 
-```{r PIIRRA_mestarijakauma, eval=FALSE, include=FALSE}
+```{r PIIRRA_mestarijakauma, echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
+library(viridis)
 ################# piirretaan mestarit
 
 Eurodata_mestari <- subset(Eurodata_lkm, ((Tyyppi == "Mestari" | 
@@ -719,12 +721,14 @@ bp <- ggplot(Eurodata_mestari, aes(x=reorder(Tyyppi, -lkm)
   xlab("") +
   ylab("Veikkausten määrä") +
   theme_classic() +
-  scale_fill_manual(name = "Maa",
-            values=Eurodata_mestari$cc
+  scale_fill_viridis(name = "Maa",
+                     ,discrete = TRUE
+                     ,option = "C"
+              #,palette = c("Blues")
             ) +
   geom_text(aes(label=lkm),
             position = position_dodge(width=0.8),
-            vjust=1.5, colour="white", size=2.0)
+            vjust=1.5, colour="white", size=2.5)
   #geom_point(aes(color=Sisalto)) +
   #scale_color_gradient(low="#33CC33", high="#CCFFCC") +
 
@@ -742,6 +746,7 @@ library(dplyr)
 #library(tidyverse)
 library(ggflags) 
 library(countrycode) # to convert country names to country codes
+library(ggthemes)
 #library(tidytext) # for reorder_within
 #library(scales) # for application of common formats to scale labels (e.g., comma, percent, dollar)
 
