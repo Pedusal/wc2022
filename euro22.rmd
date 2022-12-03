@@ -108,6 +108,11 @@ oikearivi <- oikearivi %>%
   filter(!is.na(oikearivi[,4])
                  )
 
+## poimitaan pudonneet maat
+pudonneet <- oikearivi[,19] %>%   
+  filter(!is.na(oikearivi[,19])
+                 )
+
 ############## luo pelit vector
 pelit <- c(1:(length(oikearivi$...3)))
 #pelit[1] <- c("Nimi")
@@ -679,7 +684,15 @@ colnames(bonus_tekijat) <- c("Nimi","Pelaaja","Maa")
 
 
 as.datatable(
-  formattable(bonus_tekijat),
+  formattable(bonus_tekijat,
+              list(
+                #Pelaaja = color_tile("white", "green")
+                "Pelaaja" = formatter("span", style = x ~ style(color = ifelse(x%in%maaliporssi$...10 , "green", "black")))
+                , "Maa" = formatter("span", style = x ~ style(color = ifelse(x%in%pudonneet$...19 , "red", "black")))
+                #,x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No"))
+                
+               )
+              ),
   rownames = '',  #rivin alussa ei mitaan
             options = list(
                       dom = 't',
