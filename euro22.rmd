@@ -112,6 +112,10 @@ oikearivi <- oikearivi %>%
 pudonneet <- oikearivi[,19] %>%   
   filter(!is.na(oikearivi[,19])
                  )
+#poimitaan valieramaat
+valieramaat <- oikearivi[,17] %>%   
+  filter(!is.na(oikearivi[,17])
+                 )
 
 ############## luo pelit vector
 pelit <- c(1:(length(oikearivi$...3)))
@@ -654,19 +658,15 @@ library(dplyr)
     style(display = "block",
           padding = "0 4px", 
           `border-radius` = "4px", 
-          `background-color` = ifelse(x %in% pudonneet$...19, "red", "white")) # Remember to change the colors!
+          `background-color` = ifelse(x %in% pudonneet$...19, "red", "white")
+                               #(x %in% valieramaat$...17, "green", "white")
+          )
   })}
 
 as.datatable(
   formattable(final4taulu,
               list(
-                Nimi = formatter("span", style = ~ style(
-                  color = "black",font.weight = "bold"))
-                #,Yhteensa = color_tile("white", "green")
-                #,Maalit = color_tile("white", "red"),
-                #,area(col=1:length(final4taulu[1,]) ) ~ color_tile(
-                 # "transparent", "lightskyblue")
-                ,area(col=1:length(final4taulu[1,]) ) ~ color_tile_mean()
+                area(col=1:length(final4taulu[1,]) ) ~ color_tile_mean() #kaytetaan ym funktiota, jotta saadaan taustavarit
               )
   )
   ,
@@ -704,11 +704,22 @@ bonus_tekijat <- subset(bonus_tekijat, select = c('Nimi','Sisalto','Sisälto_tar
 colnames(bonus_tekijat) <- c("Nimi","Pelaaja","Maa")
 
 
+# Define color_tile_mean function
+ color_tile_bonus <- function (...) {
+  formatter("span", style = function(x) {
+    style(display = "block",
+          padding = "0 4px", 
+          `border-radius` = "4px", 
+          `background-color` = ifelse(x %in% maaliporssi$...10, "green", "white")
+                               #(x %in% valieramaat$...17, "green", "white")
+          )
+  })}
+
 as.datatable(
   formattable(bonus_tekijat,
               list(
                 #Pelaaja = color_tile("white", "green")
-                "Pelaaja" = formatter("span", style = x ~ style(color = ifelse(x%in%maaliporssi$...10 , "green", "black")))
+                Pelaaja = color_tile_bonus() 
                 , "Maa" = formatter("span", style = x ~ style(color = ifelse(x%in%pudonneet$...19 , "red", "black")))
                 #,x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No"))
                 

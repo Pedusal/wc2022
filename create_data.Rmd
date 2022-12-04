@@ -177,7 +177,16 @@ Eurodata_lkm <- merge(Eurodata_lkm, en_fi_country_colors,
 ### 
 ```
 
-```{}
+```{r}
+library(Matrix)
+library(data.table)
+
+veikkaukset1 <- unlist(veikkaukset)
+
+list_data <- Map(as.data.frame, veikkaukset)
+
+veikkaukset1 <- rbindlist(list_data, fill = T)
+
 
 ```
 
