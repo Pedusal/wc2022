@@ -347,7 +347,7 @@ if (final4taulu[i,1] %in% mestari[,1] ) {
 #maalinkuningas pisteytys
 maalikuningas_pisteet[i-1] <- 0
 
-if (maalintekijat[i,2] %in% maalikuningas[,1] ) {
+if (maalintekijat[i-1,2] %in% maalikuningas[,1] ) {
   maalikuningas_pisteet[i-1] <- 8
   }
 
